@@ -1,0 +1,29 @@
+Diversity is acknowledged as a crucial element for resilience, sustainability and increased wealth in many domains such as  sociology, economy and ecology. 
+Yet, despite the large body of theoretical and experimental science that emphasizes the need to conserve high levels of diversity in complex systems, the limited amount of diversity in software-intensive systems is a major issue. 
+This  is particularly critical as these systems integrate multiple concerns, are connected to the physical world, run eternally and are open to other services and to users.
+Here we present our latest observational and technical results about (i) new approaches to increase diversity in software systems, and (ii) software testing to assess the validity of software. 
+
+\paragraph{Software diversification}  
+%*******DIVERSITY*******%      
+
+Our work on software diversification explores various ways of adding randomness in program executions: state perturbations that preserve functional correctness \cite{danglot:hal-01378523}; randomizing of web APIs to mitigate browser fingeprinting \cite{laperdrix:hal-01527580}. 
+
+Can the execution of software be perturbed without breaking the correctness of the output?
+In this work \cite{danglot:hal-01378523}, we devise a protocol to answer this question from a novel perspective.
+In an experimental study, we observe that many perturbations do not break the correctness in ten subject programs. 
+We call this phenomenon ``correctness attraction''.
+The uniqueness of this protocol is that it considers a systematic exploration of the perturbation space as well as perfect oracles to determine the correctness of the output. 
+To this extent, our findings on the stability of software under execution perturbations have a level of validity that has never been reported before in the scarce related work.
+A qualitative manual analysis enables us to set up the first taxonomy ever of the reasons behind correctness attraction.
+
+The rich programming interfaces (APIs) provided by web browsers can be diverted to collect a browser fingerprint. A small number of queries on these interfaces are sufficient to build a fingerprint that is statistically unique and very stable over time. Consequently, the fingerprint can be used to track users. Our work \cite{laperdrix:hal-01527580} aims at mitigating the risk of browser fingerprinting for users privacy by 'breaking' the stability of a fingerprint over time. We add randomness in the computation of selected browser functions, in order to have them deliver slightly different answers for each browsing session. Randomization is possible thanks to the following properties of browsers implementations: (i) some functions have a nondeterministic specification, but a deterministic implementation ; (ii) multimedia functions can be slightly altered without deteriorating user's perception. We present FPRandom, a modified version of Firefox that adds randomness to mitigate the most recent fingerprinting algorithms, namely canvas fingerprinting, AudioContext fingerprinting and the unmasking of browsers through the order of JavaScript properties. We evaluate the effectiveness of FPRandom by testing it against known fingerprinting tests. We also conduct a user study and evaluate the performance overhead of randomization to determine the impact on the user experience. 
+
+The other aspect in the area of software diversity  is about the statistical analysis of browser fingerprinting on a large industrial dataset \cite{laperdrix:tel-01621257,gomezboix:hal-01611101}. 
+
+
+\paragraph{Software testing}  
+%*******TESTING*******%      
+Generative software development has paved the way for the creation of multiple code generators and compilers that serve as a basis for automatically generating code to a broad range of software and hardware platforms. With full automatic code generation, the user is able to easily and rapidly synthetize software artifacts for various software platforms. In addition, modern generators (i.e., C compilers) become highly configurable, offering numerous configuration options that the user can use to easily customize the generated code for the target hardware platform.
+In this context, it is crucial to verify the correct behaviour of code generators. Numerous approaches have been proposed to verify the functional outcome of generated code but few of them evaluate the non-functional properties of automatically generated code, namely the performance and resource usage properties.
+The thesis of Mohamed Boussaa \cite{boussaa:tel-01598821} has addressed this limitation.
+

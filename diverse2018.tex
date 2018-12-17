@@ -1,0 +1,1470 @@
+
+%%%
+%%% iTrameRA : Trame pour le Rapport d'Activité Inria 2018
+%%% ------------------------------------------------------
+%%%  
+%%% Url de la trame : http://irabot.inria.fr/itramera?projet=diverse
+%%%
+%%% ----------------
+
+%%%  Nouveautés ou rappels 2018 !
+%%% ----------------
+%%% - Personnes : mettez à jour https://gef.inria.fr/ (assistante) pour obtenir des imports corrects pour les mots-clés et le RA
+%%% - Mots-clés : mots-clés équipe et personnes à renseigner dans https://bastri.inria.fr/FichesProjets/  - Etape nécessaire pour pouvoir déposer le RA
+%%% - Logiciels : à renseigner dans BIL https://bil.inria.fr/fr/catalog/listby/raweb avant l'import dans le RA. Les modifications sont à faire dans BIL, ce n'est pas possible dans le RA.
+%%% - Médiation : un rubricage fin des activités vous est proposé dans la section Dissemination
+
+%%% ------------------
+%%% Ce document est un squelette de rapport d'activité  
+%%% mis à jour à partir des bases de données de l'Inria
+%%% (HAL pour les publis, BASTRI pour les équipes, FicheProjet pour les mots-clés, BIL pour les logiciels, l'entrepôt pour les données DPEI ...).
+%%% Le rédacteur doit compléter ce document.  
+%%%
+%%% Marche à suivre :
+%%%
+%%% Récuperer l'archive tgz de 2018 et la décompresser  dans un répertoire.  
+%%% Il y a un fichier tex et 3 fichiers de bibliographie (.bib) :  
+%%% - diverse2018.tex : le texte en latex du rapport  
+%%% - diverse2018.bib : les publis de l'année 2018 issues de Hal
+%%% - diverse_refer2018.bib : les publications de référence (c'est-a-dire les 10 publis les plus importantes
+%%%   de l'équipe quelle que soit l'année)
+%%% - diverse_foot2018.bib : les publis placées dans les notes de bas de page (footnote) issues de votre rapport 2017
+%%%
+%%% Instructions pour l'écriture du RA :
+%%%
+%%% https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Rediger-le-RA-Objectifs-et-actualites
+%%%
+%%% Pour compiler puis déposer le rapport utiliser le serveur iRAbot :  
+%%%
+%%% http://irabot.inria.fr/irabot
+%%%
+%%% ou bien le script irabot.sh qui utilise iRAbot.
+%%%
+%%% Le rapport est en ANGLAIS !
+%%%
+
+
+\documentclass{ra2018}
+
+%SKEL - v0.4 - 2018 (Utiliser pour les stats d'utilisation de Skel, merci de ne effacer cette ligne)
+
+% ne pas enlever  
+\renewenvironment{motscle}{\begin{xmlelement}{keywords}}{\end{xmlelement}}
+
+%%% Par defaut sont inclus les packages : html, french, graphics et footbib  
+%%% (ifthen curves soul epsf html)
+%%% Le plus souvent la commande \usepackage n'est pas prise en compte  
+%%% Mais si le package est calc ou fp certaines commandes sont rendues disponibles
+%%% (fancyvrb)  
+
+%%% Mettez ici les \newcommand et \def que vous voulez
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fonctions tex issus du RAweb 2017
+% Source : diverse2017.tex
+% Date : lundi 17 dÃ©cembre 2018, 17:59:56 (UTC+0100)
+%
+
+\newcommand{\team}{DIVERSE}    
+\newcommand{\equipe}{DIVERSE}    
+\newcommand{\FIXME}[1]{\uppercase{\bf #1}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%  Information sur les données importées : Bastri
+%%%
+%%% L'acronyme de votre équipe et le CRI sont présentés comme dans les fiches projets.
+%%% Si vous souhaitez les modifier, faites-le dans la base de gestion des fiches projets :
+%%% https://bastri.inria.fr/FichesProjets/ et régénérez votre trame.
+
+%%% Les organismes ou écoles partenaires de votre équipe, les labos auxquels
+%%% vous êtes associés ainsi que thème et domaine de rattachement sont récupérés automatiquement à chaque compilation.
+%%%. Ces infos sont issues de Bastri :  https://bastri.inria.fr, la base des structures de recherche Inria.
+%%%
+%%% Le "moreinfo" de l'équipe servira donc uniquement à préciser la localisation  
+%%% quand elle est distincte du CRI (pour ceux qui le souhaitent).  
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%  Information sur les données importées : Cartographie
+%%% Cartographie de l'activité : chaque équipe et chaque membre d'équipe doit renseigner les mots-clés 2018 décrivant son activité dans https://bastri.inria.fr/FichesProjets/.  
+%%% Le RA importe les mots-clés équipe. Ils sont visibles dans le RA *10 à 15 mn* après la validation dans https://bastri.inria.fr/FichesProjets/.  
+%%% Le dépôt du RA est impossible tant que les mots-clés ne sont pas validés.
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RAweb/Consignes-generales#eztoc26917_4
+  
+%%% Vérifiez et signalez erreurs et problèmes sur le Helpdesk : https://helpdesk.inria.fr/categories/181/submit
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% \projet{<PROJET>}{<ALT-ABRÉGÉ>}{<NOM-PROJET-EXPLICITÉ>}
+%%% exemple :  
+%%% \projet{EXEMPLE}{ExemplE}{Algebraic Systems for Research and Industry}  
+%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Informations concernant l'equipe extraites de BASTRI
+% Source : http://bastri.inria.fr/
+% Date : lundi 17 dÃ©cembre 2018, 17:59:56 (UTC+0100)
+%
+
+\projet{DIVERSE}{diverse}{Diversity-centric Software Engineering}
+
+%% Pour information le domaine et le theme du projet 
+%% Domaine : Networks, Systems and Services, Distributed Computing
+%% Theme : Distributed programming and Software engineering
+
+
+%%% CRI Inria  
+%%% Sophia, ou Paris, ou Nancy, si le projet est bilocalisé : \UR{cr1,cr2} etc
+
+\UR{Rennes}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+
+%%% Pour ceux qui le souhaitent le moreinfo permet d'insérer un texte
+%%% de 3 - 4 lignes qui indique les particularités de l'équipe.
+%%% Ne doublonnez pas thème, domaine, CRI et partenariats qui sont ajoutés automatiquement.  
+
+%%\begin{moreinfo}
+%%ICI Vous pouvez ecrire du texte
+
+
+%%\end{moreinfo}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Liste des modules possibles pour les sections :
+%%% composition presentation fondements domaine highlights logiciels resultats contrats partenariat diffusion
+%%%
+%%% ex : \begin{module}{composition}
+%%%
+%%% \begin{module} {<SECTION>} {<NOMMODULE>} {<TITRE>}
+%%%     <PERSONNES>  
+%%%    [<GLOSSAIRE>]  
+%%%    [<MOREINFO>]  
+%%%    [<RESUME>]  
+%%%    <CORPS>
+%%% \end{module}
+%%%
+%%%
+%%% NOMMODULE est un identifiant unique pour repérer le module,
+%%% aussi chaque module doit en avoir un NOMMODULE différent.  
+%%%
+%%% \begin{module}{logiciels}{calcul-formel}{Sofrware aspects of Computer Algebra}
+%%%  \begin{participants}
+%%%  format: \pers <PRENOM> [<PARTICULE>] <NOM> [<MOREINFO>]
+%%%        \pers{Jean}[de]{La Fontaine}[1621-1695],
+%%%        \pers{Cecil Blount}{De Mille}
+%%%  \end{participants}
+%%%  \begin{glossaire}
+%%%       \glo{backward combatability}{A property of hardware or software
+%%%   ... but activeliy... }
+%%%  \end{glossaire}
+%%%  \begin{abstract}
+%%%       Le joli résumé que voilà
+%%%  \end{abstact}  
+%%%  This is a very short module with a hypertext link to the
+%%%  \href{http://www.eps.mcgill.ca/jargon/jargon.html}{Jargon File}.
+%%% \end{module}
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Composition de l'équipe
+%%%
+%%% Professions possibles :
+%%% Chercheur Enseignant PostDoc PhD Technique Stagiaire Assistant Visiteur CollaborateurExterieur
+%%%  
+%%% Utiliser le mot-clé [Habilite] pour les titulaires d'une Thèse d'État ou d'une HDR
+%%%
+%%%       \pers{Prénom}{Nom}{profession}[champ_libre: Employeur, Fonction, until/since, financement, info supplémentaire][Habilite]?
+%%%        ...
+%%%
+%%% La mention "Team leader" est précisée dans le champ libre (moreinfo) et pré-remplie par l'export GEF.
+%%%
+%%% Dans le champ libre, si vous indiquez le grade (donnée importée si elle est dans Gef), écrivez :
+%%%    
+%%%   Pour DR : Senior Researcher  
+%%%   Pour CR : Researcher
+%%%   Pour Advanced Research position : Advanced Research position
+%%%   Pour Starting Research position : Starting Research position
+%%%   Pour Professeur : Professor ou Prof
+%%%   Pour Maitre de conférence : Associate Professor
+%%%   Pour les chercheurs émérites : Emeritus
+
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Information sur les données importées : les membres de l'équipe sont importés de GEF
+%%%  
+%%% Tous les membres de l'équipe doivent être dans GEF  
+%%% Ajoutez et corrigez les noms dans https://gef.inria.fr et régénérez la trame.
+%%% Les infos de financement viennent de la base Safin et la graphie des noms des responsables d'équipe de Bastri.
+%%% La mention "Team leader" est exportée dans le champ libre (moreinfo), de même que l'employeur (à vérifier)
+%%% Vérifiez et signalez erreurs et problèmes dans le Helpdesk : https://helpdesk.inria.fr/categories/181/submit
+ %%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_2
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Donnees  construites d'aprÃ¨s les informations de la base GEF pour 2018
+% Source : https://gef.inria.fr/
+% Date : lundi 17 dÃ©cembre 2018, 17:59:56 (UTC+0100)
+%
+
+%\begin{composition}
+\pers{Olivier}{Barais}{Enseignant}[Team leader, Univ de Rennes I, Professor][Habilite]
+\pers{Mathieu}{Acher}{Enseignant}[Univ de Rennes I, Associate Professor]
+\pers{Arnaud}{Blouin}{Enseignant}[INSA Rennes, Associate Professor]
+\pers{Johann}{Bourcier}{Enseignant}[Univ de Rennes I, Associate Professor][Habilite]
+\pers{Benoit}{Combemale}{Enseignant}[Univ de Toulouse 1 Capitole, Associate Professor, from Sep 2018][Habilite]
+\pers{Jean-Marc}{Jezequel}{Enseignant}[Univ de Rennes I, Professor][Habilite]
+\pers{Noel}{Plouzeau}{Enseignant}[Univ de Rennes I, Associate Professor]
+\pers{Juliana}{Alves Pereira}{PostDoc}[Univ de Rennes I, from Sep 2018]
+\pers{Akbar Pranata}{Alif}{PhD}[Inria, from Oct 2018]
+\pers{June}{Benvegnu Sallou}{PhD}[Univ de Rennes I, from Oct 2018]
+\pers{Antoine}{Cheron}{PhD}[\_\_\_EMPLOYEUR???\_\_\_, from Mar 2018]
+\pers{Fabien}{Coulon}{PhD}[\_\_\_EMPLOYEUR???\_\_\_, from Sep 2018]
+\pers{Jean-Emile}{Dartois}{PhD}[Institut de recherche technologique B-com]
+\pers{Alejandro}{Gomez Boix}{PhD}[Inria]
+\pers{Pierre}{Jeanjean}{PhD}[Inria, from Nov 2018]
+\pers{Romain}{Lebouc}{PhD}[Univ de Rennes I, from Oct 2018]
+\pers{Manuel}{Leduc}{PhD}[Univ de Rennes I]
+\pers{Dorian}{Leroy}{PhD}[\_\_\_EMPLOYEUR???\_\_\_]
+\pers{Gauthier}{Lyan}{PhD}[\_\_\_EMPLOYEUR???\_\_\_, from Feb 2018]
+\pers{Hugo}{Martin}{PhD}[Univ de Rennes I, from Sep 2018]
+\pers{Ludovic}{Mouline}{PhD}[\_\_\_EMPLOYEUR???\_\_\_]
+\pers{Youssou}{Ndiaye}{PhD}[Orange Labs]
+\pers{Johan}{Pelay}{PhD}[Institut de recherche technologique B-com, until Sep 2018]
+\pers{Quentin}{Plazar}{PhD}[Inria, until Sep 2018]
+\pers{Paul}{Temple}{PhD}[Univ de Rennes I, until Nov 2018]
+\pers{Oscar Luis}{Vera Perez}{PhD}[Inria]
+\pers{Amine}{Benelallam}{Technique}[Univ de Rennes I]
+\pers{Maxime}{Bricet}{Technique}[Univ de Rennes I]
+\pers{Caroline}{Landry}{Technique}[Inria]
+\pers{Maxime}{Tricoire}{Technique}[Inria, until Jun 2018]
+\pers{Didier}{Vojtisek}{Technique}[Inria]
+\pers{Max}{Aguirre}{Stagiaire}[Univ de Rennes I, from Jun 2018 until Jul 2018]
+\pers{Gwendal}{Didot}{Stagiaire}[Univ de Rennes I, from May 2018 until Aug 2018]
+\pers{Arnaud}{Gohier}{Stagiaire}[Univ de Rennes I, from Apr 2018 until Aug 2018]
+\pers{Alexis}{Lemasle}{Stagiaire}[Univ de Rennes I, from May 2018 until Aug 2018]
+\pers{Hugo}{Martin}{Stagiaire}[Univ de Rennes I, from Feb 2018 until Aug 2018]
+\pers{Enzo}{Menegaldo}{Stagiaire}[Univ de Rennes I, from Jun 2018 until Sep 2018]
+\pers{Yannick}{Namour}{Stagiaire}[Univ de Rennes I, from Apr 2018 until Aug 2018]
+\pers{Koko Armando}{Nguepi Kenfack}{Stagiaire}[Univ de Rennes I, until Jan 2018]
+\pers{Anthony}{Orain}{Stagiaire}[Univ de Rennes I, from Jun 2018 until Jul 2018]
+\pers{Tifenn}{Donguy}{Assistant}[CNRS]
+\pers{Erwan}{Bousse}{Visiteur}[\_\_\_EMPLOYEUR???\_\_\_, until Aug 2018]
+\pers{Marcel}{Heinz}{Visiteur}[\_\_\_EMPLOYEUR???\_\_\_, Jul 2018]
+\pers{Gurvan}{Le Guernic}{CollaborateurExterieur}[DGA]
+\pers{Benoit}{Combemale}{AutreCategorie}[\_\_\_EMPLOYEUR???\_\_\_, until Aug 2018][Habilite]
+%\end{composition}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section presentation (Overall Objectives)
+%%% On peut mettre un ou plusieurs modules.
+%%%  
+%%% La partie présentation du projet est issue de la section "Overall Objectives" du RAweb 2017  
+%%% source : http://raweb.inria.fr/rapportsactivite/2017/diverse/uid0.html
+%%%
+%%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PrÃ©sentation du projet issues des informations du RAweb 2017
+% Source : http://raweb.inria.fr/rapportsactivite/RA2017/diverse/uid3.html
+% Date : lundi 17 dÃ©cembre 2018, 17:59:56 (UTC+0100)
+%
+
+
+\begin{module}{presentation}{overall}{Overall objectives}
+
+  \team{}'s research agenda is in the area of software engineering. 
+  In this broad domain we develop models, methodologies and theories to address the challenges raised by the emergence of several forms of diversity in the design, deployment and evolution of software-intensive systems.
+  The emergence of software diversity is an essential phenomenon in all application domains that we investigate with our industrial partners. These application domains range from complex systems such as systems of systems (in collaboration with Thales and DGA) and Instrumentation and Control (with EDF) to pervasive combinations of Internet of Things and Internet of Services (with TellU and Software AG) and tactical information systems (with the firefighter department).
+  Even if today these systems are apparently radically different, we envision a strong convergence  of the scientific principles underpinning their construction and validation towards \textbf{flexible and open yet dependable systems}. 
+  In particular, we see that the required flexibility and openness raise challenges for the software layer of these systems that must deal with four dimensions of diversity: the \textbf{diversity of languages} used by the stakeholders involved in the construction of these systems; the \textbf{diversity of features} required by the different customers; the \textbf{diversity of runtime environments} in which software has to run and adapt; the \textbf{diversity of implementations} that are necessary for resilience through redundancy.
+
+  In this context, the major software engineering challenge consists in handling \textbf{diversity} from variability in requirements and design to heterogeneous and dynamic execution environments. 
+  In particular this requires considering that the software system must adapt, in unpredictable ways, to changes in the requirements and environment. 
+  Conversely, explicitly handling of diversity is a great opportunity to allow software to spontaneously explore alternative design solutions. 
+  Concretely, we want to provide software engineers with the ability:
+  \begin{itemize}
+      \item to characterize an `envelope' of possible variations
+      \item to compose `envelopes' (to discover new macro envelopes in an opportunistic manner)
+      \item to dynamically synthesize software inside a given  envelop
+  \end{itemize}
+
+  The major scientific objective that we must achieve to provide such mechanisms for software engineering is synthesized below
+
+
+    \textbf{Scientific objective for \team{}:} Automatically \textbf{compose and synthesize software diversity} from design to runtime to \textbf{address unpredictable evolutions of software-intensive systems} 
+
+  Software product lines and associated variability modeling formalisms represent an essential aspect of software diversity, which we already explored in the past and that represent a major foundation of \team{}'s research agenda. 
+  However, \team{}  also exploits other foundations to handle new forms of diversity: type theory and models of computation for the composition of languages; distributed algorithms and pervasive computation to handle the diversity of execution platforms;  functional and qualitative randomized transformations to synthesize diversity for robust systems.
+
+
+
+
+
+
+\end{module}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Module fondements (Research Program)
+%%%
+%%% Ce module fondements va apparaitre dans le rapport en html et en pdf sous le titre "Research Program".
+%%%
+%%% Cette section sert à mentionner le contexte scientifique qui est à la base de votre programme  
+%%% puis à préciser les différentes thématiques que vous abordez au sein de votre équipe-projet.  
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{fondements}{sota}{Scientific background}
+\label{sec:sota}
+
+\subsection{Model-driven engineering}    
+
+Model-Driven Engineering (MDE) aims at reducing the accidental complexity associated with developing complex software-intensive systems (e.g., use of abstractions of the problem space rather than abstractions of the solution space)  \footcite{Schmidt06}. It provides \team{} with solid foundations to specify, analyze and reason about the different forms of diversity that occur through the development lifecycle. A primary source of accidental complexity is the wide gap between the concepts used by domain experts and the low-level abstractions provided by general-purpose programming languages~\footcite{France07}. MDE approaches address this problem through  modeling techniques that support separation of concerns and automated generation of major system artifacts from models (\emph{e.g.,} test cases, implementations, deployment and configuration scripts). In MDE, a model describes an aspect of a system and is typically created or derived for specific development purposes~\footcite{BAN04}. Separation of concerns is supported through the use of different modeling languages, each providing constructs based on abstractions that are specific to an aspect of a system. MDE technologies also provide support for manipulating models, for example, support for querying, slicing, transforming, merging, and analyzing (including executing) models. Modeling languages are thus at the core of MDE, which participates to the development of a sound \emph{Software Language Engineering}~\footnote{See \url{http://planet-sl.org}}, including an unified typing theory that integrate models as first class entities~\footcite{Steel07a}. 
+
+Incorporating domain-specific concepts and high-quality development experience into MDE technologies can significantly improve developer productivity and system quality. Since the late nineties, this realization has led to work on MDE language workbenches that support the development of domain-specific modeling languages (DSMLs) and associated tools (\emph{e.g.,} model editors and code generators). A DSML provides a bridge between the field in which domain experts work and the implementation (programming) field. Domains in which DSMLs have been developed and used include, among others, automotive, avionics, and the emerging cyber-physical systems. A study performed by Hutchinson et al.   \footcite{Hutchinson11} provides some indications that DSMLs can pave the way for wider industrial adoption of MDE.
+
+More recently, the emergence of new classes of systems that are complex and  operate in heterogeneous and rapidly changing environments raises new challenges for the software engineering community. These systems must be adaptable, flexible, reconfigurable and, increasingly, self-managing. Such characteristics make systems more prone to failure when running and thus the development and study of appropriate mechanisms for continuous design and run-time validation and monitoring are needed. In the MDE community, research is focused primarily on using models at design, implementation, and deployment stages of development. This work has been highly productive, with several techniques now entering a commercialization phase. As software systems are becoming more and more dynamic, the use of model-driven techniques for validating and monitoring run-time behavior
+is extremely promising   \footcite{Morin09f}.
+
+
+
+\subsection{Variability modeling}
+\label{sec:variability}
+% TODO: too many citations
+While the basic vision underlying \textit{Software Product Lines} (SPL) can
+probably be traced back to David Parnas seminal article~  \footcite{parnas1976} on
+the Design and Development of Program Families, it is only quite recently that
+SPLs are emerging as a paradigm shift towards modeling and developing
+software system families rather than individual
+systems~\footcite{Northrop1999}. SPL engineering embraces the ideas of mass
+customization and software reuse. It focuses on the means of efficiently
+producing and maintaining multiple related software products, exploiting what
+they have in common and managing what varies among them.
+
+Several definitions of the \emph{software product line} concept can be found
+in the research literature. Clements \textit{et~al.} define it as \textit{a set of
+software-intensive systems sharing a common, managed set of features that
+satisfy the specific needs of a particular market segment or mission and are
+developed from a common set of core assets in a prescribed way}
+  \footcite{Northrop2002}. Bosch provides a different definition   \footcite{Bosch2000}:
+\textit{A SPL consists of a product line architecture and a set of reusable
+components designed for incorporation into the product line architecture. In
+addition, the PL consists of the software products developed using the
+mentioned reusable assets}. In spite of the similarities, these definitions
+provide different perspectives of the concept: \textit{market-driven}, as seen
+by Clements \textit{et~al.}, and \textit{technology-oriented} for Bosch.
+
+SPL engineering is a process focusing on capturing the \textit{commonalities}
+(assumptions true for each family member) and \textit{variability}
+(assumptions about how individual family members differ) between several
+software products   \footcite{Coplien1998}. Instead of describing a single software
+system, a SPL model describes a set of products in the same domain. This is
+accomplished by distinguishing between elements common to all SPL members, and
+those that may vary from one product to another. Reuse of core assets, which
+form the basis of the product line, is key to productivity and quality
+gains. These core assets extend beyond simple code reuse and may include the
+architecture, software components, domain models, requirements statements,
+documentation, test plans or test cases.
+
+
+The SPL engineering process consists of two major steps:
+\begin{enumerate}
+\item \textbf{Domain Engineering}, or \emph{development for reuse}, focuses on
+core assets development.
+\item \textbf{Application Engineering}, or \emph{development with reuse},
+addresses the development of the final products using core assets and
+following customer requirements.
+\end{enumerate}
+
+Central to both processes is the management of \textbf{variability} across
+the product line~  \footcite{halmans2003}. In common language use, the term
+\textit{variability} refers to \textit{the ability or the tendency to
+change}. Variability management is thus seen as the key feature that
+distinguishes SPL engineering from other software development approaches
+  \footcite{Bosch2002}. Variability management is thus growingly seen as the
+cornerstone of SPL development, covering the entire development life cycle,
+from requirements elicitation~  \footcite{Jean-ChristopheTRIGAUX2003} to product
+derivation~  \footcite{Ziadi2006a} to product testing~  \footcite{nebut03b,Nebut06b}. 
+ 
+
+Halmans \textit{et~al.}   \footcite{halmans2003} distinguish between \textit{essential} and
+\textit{technical} variability, especially at requirements level. Essential
+variability corresponds to the customer's viewpoint, defining what to
+implement, while technical variability relates to product family engineering,
+defining how to implement it. A classification based on the dimensions of
+variability is proposed by Pohl \textit{et~al.}   \footcite{Pohl2005}: beyond
+\textbf{variability in time} (existence of different versions of an artifact
+that are valid at different times) and \textbf{variability in space}
+(existence of an artifact in different shapes at the same time) Pohl \textit{et~al.} claim that variability is important to different stakeholders and thus has
+different levels of visibility: \textbf{external variability} is visible to
+the customers while \textbf{internal variability}, that of domain artifacts,
+is hidden from them. Other classification proposals come from Meekel \textit{et~al.}   \footcite{Meekel1998} (feature, hardware platform, performances and attributes
+variability) or Bass \textit{et~al.}   \footcite{Bachmann2001} who discuss about variability
+at the architectural level.
+
+
+Central to the modeling of variability is the notion of \textit{feature},
+originally defined by Kang \textit{et~al.} as: \textit{a prominent or distinctive user-visible
+aspect, quality or characteristic of a software system or
+systems}~  \footcite{Kang1990}. Based on this notion of \textit{feature}, they proposed to use a
+\textit{feature model} to model the variability in a SPL. A
+feature model consists of a \textit{feature diagram} and other associated
+information: \textit{constraints} and \textit{dependency rules}. Feature
+diagrams provide a \textit{graphical tree-like notation depicting the
+hierarchical organization of high level product functionalities} represented
+as features. The root of the tree refers to the complete system and is
+progressively decomposed into more refined features (tree nodes). Relations
+between nodes (features) are materialized by \textit{decomposition edges} and
+\textit{textual constraints}. Variability can be expressed in several
+ways. Presence or absence of a feature from a product is modeled using
+\textit{mandatory} or \textit{optional features}. Features are graphically
+represented as rectangles while some graphical elements (e.g., unfilled
+circle) are used to describe the variability (e.g., a feature may be
+optional).
+
+Features can be organized into \textit{feature groups}. Boolean operators
+\textit{exclusive alternative (XOR)}, \textit{inclusive alternative (OR)} or
+\textit{inclusive (AND)} are used to select one, several or all the features
+from a feature group. Dependencies between features can be modeled using
+\textit{textual constraints}: \textit{requires} (presence of a feature requires
+the presence of another), \textit{mutex} (presence of a feature automatically
+excludes another). Feature attributes can be also used for modeling quantitative (e.g., numerical) information. 
+Constraints over attributes and features can be specified as well. 
+
+Modeling variability allows an organization to capture and select which
+version of which variant of any particular aspect is wanted in the
+system~  \footcite{Bosch2002}. To implement it cheaply, quickly and safely, redoing by hand
+the tedious weaving of every aspect is not an option: some form of automation
+is needed to leverage the modeling of
+variability~  \footcite{batory2002,czarnecki2000}. Model Driven Engineering (MDE)
+makes it possible to automate this weaving process~  \footcite{Jezequel08a}. This
+requires that models are no longer informal, and that the weaving process is
+itself described as a program (which is as a matter of facts an executable
+meta-model~  \footcite{Muller05a}) manipulating these models to produce for instance a
+detailed design that can ultimately be transformed to code, or to test
+suites~  \footcite{Pickin07a}, or other software artifacts.
+
+
+\subsection{Component-based software development}
+
+Component-based software development   \footcite{szyperski2002component} aims at providing reliable software architectures with a low cost of design.
+Components are now used routinely in many domains of software system designs: 
+distributed systems, user interaction, product lines, embedded systems, etc.
+With respect to more traditional software artifacts (e.g., object oriented architectures),
+modern component models have the following distinctive features~  \footcite{crnkovic2011classification}: 
+description of requirements on services required from the other components;
+indirect connections between components thanks to ports and connectors constructs~  \footcite{lau2005exogenous};
+hierarchical definition of components (assemblies of components can define new component types);
+connectors supporting various communication semantics~  \footcite{bures2006sofa};
+quantitative properties on the services~  \footcite{beugnard2010contract}.
+
+In recent years  component-based architectures have evolved from static designs to dynamic, adaptive designs (e.g., SOFA~  \footcite{bures2006sofa}, Palladio~  \footcite{Becker:2009cl}, Frascati~  \footcite{Melisson:2010it}).
+Processes for building a system using a statically designed architecture are made of  the following sequential lifecycle stages: requirements, modeling, implementation, packaging, deployment, system launch, system execution, system shutdown and system removal.
+If for any reason after design time architectural changes are needed after system launch (e.g., because requirements changed, or the implementation platform has evolved, etc) then the design process must be reexecuted from scratch 
+(unless the changes are limited to parameter adjustment in the components deployed).
+
+Dynamic designs allow for \textit{on the fly} redesign of a component based system. 
+A  process for dynamic adaptation is able to reapply the  design phases while the system is up and running, without stopping it (this is different from stop/redeploy/start).
+This kind of process supports \textit{chosen adaptation}, when changes are planned and realized to maintain a good fit between the needs that the system must support and the way it supports them~  \footcite{Kramer:2007kv}.
+Dynamic component-based designs rely on a component meta-model that supports complex life cycles for components, connectors, service specification, etc.
+Advanced dynamic designs can also take platform changes into account at run-time, without human intervention, by adapting themselves~  \footcite{Cheng:2009hh,Vromant:NPd9bKZ}.
+Platform changes and more generally environmental changes trigger \textit{imposed adaptation}, when the system can no longer use its design to provide the services it must support.
+In order to support an eternal system~  \footcite{Bencomo:2009tm}, dynamic component based systems must separate architectural design and platform compatibility.
+This requires  support for heterogeneity, since platform evolutions can be partial.
+
+The Models@runtime paradigm denotes a model-driven approach aiming at taming the complexity of dynamic software systems. It basically pushes the idea of reflection one step further by considering the reflection layer as a real model ``something simpler, safer or cheaper than reality to avoid the complexity, danger and irreversibility of reality  \footcite{Rothenberg89thenature}''. In practice, component-based (and/or service-based) platforms offer reflection APIs that make it possible to introspect the system (which components and bindings are currently in place in the system) and dynamic adaptation (by applying CRUD operations on these components and bindings). While some of these platforms offer rollback mechanisms to recover after an erroneous adaptation, the idea of Models@runtime is to prevent the system from actually enacting an erroneous adaptation. In other words, the ``model at run-time'' is a reflection model that can be uncoupled (for reasoning, validation, simulation purposes) and automatically resynchronized.
+
+
+
+Heterogeneity is a key challenge for modern component based system. 
+Until recently, component based techniques were designed to address a specific domain, such as embedded software for command and control, or distributed Web based service oriented architectures.
+The emergence of the Internet of Things paradigm calls for a unified approach in component based design techniques.
+By implementing an efficient separation of concern between platform independent architecture management and platform dependent implementations,
+\textit{Models@runtime}  is now established as a key technique to support dynamic  component based designs. It provides \team{} with an essential foundation to explore an adaptation envelop at run-time. 
+
+Search Based Software Engineering   \footcite{harman2001search} has been applied to various software engineering problems in order to support software developers in their daily work.
+The goal is to automatically  explore a set of alternatives and assess their relevance with respect to the considered problem. 
+These techniques have been applied to craft software architecture exhibiting high quality of services properties   \footcite{frey2013search}. 
+Multi  Objectives Search based techniques   \footcite{deb2002fast} deal with optimization problem containing several (possibly conflicting) dimensions to optimize. 
+These techniques provide \team{} with the scientific foundations for reasoning and efficiently exploring an envelope of software configurations at run-time.
+ 
+
+
+\subsection{Validation and verification}
+
+Validation and verification (V\&V) theories and techniques provide the means to assess the validity of a software system with respect to a specific correctness envelop. As such, they form an essential element of \team{}'s scientific background. In particular, we focus on model-based V\&V in order to leverage the different models that specify the envelop at different moments of the software development lifecycle.
+
+%MBT
+Model-based testing consists in analyzing a formal model of a system (\textit{e.g.}, activity diagrams, which capture high-level requirements about the system, statecharts, which capture the expected behavior of a software module, or a feature model, which describes all possible variants of the system) in order to generate test cases that will be executed against the system. Model-based testing   \footcite{utting2010practical} mainly relies on model analysis, constraint solving   \footcite{demilli1991constraint} and search-based reasoning   \footcite{mcminn2004search}. \team{} leverages in particular the applications of model-based testing in the context of highly-configurable systems and    \footcite{yilmaz2006covering} interactive systems   \footcite{memon2007event} as well as recent advances based on diversity for test cases selection   \footcite{HemmatiBAA10}.
+
+
+
+%simulation
+
+Nowadays, it is possible to simulate various kinds of models. Existing tools range from industrial tools such as Simulink, Rhapsody or Telelogic to academic approaches like Omega   \footcite{ober2006validating}, or Xholon   \footnote{http://www.primordion.com/Xholon/}.  %or the Turtle toolkit   \footcite{apvrille2004turtle}. 
+All these simulation environments operate on  homogeneous environment models. However, to handle diversity in software systems, we also leverage recent advances in heterogeneous simulation. 
+Ptolemy   \footcite{buck1994ptolemy} proposes a common abstract syntax, which represents
+the description of the model structure. These elements can be decorated using different
+directors that reflect the application of a specific model of computation on the model element. 
+Metropolis  \footcite{balarin2003metropolis} provides modeling elements amenable to semantically
+equivalent mathematical models. Metropolis offers a precise semantics flexible enough to
+support different models of computation.
+ModHel'X   \footcite{hardebolle2008modhel} studies the composition of multi-paradigm models relying on
+different models of computation. 
+
+
+%diversity
+
+Model-based testing and simulation are complemented by runtime fault-tolerance through the automatic generation of software variants that can run in parallel, to tackle the open nature of software-intensive systems. The foundations in this case are  the seminal work about N-version programming   \footcite{avizienis85}, recovery blocks   \footcite{randell75} and code randomization   \footcite{barrantes05}, which demonstrated the central role of diversity in software to ensure runtime resilience of complex systems. Such techniques rely on truly diverse software solutions in order to provide systems with the ability to react to events, which could not be predicted at design time and checked through testing or simulation. 
+
+
+\subsection{Empirical software engineering}
+
+The rigorous, scientific evaluation of \team{}'s contributions is an essential aspect of our research methodology. In addition to theoretical validation through formal analysis or complexity estimation, we also aim at applying state-of-the-art methodologies and principles of empirical software engineering. This approach encompasses a set of techniques for the sound validation contributions in the field of software engineering, ranging from statistically sound comparisons of techniques and large-scale data analysis to interviews and systematic literature reviews   \footcite{shull2008guide, runeson2009guidelines}. Such methods have been used for example to understand the impact of new software development paradigms   \footcite{briand1999empirical}. Experimental design and statistical tests represent another major aspect of empirical software engineering.  Addressing large-scale software engineering problems often requires the application of heuristics, and it is important to understand their effects through sound statistical analyses   \footcite{ArcuriB11}.
+
+\end{module}
+
+\begin{module}{fondements}{axis}{Research axis}
+\label{sec:axis}
+
+Figure \ref{fig:axis} illustrates the four dimensions of software diversity, which form the core research axis of \team{}: the \textbf{diversity of languages} used by the stakeholders involved in the construction of these systems; the \textbf{diversity of features} required by the different customers; the \textbf{diversity of runtime environments} in which software has to run and adapt; the \textbf{diversity of implementations} that are necessary for resilience through redundancy. 
+These four axis share and leverage the scientific and technological results developed in the area of model-driven engineering in the last decade. 
+This means that all our research activities are founded on sound abstractions to reason about specific aspects of software systems, compose different perspectives and automatically generate parts of the system.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\columnwidth]{IMG/research-axis.pdf}
+\caption{The four research axis of \team{}, which rely on a MDE scientific background}
+\label{fig:axis}
+\end{figure}
+
+\subsection{Software Language Engineering}
+\label{sec:axis-sle}
+
+The engineering of systems involves many different stakeholders, each with their own domain of expertise. Hence more and more organizations are adopting Domain Specific Modeling Languages (DSMLs) to allow domain experts to express solutions directly in terms of relevant domain concepts   \footcite{Schmidt06,France07}. This new trend raises new challenges about designing DSMLs, evolving a set of DSMLs and coordinating the use of multiple DSLs for both DSL designers and DSL users.
+
+
+\subsubsection*{Challenges} 
+
+\textbf{Reusability} of software artifacts is a central notion that has been thoroughly studied and used by both academics and industrials since the early days of software construction. Essentially, designing reusable artifacts allows the construction of large systems from smaller parts that have been separately developed and validated, thus reducing the development costs by capitalizing on previous engineering efforts.
+%
+However, it is still hardly possible for language designers to design typical language artifacts (e.g. language constructs, grammars, editors or compilers) in a reusable way. The current state of the practice usually prevents the reusability of language artifacts from one language to another, consequently hindering the emergence of real engineering techniques around software languages.
+Conversely, concepts and mechanisms that enable artifacts reusability abound in the software engineering community. 
+
+\textbf{Variability} in modeling languages occur in the definition of the abstract and concrete syntax as well as in the specification of the language's semantics. 
+The major challenges met when addressing the need for variability are: (i)~set principles for modeling language units that support the modular specification of a modeling language; and (ii)~design mechanisms to assemble these units in a complete language, according to the set of authorized variation points for the modeling language family.
+
+
+A new generation of complex software-intensive systems (for example smart health support, smart grid, building energy management, and intelligent transportation systems) presents new opportunities for leveraging modeling languages. The development of these systems requires expertise in diverse domains.
+Consequently, different types of stakeholders (e.g., scientists, engineers and end-users) must work in a coordinated manner on various aspects of the system across multiple development phases. DSMLs can be used to support the work of domain experts who focus on a specific system aspect, but they can also provide the means for coordinating work across teams specializing in different aspects and across development phases. The support and integration of DSMLs leads to what we call \textbf{the globalization of modeling languages}, \textit{i.e.} the use of multiple languages for the coordinated development of diverse aspects of a system. One can make an analogy with world globalization in which relationships are established between sovereign countries to regulate interactions (e.g., travel and commerce related interactions) while preserving each country's independent existence.
+
+
+\subsubsection*{Scientific objectives} 
+
+We address reuse and variability challenges through the investigation of the time-honored concepts of substitutability, inheritance and components, evaluate their relevance for language designers and provide tools and methods for their inclusion in software language engineering.
+We will develop novel techniques for the modular construction of language extensions with the support of model syntactical variability. From the semantics perspective, we investigate extension mechanisms for the specification of variability in  operational semantics, focusing on static introduction and heterogeneous models of computation. The definition of variation points for the three aspects of the language definition provides the foundations for the novel concept Language Unit (LU) as well as suitable mechanisms to compose such units.
+
+
+We explore the necessary breakthrough in software languages to support modeling and simulation of heterogeneous and open systems. This work relies on the specification of executable domain specific modeling languages (DSMLs) to formalize the various concerns of a software-intensive system, and of models of computation (MoCs) to explicitly model the concurrency, time and communication of such DSMLs. We develop a framework that integrates the necessary foundations and facilities for designing and
+implementing executable and concurrent domain-specific modeling languages. It also provides unique features to specify composition operators between (possibly heterogeneous) DSMLs. Such specifications are amenable to support the edition, execution, graphical animation and analysis of heterogeneous models. The objective is to provide both a significant improvement of MoCs and DSMLs design and implementation; and the simulation based validation and verification of complex systems.
+
+
+We see an opportunity for the automatic diversification of programs' computation semantics, for example through the diversification of compilers or virtual machines. The main impact of this artificial diversity is to provide flexible computation and thus ease adaptation to different execution conditions. A combination of static and dynamic analysis could support the identification of what we call \emph{plastic computation zones} in the code. We identify different categories of such zones: (i)~areas in the code in which the
+order of computation can vary (e.g., the order in which a block of sequential statements is executed); (ii)~areas that can be removed, keeping the essential functionality   \footcite{Sidiroglou-Douskos2011} (e.g., skip some loop iterations); (iii)~areas that can replaced by alternative code (e.g., replace a try-catch by a return statement). Once we know which zones in the code can be randomized, it is necessary to modify the model of computation to leverage the computation plasticity. This consists in introducing variation points in the interpreter
+to reflect the diversity of models of computation. Then, the choice of a given variation is performed randomly at run-time.
+
+
+
+\subsection{Variability Modeling and Engineering}
+\label{sec:axis-spl}
+
+The systematic modeling of variability in software systems has emerged as an effective approach to document and reason about software evolutions and heterogeneity (\textit{cf.} Section~\ref{sec:variability}). Variability modeling characterizes an ``envelope'' of possible software variations. The industrial use of variability models and their relation to software artifact models require a complete engineering framework, including composition, decomposition, analysis, configuration and artifact derivation, refactoring, re-engineering, extraction, and testing.  This framework can be used both to tame imposed diversity and to manage chosen diversity.  
+
+
+
+\subsubsection*{Challenges} 
+
+A fundamental problem is that the \textbf{number of variants} can be exponential in the number of options (features). 
+Already with 300~boolean configuration options, approximately $10^{90}$ configurations exist -- more than estimated count of atoms in the universe. Domains like automotive or operating systems have to manage more than 10000 options (e.g., Linux). Practitioners face the challenge of developing billions of variants. It is easy to forget a necessary constraint, leading to the synthesis of unsafe variants, or to under-approximate the capabilities of the software platform. Scalable modelling techniques are therefore crucial to specify and reason about a very large set of variants.
+
+Model-driven development supports two ways to deal with the increasing number of concerns in complex systems: (1)~multi-view modeling, \textit{i.e.} when modeling each concern separately, and variability modeling. However, there is little support to combine both approaches consistently. Techniques to integrate both approaches will enable the construction of a consistent set of views and variation points in each view.
+
+The design, construction and maintenance of software families have a major impact on \textbf{software testing}. Among the existing challenges, we can cite: the selection of test cases for a specific variant; the evolution of test suites with integration of new variants; the combinatorial explosion of the number of software configurations to be tested. Novel model-based techniques for test generation and test management in a software product line context are needed to overcome state-of-the-art limits we already observed in some projects.
+
+\subsubsection*{Scientific objectives} 
+
+
+We aim at developing scalable  techniques  to automatically analyze variability models and their interactions with other views on the software intensive system (requirements, architecture, design). These techniques  provide two major advancements in the  state of the art: (1)~an extension of the semantics of variability models in order to enable the definition of attributes (\textit{e.g.}, cost, quality of service, effort) on features and to include these attributes in the reasoning;  (2)~an assessment of the consistent specification of variability models with respect to system views (since variability is orthogonal to system modeling, it is currently possible to specify the different models in ways that are semantically meaningless). The former aspect of analysis is tackled through  constraint solving and finite-domain constraint programming, while the latter aspect is investigated through automatic search-based techniques (similar to genetic algorithms) for the exploration of the space of interaction between variability and view models.
+
+%Manual elaboration of variability models (e.g., feature models) is not realistic for large projects or for legacy systems. 
+We aim to develop procedures to reverse engineer dependencies and features' sets from existing software artefacts -- be it source code, configuration files, spreadsheets (e.g., product comparison matrices) or requirements. 
+We expect to scale up (e.g., for extracting a very large number of variation points) and guarantee some properties (e.g., soundness of configuration semantics, understandability of ontological semantics). 
+For instance, when building complex software-intensive systems, textual requirements are captured in very large quantities of documents. In this context, adequate models to formalize the organization of requirements documents and automated techniques to support impact analysis (in case of changes in the requirements) have to be developed.
+
+We aim at developing sound methods and tools to integrate variability management in model-based testing activities. In particular, we will leverage requirement models as an essential asset to establish formal relations between variation points and test models. These relations will form the basis for novel algorithms that drive  the systematic selection of test configurations that satisfy well-defined test adequacy criteria as well as the generation of test cases for a specific product in the product line.
+
+
+
+
+\subsection{Heterogeneous and dynamic software architectures}
+\label{sec:axis-runtime}
+
+
+
+Flexible yet dependable systems have to cope with heterogeneous hardware execution platforms ranging from smart sensors to huge computation infrastructures and data centers. Evolutions range from a mere change in the system configuration to a major architectural redesign,  for instance to support addition of new features or a change in the platform architecture (new hardware is made available, a running system switches to low bandwidth wireless communication, a computation node battery is running low, etc).
+In this context, we need to devise formalisms to reason about the impact of an evolution and about the transition from one configuration to another.
+It must be noted that this axis focuses on the use of models to drive the evolution from design time to run-time. 
+Models will be used to (i)~systematically define predictable configurations and variation points through which the system will evolve;
+(ii)~develop behaviors necessary to handle unpredicted evolutions.
+%In the coming years, we will initiate research in this axis in the following directions.
+
+\subsubsection*{Challenges} 
+
+The main challenge is to provide new homogeneous architectural modelling languages and efficient techniques that enable continuous software reconfiguration to react to changes. This work handles the challenges of handling the diversity of runtime infrastructures and managing the cooperation between different stakeholders. More specifically, the research developed in this axis targets the following dimensions of software diversity.
+
+%\textbf{Imposed diversity}
+
+Platform architectural heterogeneity induces a first dimension of imposed diversity (type diversity). Platform reconfigurations driven by changing resources define another dimension of diversity (deployment diversity). To deal with these imposed diversity problems, we will  rely on  model based runtime support for adaptation, in the spirit of the dynamic distributed component framework developed by the Triskell team. Since the runtime environment composed of distributed, resource constrained hardware nodes cannot afford the overhead of traditional runtime adaptation techniques, we investigate the design of novel solutions relying on models@runtime and on specialized tiny virtual machines to offer resource provisioning and dynamic reconfigurations. In the next two years this research will be supported by the InfraJVM project.
+
+%\textbf{Chosen diversity}
+
+Diversity can also be an asset to optimize software architecture. Architecture models must integrate multiple concerns in order to properly manage the deployment of software components over a physical platform. However, these concerns can contradict each other (\textit{e.g.}, accuracy and energy). In this context, we investigate automatic solutions to explore the set of possible architecture models and to establish valid trade-offs between all concerns in case of changes. 
+
+
+%projects
+
+\subsubsection*{Scientific objectives} 
+
+ 
+\textbf{Automatic synthesis of optimal software architectures.} Implementing a service over a distributed platform (\textit{e.g.}, a pervasive system or a cloud platform) consists in deploying multiple software components over distributed computation nodes. We aim at designing search-based solutions to (i)~assist the software architect in establishing a good initial architecture (that balances between different factors such as cost of the nodes, latency, fault tolerance) and to automatically update the architecture when the environment or the system itself change. The choice of search-based techniques is motivated by the very large number of possible software deployment architectures that can be investigated and that all provide different trade-offs between qualitative factors. Another essential aspect that is supported by multi-objective search is to explore different architectural solutions that are not necessarily comparable. This is important when the qualitative factors are orthogonal to each other, such as security and usability for example.
+
+\textbf{Flexible software architecture for testing and data management.} As the number of  platforms on which software runs increases and different software versions coexist, the demand for testing environments also increases. For example, to test a  software patch or upgrade, the number of testing environments  is the product of the number of running environments the  software supports and the number of coexisting versions of the  software.  
+Based on our first experiment on the synthesis of cloud environment using architectural models, our objective is to define a set of domain specific languages to catch the requirement and to design cloud environments for testing and data management of future internet systems from data centers to things. These languages will be interpreted to support dynamic synthesis and reconfiguration of a testing environment.
+
+\textbf{Runtime support for heterogeneous environments.}
+Execution environments must provide a way to account or reserve resources for applications. However, current execution environments such as the Java Virtual Machine do not clearly define a notion of application: each framework has its own definition. 
+For example, in OSGi, an application is a component, in JEE, an application is most of the time associated to a class loader, in the Multi-Tasking Virtual machine, an application is a process. 
+The challenge consists in defining an execution environment that provides direct control over resources (CPU, Memory, Network I/O) independently from the definition of an application. 
+We propose to define abstract resource containers to account and reserve resources on a distributed network of heterogeneous devices.
+
+\subsection{Diverse implementations for resilience}
+\label{sec:axis-implementation}
+
+Open software-intensive systems have to evolve over their lifetime in response to changes in their environment. Yet, most verification techniques assume a closed environment or the ability to predict all changes. Dynamic changes and evolutions thus represent a major challenge for these techniques that aim at assessing the correctness and robustness of the system. On the one hand, \team{} will adapt V\&V techniques to handle diversity imposed by the requirements and the execution environment, on the other hand we leverage diversity to increase the robustness of software in face of unpredicted situations. More specifically, we address the following V\&V challenges.
+
+\subsubsection*{Challenges} 
+
+%\textbf{Imposed diversity}
+
+One major challenge to build flexible and open yet dependable systems is that current software engineering techniques require architects to foresee all possible  situations the system will have to face. However, openness and flexibility also mean unpredictability: unpredictable bugs, attacks, environmental evolutions, etc. Current fault-tolerance   \footcite{randell75} and security   \footcite{forrest1997building} techniques  provide software systems with the capacity of detecting   accidental and deliberate faults. However, existing solutions assume that the set of bugs or vulnerabilities in a system does not evolve. This assumption does not hold for open systems, thus it is essential to revisit fault-tolerance and security solutions to account for diverse and unpredictable faults.
+
+%\textbf{Chosen diversity}
+
+Diversity is known to be a major asset for the robustness of large, open, and complex systems (\textit{e.g.}, economical or ecological systems). 
+Following this observation, the software engineering literature provides a rich set of work that choose to implement diversity in software systems in order to improve robustness to attacks or to changes in quality of service. 
+These works range from N-version programming to obfuscation of data structures or control flow, to randomization of instruction sets. 
+An essential remaining challenge is to support the automatic synthesis and evolution of software diversity in open software-intensive systems.
+There is an opportunity to further enhance these techniques in order to cope with a wider diversity of faults, by multiplying the levels of diversity in the different software layers that are found in software-intensive systems (system, libraries, frameworks, application). 
+This increased diversity must be based on artificial program transformations and code synthesis, which increase the chances of exploring novel solutions, better fitted at one point in time. The biological analogy also indicates that diversity should emerge as a side-effect of evolution, to prevent over-specialization towards one kind of diversity.
+
+
+\subsubsection*{Scientific objectives} 
+
+The main objective is to address one of the main limitations of N-version programming for fault-tolerant systems: the manual production and management of software diversity. Through automated injection of artificial diversity we aim at systematically increasing failure diversity and thus increasing the chances of early error detection at run-time. A fundamental assumption for this work is that software-intensive systems can be ``good enough''   \footcite{Rinard12, Zhu12}. 
+
+\textbf{Proactive program diversification.} We aim at establishing novel principles and techniques that favor the emergence of multiple forms of software diversity in software-intensive systems, in conjunction with the software adaptation mechanisms that leverage this diversity. The main expected outcome is a set of meta-design principles that maintain diversity in systems and the experimental demonstration of the effects of software diversity on the
+adaptive capacities of CASs. Higher levels of diversity in the system provide a pool of software solutions that can eventually be used to adapt to  situations unforeseen at design time (bugs, crash, attacks, etc.). Principles of automated software diversification rely on the automated synthesis of variants in a software product line, as well as finer-grained program synthesis combining unsound transformations and genetic programming to explore the space of mutational robustness.
+
+\textbf{Multi-tier software diversification.} We call  multi-tier diversification the fact of diversifying several application software components simultaneously. The novelty of our proposal, with respect to the software diversity state of the art, is to diversify the application-level code (for example, diversify the business logics of the application), focusing on the technical layers found in web applications. 
+The diversification of application software code is expected to provide a diversity of failures and vulnerabilities in web server deployment. 
+Web server deployment usually adopts a form of the Reactor architecture pattern, for scalability purposes: multiple copies of the server software stack, called request handlers, are deployed behind a load balancer. 
+This architecture is very favorable for diversification, since by using the multiplicity of request handlers running in a web server we can simultaneously deploy multiple combinations of diverse software components. Then, if one handler is hacked or crashes the others should still be able to process client requests.
+
+
+\end{module}
+
+
+
+\begin{module}{fondements}{test1}{LaTeX Test Page}
+
+%%% muni d'un titre, ce module apparaitra comme une sous-section
+
+Exemples d'équations :
+  
+\begin{itemize}
+\item Equation en mode ``mathématique'' :\\
+
+$y=x^2$  
+
+\item Equation en environnement ``equation'' : \\
+
+\begin{equation}
+  P \left(\begin{array} {c}
+     \theta_{1} \\ \vdots  \\ \theta_{r}  
+\end{array}
+  \right) = Q + R, \label{noisident1}
+\end{equation}
+
+\item Equation en environnement ``displaymath'' : \\
+
+\begin{displaymath}
+\sum_{0}^{\infty} y = x^4
+\end{displaymath}
+
+\item Autre exemple :  
+
+\[ \forall f\in C^\infty\left(\left[-\frac{T}{2};\frac{T}{2}\right]\right),
+   \forall t\in \left[-\frac{T}{2};\frac{T}{2}\right],
+   f(\tau) = \sum_{k = -\infty}^{+\infty} e^{2i\pi\frac{k}{T}t} \times
+   \underbrace{\frac{1}{T}
+               \int_{-\frac{T}{2}}^{\frac{T}{2}} f(t) e^{-2i\pi\frac{k}{T}t} dt
+              }_{a_k = \tilde{f}\left(\nu = \frac{k}{T}\right)}
+\]
+
+\end{itemize}  
+
+Exemple de caractères spéciaux : \\  
+
+math pi : $\pi$ \\
+
+lettres : æ Æ à À â Â ä Ä ç Ç é É è È ê Ê ë Ë î Î ï Ï ô Ô ö Ö ù Ù û Û ü Ü ÿ {\th} {\TH}
+
+Exemples d'images :
+  
+\begin{itemize}
+
+\item Image en jpeg : voir image \ref{fig:jpegimage} \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=4cm]{IMG/imagejpeg}
+\end{center}
+\caption{An example of a jpeg image}
+\label{fig:jpegimage}
+\end{figure}
+
+\item  Image en eps : voir figure \ref{fig:completemap} \\  
+
+\begin{figure}
+\begin{center}
+\includegraphics{IMG/imageeps}
+\end{center}
+\caption{An example of an eps file}
+\label{fig:completemap}
+\end{figure}
+
+\item Image en pdf : voir image \ref{fig:pdffile} \\  
+
+%\begin{center}
+\begin{figure}
+\includegraphics[width=2cm]{IMG/imagepdf}
+\caption{An example of a pdf file}
+\label{fig:pdffile}
+\end{figure}
+%\end{center}
+
+\end{itemize}
+
+\end{module}
+
+
+%%% Un autre module dans la même section fondements  
+
+% \begin{module}{fondements}{ident2}{Identification2}
+% ...
+% \end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section domaine (Application Domains)
+%%% Il y a des modules ici
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{domaine}{dom11}{Domain 1}
+
+%% ICI Vous pouvez écrire votre texte
+
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section Highlights (Faits Marquants)
+%%%  
+%%% Les faits marquants doivent être relatifs aux résultats de l'année obtenus par votre équipe.
+%%% L'obtention d'une HDR n'est pas un fait marquant.
+%%% La sous-partie Awards (précédemment "Best papers") vous permet de signaler toute récompense, concernant une publication ou pas.  
+%%% Tous types de publication récompensée peuvent être présentés ici. La récompense doit dater de l'année, la publication pas forcément.
+%%% Citez-les dans la partie "Awards" sous la forme : \bestcite{xxxx}, \bestcite{yyyy}, ...  
+%%%
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RAweb/Les-sections#eztoc27554_8
+%%%  
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{highlights}{NewHighlights}{}
+
+\subsection{Awards}
+
+%% ICI vous pouvez ecrire du texte
+%%
+%% citez les "Awards" sous la forme : \bestcite{xxxx}, \bestcite{yyyy}, ...
+
+\end{module}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section logiciels et plateformes
+%%%
+%%%
+%%% Information sur les données importées : logiciels
+%%%  
+%%% Il n'est pas possible de modifier le tex de la partie logiciel de cette section : les logiciels sont importés de la base BIL.  
+%%% Il faut passer par BIL (https://bil.inria.fr/fr/catalog/listby/raweb) pour rajouter et compléter des logiciels.  
+%%% Critères de sélection des logiciels pour le RA : avoir été développé ou avoir connu une évolution majeure ou importante en 2018.
+%%% Le fichier tex du rapport est mis à jour automatiquement à chaque compilation.
+%%% Il faut ensuite consulter le rapport en HTML et/ou en PDF pour vérifier le résultat.
+%%%  
+%%% Par contre la partie pour les platformes doit toujours être mise à jour manuellement à partir de ce fichier tex.
+%%%
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RAweb/Les-sections#eztoc27554_9
+%%%
+%%% En cas de problème : https://helpdesk.inria.fr/categories/181/submit
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%
+%%% Ici la section logiciel va être incluse à la compilation    
+%%% Il est possible de consulter le source tex qui va être inclus à l'adresse suivante :  
+%%%     https://irabot.inria.fr/itramera?format=bil&epi=diverse&annee=2018
+%%%
+%%%
+%%% La partie Plaforms de la section logiciels et plateformes doit, le cas échéant, être complétée ici :  
+%%%  
+
+ \begin{module}{logiciels}{plateformexemple}{Platforms}  
+ \subsection{Platform A}
+ ...
+ \subsection{Platform B}
+ ...
+ \end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section Resultat nouveaux (New Results)
+%%% Il y a des modules ici
+
+%%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RAweb/Les-sections#eztoc27554_10
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{resultats}{new1}{New result 1}
+%%ICI Vous pouvez ecrire du texte
+\end{module}
+
+
+%%\begin{module}{resultats}{new2}{New result 2}
+%%ICI Vous pouvez ecrire du texte
+%%\end{module}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section contrats (Bilateral Contracts and Grants with Industry)
+%%% Il y a des modules ici
+%%%
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_11
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{module}{contrats}{cgwi1}{Bilateral Contracts with Industry}
+%%ICI Vous pouvez ecrire du texte
+\end{module}
+
+\begin{module}{contrats}{cgwi2}{Bilateral Grants with Industry}
+%%ICI Vous pouvez ecrire du texte
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section partenariat (Partnerships and Cooperations)
+%%% Il y a des modules ici
+%%%
+%%% Dans cette section, certains modules sont **normalises**.
+%%% Par consequent, la liste de ces modules
+%%% est :
+%%%  
+%%% \begin{module}{partenariat}{regional}{Regional Initiatives}
+%%% \begin{module}{partenariat}{national}{National Initiatives}
+%%% \begin{module}{partenariat}{europe}{European Initiatives}
+%%% \begin{module}{partenariat}{international}{International Initiatives}
+%%% \begin{module}{partenariat}{visites}{International Research Visitors}
+%%%  
+%%% On peut, en outre, ajouter des modules pour insérer ce qui ne  
+%%% rentre pas dans les catégories ci-dessus. Pour chacun des modules  
+%%% listés, les actions proprement dites apparaitront en  
+%%% \subsubsection, et les listes de {participants} seront ventilées en  
+%%% conséquence, par \subsubsection (et non plus par module)
+%%%  
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_12
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{partenariat}{regional}{Regional Initiatives}
+%% ICI Vous pouvez ecrire du texte
+...
+\end{module}
+
+
+ \begin{module}{partenariat}{national}{National Initiatives}
+
+ %%% Présentez vos données avec les items en précisant pour chaque projet : 
+ %%% Project Acronym, Project Title, Coordinator, Duration, Others Partners, Abstract... 
+
+ \subsection{ANR}
+
+
+\subsubsection*{\label{project:soprano}SOPRANO}
+\begin{itemize}
+	\item Coordinator: CEA
+	\item CEA, University of Paris-Sud, Inria Rennes, OcamlPro, Adacore
+	\item Dates: 2014-2017
+	\item Abstract:  Today most major verification
+    approaches rely on automatic external
+    solvers. However these solvers do not fill the current and
+    future needs for verification: lack of satisfying model
+    generation, lack of reasoning on difficult theories
+    (e.g. floating-point arithmetic), lack of extensibility for
+    specific or new needs. The SOPRANO
+    project aims at solving these problems and prepare the next generation of verification-oriented
+    solvers by gathering experts
+    from academia and industry.
+     We will design a new framework for the cooperation of
+    solvers, focused on model generation and borrowing principles from
+    SMT (current standard) and CP (well-known in optimisation).
+    These ideas will be implemented in an open-source platform, with regular evaluations
+    from the industrial partners.
+\end{itemize}
+
+\subsubsection*{\label{project:varyvary}VaryVary ANR JCJC}
+\begin{itemize}
+	\item Coordinator: Mathieu Acher
+	\item DiverSE, Inria/IRISA Rennes
+	\item Dates: 2017-2021
+	\item Abstract:  
+    Most modern software systems (operating systems like Linux, Web browsers like Firefox or Chrome, video encoders like x264 or ffmpeg, servers, mobile applications, etc.) are subject to variation or come in many variants. Hundreds of configuration options, features, or plugins can be combined, each potentially with distinct functionality and effects on execution time, memory footprint, etc. Among configurations, some of them are chosen and do not compile, crash at runtime, do not pass a test suite, or do not reach a certain performance quality (e.g., energy consumption, security).
+In this JCJC ANR project, we follow a thought-provocative and unexplored direction: We consider that the variability boundary of a software system can be specialized and should vary when needs be. The goal of this project is to provide theories, methods and techniques to make vary variability.
+Specifically, we consider machine learning and software engineering techniques for narrowing the space of possible configurations to a good approximation of those satisfying the needs of users.
+Based on an oracle (e.g., a runtime test) that tells us whether a given configuration meets the requirements (e.g. speed or memory footprint), we leverage machine learning to retrofit the acquired constraints into a variability that can be used to automatically specialize the configurable system. Based on a relative small number of configuration samples, we expect to reach high accuracy for many different kinds of oracles and subject systems.
+Our preliminary experiments suggest that varying variability can be practically useful and effective. However, much more work is needed to investigate sampling, testing, and learning techniques within a variety of cases and application scenarios.
+We plan to further collect large experimental data and apply our techniques on popular, open-source, configurable software (like Linux, Firefox, ffmpeg, VLC, Apache or JHipster) and generators for media content (like videos, models for 3D printing, or technical papers written in LaTeX).
+\end{itemize}
+
+
+
+
+
+% \subsection{Competitivity Clusters}
+ %% Ici vous pouvez écrire du texte
+ %% Les Competitivity Clusters...
+
+\subsubsection*{\label{project:clarity}CLARITY}
+\begin{itemize}
+	\item Coordinator: Obéo
+	\item Other partners:  AIRBUS, Airbus Defence and Space, All4tec, ALTRAN Technologies, AREVA, Artal, C.E.S.A.M.E.S., Eclipse Foundation Europe, INRIA Sophia Antipolis Méditerranée, PRFC, Scilab Enterprises, Thales Global Services, Thales Alenia Space, Thales Research \& Technology, Thales Systèmes Aéroportés, Université de Rennes 1.
+	\item Dates: 2014-2017
+	\item Abstract: The CLARITY project aims to establish an international dimension ecosystem around Melody/Capella modeling workbench for systems engineering (MBSE) and engineering architectures (system, software, hardware).
+\end{itemize}
+
+\subsubsection*{\label{project:occiware}Occiware}
+\begin{itemize}
+	\item Coordinator: Open Wide
+	\item Open Wide, ActiveEon SA, CSRT - Cloud  Systèmes Réseaux et Télécoms, Institut Mines-Télécom/Télécom SudParis, Inria, Linagora, Obeo, OW2 Consortium, Pôle Numérique, Université Joseph Fourier, 
+	\item Dates: 2014-2017
+	\item Abstract: The Occiware project aims to establish a formal and equipped framework for the management of all cloud resource based on the OCCI standard. 
+\end{itemize}
+
+
+
+
+\subsection{DGA}
+
+
+\subsubsection*{\label{project:fpml}FPML (CYBERDEFENSE)}
+
+   \begin{itemize}
+   	    \item Coordinator: DGA
+      	\item Partners: DGA MI, INRIA
+      	\item Dates: 2014-2017
+      	\item Abstract: in the context of this project, DGA-MI and the INRIA team DiverSE explore the existing approaches to ease the development of formal specifications of domain-Specific Languages (DSLs) dedicated to paquet filtering, while guaranteeing expressiveness, precision and safety. In the long term, this work is part of the trend to provide to DGA-MI and its partners a tooling to design and develop formal DSLs which ease the use while ensuring a high level of reasoning.
+      \end{itemize}
+
+\subsection{Cominlabs}
+\subsubsection*{\label{project:profile}PROFILE}
+
+\begin{itemize}
+	\item Coordinator: Universit\'e de Rennes 1
+	\item Partners: INRIA, Universit\'e de Rennes 2
+	\item Dates: 2016-2019
+	\item Abstract:  The PROFILE project brings together experts from law, computer science and sociology to address the challenges raised by online profiling, following a multidisciplinary approach. More precisely, the project will pursue two complementary and mutually informed lines of research: (i) Investigate, design, and introduce a new right of opposition into the legal framework of data protection to better regulate profiling and to modify the behavior of commercial companies towards being more respectful of the privacy of their users; (ii)S Provide users with the technical means they need to detect stealthy profiling techniques as well as to control the extent of the digital traces they routinely produce. As a case study, we focus on browser fingerprinting, a new profiling technique for targeted advertisement. The project will develop a generic framework to reason on the data collected by profiling algorithms, to uncover their inner working, and make them more accountable to users. PROFILE will also propose an innovative protection to mitigate browser fingerprinting, based on the collaborative reconfiguration of browsers.
+\end{itemize}
+
+ \end{module} 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Information sur les données importées : projets européens
+%%%  
+%%% Les données sur vos partenariats européens sont issus de la DPEI via l'entrepôt de données.  
+%%% Les données affichées sont : Nom du projet, Type Defi, Instrument, Duration, Coordinator, Others partners.
+%%%
+%%% Complétez ce qui manque : résumé, Others partners (on attend des noms de pays), ...  
+%%%
+%%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_14
+%%%
+%%% En cas de problème : https://helpdesk.inria.fr/categories/181/submit
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{partenariat}{europe}{European Initiatives}
+
+\subsection{FP7 \& H2020 Projects}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Donnees  construites d'aprÃ¨s les informations de la base DPE pour 2018
+% Source : https://drone.inria.fr/
+% Date : lundi 17 dÃ©cembre 2018, 17:59:56 (UTC+0100)
+%
+
+
+
+
+\subsection{Collaborations in European Programs, Except FP7 \& H2020}
+% Eureka, COST...
+
+% respecter le format  
+%% \begin{itemize}
+%% Gardez la ligne suivante :
+%% \XMLaddatt*{type}{sanspuces}
+%%         \item Program:
+%%         \item Project acronym:
+%%         \item Project title:
+%%         \item Duration: mois ann\'ee d\'ebut - mois ann\'ee fin
+%%         \item Coordinator:
+%%         \item Other partners: organisme, labo (pays)
+%%         \item Abstract:  
+%% \end{itemize}
+
+
+% organisation europeenne  
+% \subsection{Major European Organizations with which the Team have followed Collaborations}
+\subsection{Collaborations with Major European Organizations}
+
+% respecter le format
+%%  \begin{itemize}
+%%  \XMLaddatt*{type}{sanspuces}
+%%         \item Partner 1: organisme 1, labo 1 (pays 1)
+%%         \item Sujet 1 (max. 2 lignes)
+%%  \end{itemize}
+%%  \begin{itemize}
+%%  \XMLaddatt*{type}{sanspuces}
+%%        \item Partner 2: organisme 2, labo 2 (pays 2)
+%%        \item Sujet 2 (max. 2 lignes)
+%%  \end{itemize}
+
+
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Information sur les données importées : équipes associées et autres actions internationales
+%%%  
+%%% La rubrique est partiellement pré-remplie avec les items suivants issus de la base de la DPEI.
+%%% Les équipes associées engagées dans un IIL sont importées sous "Inria International Labs".
+%%%  
+%%% Vous devez compléter cette rubrique.
+%%%  
+%%% Inria International Labs  
+%%% Associate Team not involved in an IIL
+%%% Inria International Partners
+%%%  A. Declared Inria International Partners
+%%%  B. Informal International Partners
+%%% Participation in other International Programs
+%%% Pour vos collaborations internationales, précisez bien le nom anglais du pays en toutes lettres sauf pour les Etats-Unis (utilisez USA).
+    
+%%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_15
+%%% Si vous voyez des erreurs, signalez-les via le  https://helpdesk.inria.fr/categories/181/submit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{module}{partenariat}{internationalInitiatives}{International Initiatives}
+
+%%\subsection{Inria International Labs}
+\subsection{Inria International Labs}
+
+%%% Implication dans les activités des laboratoires conjoints à l'étranger  
+%%% (Inria-Chile, JLESC, LIRIMA, LIAMA , Inria@SiliconValley, EPFL)
+%%% Les équipes associées impliquées dans un IIL apparaissent ici :
+
+\textbf{IIL CWI-Inria} \\   
+ Associate Team involved in the International Lab: \\  
+ \subsubsection{\href{http://gemoc.org/ale/}{ALE }}
+\begin{itemize}
+%\XMLaddatt*{type}{sanspuces}
+ \item Title: Agile Language Engineering
+ \item International Partner (Institution -  Laboratory - Researcher):
+ \begin{itemize}
+%    \XMLaddatt*{type}{sanspuces}
+    \item CWI (Netherlands)   Tijs van der Storm
+ \end{itemize}
+ \item Start year: 2017 \item See also: \url{http://gemoc.org/ale/}
+ \item Software engineering faces new challenges with the advent of modern software-intensive systems such as complex critical embedded systems, cyber-physical systems and the Internet of things. Application domains range from robotics, transportation systems, defense to home automation, smart cities, and energy management, among others. Software is more and more pervasive, integrated into large and distributed systems, and dynamically adaptable in response to a complex and open environment. As a major consequence, the engineering of such systems involves multiple stakeholders, each with some form of domain-specific knowledge, and with an increasingly use of software as an integration layer.
+
+Hence more and more organizations are adopting Domain Specific Languages (DSLs) to allow domain experts to express solutions directly in terms of relevant domain concepts. This new trend raises new challenges about designing DSLs, evolving a set of DSLs and coordinating the use of multiple DSLs for both DSL designers and DSL users.
+
+ALE will contribute to the field of Software Language Engineering, aiming to provide more agility to both language designers and language users. The main objective is twofold. First, we aim to help language designers to leverage previous DSL implementation efforts by reusing and combining existing language modules. Second, we aim to provide more flexibility to  language users by ensuring interoperability between different DSLs and offering live feedback about how the model or program behaves while it is being edited (aka. live programming/modeling). 
+\end{itemize}
+
+
+
+
+
+%%% Ci-dessous, les projets rattachés à l'IIL hors les équipes associées
+\subsubsection{Other IIL projects}
+
+
+
+
+\subsection{Inria Associate Teams Not Involved in an Inria International Labs}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Donnees construites d'aprÃ¨s les informations de la base DRI pour 2018
+% Source : https://drone.inria.fr/
+% Date : lundi 17 dÃ©cembre 2018, 17:59:56 (UTC+0100)
+%
+
+
+
+
+\subsection{Inria International Partners}
+%%% indique un partenariat international important pour votre équipe,  
+%%% hors Equipes Associées et hors participation aux programmes internationaux mentionnés ci-dessous
+
+        \subsubsection{Declared Inria International Partners}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Donnees construites d'aprÃ¨s les informations de la base DRI pour 2018
+% Source : https://drone.inria.fr/
+% Date : lundi 17 dÃ©cembre 2018, 17:59:56 (UTC+0100)
+%
+
+
+
+
+        \subsubsection{Informal International Partners}
+        
+%%%        Vous pouvez écrire du texte
+
+%%% Si les subsections précédentes sont vides utilisez plutôt le titre sans "Other" : Participation in International Programs
+%%% au lieu de : Participation in Other International Programs
+
+\subsection{Participation in Other International Programs}
+%%%   * Implication dans des activités avec des partenaires français :  JFLI ; IFCAM ; LICIA ; LIRIO ; ICeiRA
+%%%   * Participation aux différents programmes soutenus par la DPEI et/ou des financeurs externes comme :
+%%%   STIC AmSud, Math AmSud, STIC Asie, ECOS-Sud, IFCAM, autres...
+
+
+
+
+\end{module}
+
+\begin{module}{partenariat}{internationalVisitors}{International Research Visitors}
+% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_16
+
+\subsection{Visits of International Scientists}
+%chercheurs invités, profs invités (via université). Les internships sont à mettre dans la subsection suivante.
+
+   \subsubsection{Internships}
+
+
+
+
+\subsection{Visits to International Teams}
+% Les explorateurs et sabbatiques provenant des bases de la DPEI sont importés dans votre trame.
+% Vérifiez et complétez.
+   \subsubsection{Sabbatical programme}
+
+
+
+
+   \subsubsection{Explorer programme}
+
+
+
+
+   \subsubsection{Research Stays Abroad}
+%% les séjours de chercheurs d'une durée supérieure à un mois, dans une université ou un laboratoire étranger
+
+
+
+
+%XFYZ_IN_IN
+
+%% ICI Vous pouvez ecrire du texte
+
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section diffusion des resultats (Dissemination)
+%%% Il y a des modules ici
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{module}{diffusion}{animation}{Promoting Scientific Activities}
+
+%%% Le module "Promoting Scientific Activities" comprend les activités éditoriales,
+%%% notamment de reviewing, d'organisation de conférences, de participation à des programmes de conférences.  
+%%% Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/Comment-rediger-le-RAweb/Les-sections#eztoc27554_17
+
+%%  respecter le format :  
+
+\subsection{Scientific Events Organisation}
+    \subsubsection{General Chair, Scientific Chair}
+    
+%%%   si liste, alors merci d'utiliser :
+%%%  \begin{itemize}
+%%%     \item  
+%%%     \end{itemize}    
+
+    \subsubsection{Member of the Organizing Committees}
+\subsection {Scientific Events Selection}
+    \subsubsection{Chair of Conference Program Committees}
+    \subsubsection{Member of the Conference Program Committees}
+    \subsubsection{Reviewer}
+\subsection{Journal}
+    \subsubsection{Member of the Editorial Boards}
+    \subsubsection{Reviewer - Reviewing Activities}
+\subsection{Invited Talks}
+\subsection{Leadership within the Scientific Community}
+\subsection{Scientific Expertise}
+\subsection{Research Administration}
+  
+\end{module}
+
+
+\begin{module}{diffusion}{enseignement}{Teaching - Supervision - Juries}
+
+\subsection {Teaching}
+%% Ce modulef présente vos activités d'enseignement et d'encadrement à présenter comme suit :
+
+% respecter le format :  
+ %%\begin{itemize}
+  %%\XMLaddatt*{type}{sanspuces}
+         %%\item Licence : Enseignant, titre du cours, nombre d'heures en équivalent TD, niveau (L1, L2, L3), université, pays  
+         %%\item Master : Enseignant, titre du cours, nombre d'heures en équivalent TD, niveau (M1, M2), université, pays  
+         %%\item Doctorat : Enseignant, titre du cours, nombre d'heures en équivalent TD, université, pays
+         %%\end{itemize}
+
+%%%
+%%% Exemple de section E-learning à décommenter si besoin
+%%%  
+%       \begin{itemize}
+%         \XMLaddatt*{type}{sanspuces}
+%         \item \textbf{E-learning}  
+%         \begin{itemize}
+%         \XMLaddatt*{type}{sanspuces}
+%                \item Mooc, SPOC, etc. : Enseignant ou auteur, titre du cours, durée en nombre de semaine, plate-forme, établissement porteur du cours, public ciblé, formation initiale ou continue, nombre d'inscrits
+%                \item Pedagogical resources : enseignant, titre, type (video, pdf, exercice, ou autre), niveau, url
+%         \end{itemize}    
+% \end{itemize}
+%
+
+%%% Détaillez les activités d'enseignement au moins pour les chercheurs Inria permanents et les enseignants-chercheurs permanents.
+
+\subsection {Supervision}
+%% PhD \& HdR : Les thèses soutenues doivent figurer dans la bibliographie
+
+ %%\begin{itemize}
+  %%\XMLaddatt*{type}{sanspuces}
+           %%\item HdR : nom du chercheur, titre du mémoire, nom de l'Université, date de soutenance
+           %%\item PhD : nom du doctorant, titre du mémoire, nom de l'Université, date de soutenance, encadrant(s)
+           %%\item PhD in progress : Nom du doctorant, titre (provisoire) du mémoire, date du début de la thèse, encadrant(s)
+  %%\end{itemize}
+
+\subsection {Juries}
+
+%% ICI Vous pouvez ecrire du texte dans le module
+
+\end{module}
+
+\begin{module}{diffusion}{popularization}{Popularization}
+
+%%% Le module "Popularization"
+%%% La médiation scientifique concerne toutes les actions à destination de publics sortant du cercle professionnel habituel des scientifiques :
+%%% enfants et jeunes, curieux de la science, grand public, décideurs politiques et partenaires socio-économiques.
+%%% La médiation fait intervenir le chercheur, auteur du contenu scientifique.
+
+%% Organisez vos informations selon les catégories suivantes :
+
+\subsection{Internal or external Inria responsibilities}
+%%% Il s'agit de responsabilités collectives : chargé.e de mission, de médiation, membre de commissions (locales/nationales),  
+%%% de comité éditorial de revues (interstices, images de maths, etc.), de comité scientifique de fondations,
+%%% d'édition d'ouvrages de vulgarisation collectifs, ...
+
+\subsection{Articles and contents}
+ %%\begin{itemize}
+       %%\item In books/journals for the general public
+       %%\item For online publications (Interstices*, Images des Maths, Binaire, Wikipedia), and more widely blog articles
+       %%\item Interviews in order to popularize
+       %%\item White Papers - white Papers for Popularization
+  %%\end{itemize}
+%%% *Interstices articles are automatically entered into Hal
+
+\subsection{Education}
+%%% *Interactions avec l'Education Nationale ou les structures d'éducation populaire
+%%% (exemple : contribuer à former des formateurs,  participer à la transmission d'outils pédagogiques sur la pensée informatique,
+%%% de personnels de l'Education Nationale ou de structures d'éducation populaire, par exemple en temps présentiel de Class'Code,
+%%% ou encore des actions pour l'enseignement comme la participation à l'élaboration des programmes scolaires, interactions avec le CNNum, etc.)
+%%% *Mise en place de modules doctoraux sur la médiation
+%%% *Participations à/créations de Moocs dont on indiquera ici les enjeux de médiation (en complément de la section e-learning dans laquelle ce même Mooc devrait apparaître aussi)
+%%% *Créations de cours (par exemple ISN)
+%%% *Organisation de/participation à des salons à destination des professionnels de l'éducation (ORME, educatec-educatice....)
+
+\subsection{Interventions}
+ %%\begin{itemize}
+    %%\item National events: Fête de la Science, Codeweek, Semaine des maths, one-off events such as Pint of Science
+    %%\item Public exhibitions (Futurs en Seine,...)
+    %%\item In educational institutions
+    %%\item Welcoming of schoolchildren or the general public in an Inria center: MathC2+ internship, open days,...
+  %%\end{itemize}
+      
+
+\subsection{Internal action}
+ %%\begin{itemize}
+     %%\item Internal meetings such as Café des sciences
+     %%\item Training of colleagues on new contents or media (activités débranchées, Poppy Ergo, TensorFlow,...)
+     %%\item Training follow-up (Media Training, new media such as Poppy ergo, with SIF, etc.)
+     %%\item Science outreach towards services (DPEI, STIP...)
+  %%\end{itemize}
+
+\subsection{Creation of media or tools for science outreach}
+%%% Nouveaux supports pour comprendre les fondamentaux des sciences du numérique ou
+%%% pour expliquer des résultats de recherche des plus ancrés aux plus récents :
+%%% vidéos, slides, création de jeu (qui explique un sujet, par exemple : Model checking), fiches autonomes d'activités, …
+
+\end{module}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Section bibliographie
+%%%
+%%% Il y a trois fichiers de bibliographie
+%%%
+%%% - diverse_refer2018.bib est inclus dans sa totalité mais en commentaire, sélectionnez les 10
+%%%   références majeures du projet en les décommentant (Remplacer AROBAS par @). Pour les citer : \refercite
+%%%
+%%% - diverse2018.bib les publis de l'année 2018 issues de Hal, citées par \cite
+%%%
+%%% - diverse_foot2018.bib contient les citations utilisées en note  de bas de page, citées par \footcite  
+%%%
+%%% Vérifier si les noms des auteurs sont corrects  
+%%%
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Information sur les données exportées : biblio
+%%%  
+%%% Seules les publications présentes dans Hal seront prises en compte dans le RA 2018 comme publications de l'année.
+%%% Lors de la compilation sur iRabot le fichier diverse2018.bib sera automatiquement récupéré à partir de Hal.  
+%%% Le fichier diverse2018.bib ne doit pas être édité.
+%%%
+%%% Vous devez donc déposer dans Hal https://hal.inria.fr/ vos publications manquantes.  
+%%% Attention, pour  cause de validation, il peut y avoir un délai de 24h avant la mise en ligne et l'intégration à la trame.  
+%%% Les thèses soutenues doivent figurer dans la biblio et donc être sur Hal.
+%%%
+%%% Consulter la bibliographie de l'année : https://irabot.inria.fr/itramera?&format=bib&epi=diverse&annee=2018
+%%%
+%%%Rappel : les Best papers cités en section Highlights sont affichés dans la biblio sur fond de couleur avec la mention "Best paper".
+%%%Citez les publications récompensées sous la forme : \bestcite{xxxx}, \bestcite{yyyy}.
+
+%%% Les publications de référence et celles en notes de bas de pages sont issues de votre RAweb 2017
+%%% Url de consulation du RAweb 2017 : http://raweb.inria.fr/rapportsactivite/RA2017/index.html
+%%%
+%%% Depuis le 25/09/2018, vous pouvez déposer du code source dans HAL et ainsi contribuer au patrimoine logiciel constitué par Software Heritage.
+%%% La notice logiciel de Hal est affichée en catégorie misc.
+
+%%% Vérifiez et signalez erreurs et problèmes  via le  https://helpdesk.inria.fr/categories/181/submit
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Attention, il n'y a pas de \nocite{*} implicite.  
+%%% Une commande \nocite{*} a été ajoutée.
+%%% Vous pouvez utiliser des \nocite{xx}.
+%   \nocite{TFE98}
+%   \nocite{AGATHISC}
+%   \nocite{FD98}
+%   \nocite{x,y,z}  
+
+%%% Une commande \omitcite a été créée pour permettre d'exclure certaines références de publication Hal de la biblio du RA.
+%%% Syntaxe : un omitcite par ligne
+%%%    \omitcite{bret:hal-00000}
+%%%    \omitcite{bret:hal-00000}
+%%%    \nocite{*}
+
+\nocite{*}
+\loadbiblio
+
+%%%%% fin du document
+\end{document}
+
+
+%% DIVERSE
+%% Date : lundi 17 dÃ©cembre 2018, 17:59:56 (UTC+0100)
+%% Source rapport latex DIVERSE : http://ralyx.inria.fr/Raweb/diverse/uid0.html
+%% Source donnees bastri SR0651GR : https://bastri.inria.fr/Bastri/structureinria/siid/SR0651GR/look
+%% Source donnees bil DIVERSE : https://bil.inria.fr/

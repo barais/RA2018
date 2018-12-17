@@ -1,0 +1,122 @@
+We have selected three main contributions for \team's research axis \#4:
+one is in the field of runtime management, while the two others one are in the field of Privacy and Security.
+
+%Sécurité Kevin.
+
+% Sécurité AmIUnique
+
+\paragraph{Verifying the configuration of Virtualized Network Functions in Software Defined Networks}
+
+In Kevoree, one of the goal is to work on the shipping pases in which we aim at making deployment, and the reconfiguration simple and accessible to the whole team. This year we work to include the capacity to manage network configuration when reconfiguring application stack. In this context, the deployment of modular virtual network functions (VNFs) in software defined infrastructures (SDI) enables cloud and network providers to deploy integrated network services across different resource domains. It leads to a large interleaving between network configuration through software defined network controllers and VNF deployment within this network. Most of the configuration management tools and network orchestrator used to deploy VNF lack of an abstraction to express Assume-Guarantee contracts between the VNF and the SDN configuration. Consequently, VNF deployment can be inconsistent with network configurations. 
+
+
+\begin{description}
+
+\item[Contribution.] To tackle this challenge, in this work~\cite{pelay:hal-01657866}, we develop an approach to check the consistency between the VNF description described from a set of structural models and flow-chart models and a proposed deployment on a real SDN infrastructure with its own configuration manager. We illustrate our approach on virtualized Evolved Packet Core function.
+\item[Originality.] The originality of this work is to propose a model to capture VNF. 
+\item[Impact.]  Beyond the scientific originality of this work, the main impacts of this novel approach to check SDN configuration has been to (i)~reinforce {\team}'s visibility in the academic and industrial communities on software components and (ii)~to create several research tracks that are currently explored in different projects of the team (B-com PhD thesis and Nokia common labs). This work is being integrated within the Kevoree platform.  
+\end{description}
+
+\paragraph{Identity Negotiation at Runtime}
+
+Authentication delegation is a major function of the modern web. Identity Providers (IdP) acquired a central role by providing this function to other web services. By knowing which web services or web applications access its service, an IdP can violate the end-user privacy by discovering information that the user did not want to share with its IdP. For instance, WebRTC introduces a new field of usage as authentication delegation happens during the call session establishment, between two users. As a result, an IdP can easily discover that Bob has a meeting with Alice. A second issue that increases the privacy violation is the lack of choice for the end-user to select its own IdP. Indeed, on many web-applications, the end-user can only select between a subset of IdPs, in most cases Facebook or Google. 
+
+\begin{description}
+\item[Contribution.] This year, we analyze this phenomena~\cite{corre:hal-01611048}, in particular why the end-user cannot easily select its preferred IdP, though there exists standards in this field such as OpenID Connect and OAuth 2? To lead this analysis, we conduct three investigations. The first one is a field survey on OAuth 2 and OpenID Connect scope usage by web sites to understand if scopes requested by web-sites could allow for user defined IdPs. The second one tries to understand whether the problem comes from the OAuth 2 protocol or its implementations by IdP. The last one tries to understand if trust relations between websites and IdP could prevent the end user to select its own IdP. Finally, we sketch possible architecture for web browser based identity management, and report on the implementation of a prototype.
+We also describe our implementation of the WebRTC identity architecture~\cite{corre:hal-01611057}. We adapt OpenID Connect servers to support WebRTC peer to peer authentication and detail the issues and solutions found in the process. 
+\item[Originality.] We observe that although WebRTC allows for the exchange of identity assertion between peers, users lack feedback and control over the other party authentication. To allow identity negotiation during a WebRTC communication setup, we propose an extension to the Session Description Protocol. Our implementation demonstrates current limitations with respect to the current WebRTC specification.
+\item[Impact.] This work is done with Orange. 
+\end{description}
+
+\paragraph{Raising Time Awareness in Model-Driven Engineering}
+
+The conviction that big data analytics is a key for the
+success of modern businesses is growing deeper, and the mobilisation
+of companies into adopting it becomes increasingly
+important. Big data integration projects enable companies
+to capture their relevant data, to efficiently store it, turn
+it into domain knowledge, and finally monetize it. In this
+context, historical data, also called temporal data, is becoming
+increasingly available and delivers means to analyse the history
+of applications, discover temporal patterns, and predict future
+trends. Despite the fact that most data that today’s applications
+are dealing with is inherently temporal current approaches,
+methodologies, and environments for developing these applications
+don’t provide sufficient support for handling time. We
+envision that Model-Driven Engineering (MDE) would be an
+appropriate ecosystem for a seamless and orthogonal integration
+of time into domain modeling and processing. 
+
+\begin{description}
+
+\item[Contribution.] This year, we investigate the state-of-the-art in MDE techniques and tools in order to identify the missing bricks for raising time-awareness in MDE and outline research directions in this emerging domain~\cite{benelallam:hal-01580554}.
+
+\item[Originality.] We propose an extended context representation for self-adaptive software that integrates the history of planned actions as well as their expected effects over time into the context representations.
+We demonstrate on a cloud elasticity manager case study that such \textit{temporal action-aware context} leads to improved reasoners while still be highly scalable. This work is original with respect to the state of the art since it provides a way to represent and take into account the impact of reconfiguration actions on a system.
+
+\item[Impact.] This work is done through a collaboration with the SnT in Luxembourg and a startup called DataThings, working on domain model representation for various industrial domains.
+\end{description}
+
+%Sécurité Kevin.
+
+
+%\paragraph{Precise and efficient resource management using models@runtime}
+%\begin{description}
+%	\item[Contribution.] We have developed an efficient monitoring framework to quickly spot an abnormal resource consumption within a complex application. In these papers~\cite{gonzalezherrera:hal-01354999}, we have proposed an optimistic adaptive monitoring system to determine the faulty components of an application. Suspected components are finely analyzed by the monitoring system, but only when required. Unsuspected components are left untouched and execute normally.
+%	\item[Originality.] Current solutions that perform permanent and extensive monitoring to detect anomalies induce high overhead on the system, and can, by themselves, make the system unstable. 
+%	Our system performs localized just-in-time monitoring that decreases the accumulated overhead of the monitoring system. Through our evaluation, we show that our technique correctly detects faulty components, while reducing overhead by ~92.98 on average\%.
+%	\item[Impact.] Beyond the scientific originality of this work, the main impacts of this novel approach approach to monitor software component performance has been to (i)~reinforce {\team}'s visibility in the academic and industrial communities on software components and (ii)~to create several research tracks that are currently explored in different projects of the team (HEADS and B-com PhD thesis). This work has been integrated within the Kevoree platform.  
+%
+%
+%\paragraph{Dynamic web application using models@runtime}
+%\begin{description}
+%	\item[Contribution.] We have developed a component-based platform supporting the development of dynamically adaptable single Web page applications. 
+%	An important part of this contribution lies in the possibility to dynamically move code from the server to the client side allowing a great flexibility in the performance management. This contribution~\cite{tricoire:hal-01354997} is based on a models@runtime approach and has been implemented in our open source KevoreeJS platform.
+%	\item[Originality.] Current solutions to create single Web page application are limited to a static code repartition between clients and server, thus limiting the flexibility at runtime.
+%	\item[Impact.] Beyond the scientific originality of this work, the main impacts of this novel approach to monitor software component performance has been to (i)~reinforce  {\team}'s visibility in the open-source community, (ii)~to start several research tracks that are currently explored in different projects of the team (HEADS, STAMP, GRevis). 
+%	This platforms is modular, one of the component has a monthly download count greater than 100k \footnote{https://www.npmjs.com/package/npmi}).  
+%\end{description}
+
+%The second scientific result is related to the use of models@runtime to drive the reconfiguration of web applications.  The architecture of classic productivity software are moving from a traditional desktop-based software to a client server architecture hosted in the Cloud. In this context, web browsers behave as application containers that allow users to access a variety of Cloud-based applications and services, such as IDEs, Word processors, Music Collection Managers, etc. As a result, a significant part of these software run in the browser and accesses remote services. A lesson learned from development framework used in distributed applications is the success of pluggable architecture pattern as a core architecture concept,  i.e.,  a Software Architecture that promotes the use of Pluggable Module to dynamically plug. 
+%Following this trend, we identify the main challenges to create a component-based platform supporting the development of dynamically adaptable single web page applications.
+%We also developed an approach called KevoreeJS based on models@runtime to control browser as component platform which address some of these challenges.
+%We validate this work by presenting the design of a dashboard for sensor based system and highlighting the capacity of KevoreeJS to dynamically choose the placement of code on the server or client side and how KevoreeJS can be used to dynamically install or remove running components. 
+
+
+%\paragraph{Testing non-functional behavior of compiler and code generator}
+%\begin{description}
+%	\item[Contribution.] We have developed NOTICE~\cite{boussaa:hal-01344835,boussaa:hal-01356849}, a component-based framework for non-functional testing of compilers through the monitoring of generated code in a controlled sand-boxing environment. In this work, we have proposed an automatic way of testing non-functional properties of compilers, while optimizing the generated application with respect to a set of specific non-functional properties (CPU, memory usage, energy consumption, \emph{etc.}).
+%	\item[Originality.] Compiler users generally apply different optimizations to generate efficient code with respect to specific non-functional properties such as energy consumption, execution time, etc. 
+%	However, due to the huge number of optimizations provided by modern compilers, finding the best optimization sequence for a specific objective and a given program is more and more challenging.
+%	\item[Impact.] Beyond the scientific originality of this work, the main impact of this novel approach is to enable the auto-tuning of compilers according to user requirements and to construct optimizations that yield to performance results that are better than standard optimization levels.   
+%\end{description}
+
+%The third scientific result is related to the use resource aware reconfigurable platform to automatically test compiler and code generator regarding the CPU and memory consumption of the generated code. Generally, compiler users apply different optimizations to generate efficient code with respect to non-functional properties such as energy consumption, execution time, etc. However, due to the huge number of optimizations provided by modern compilers, finding the best optimization sequence for a specific objective and a given program is more and more challenging.
+%This work proposes NOTICE, a component-based framework for non-functional testing of compilers through the monitoring of generated code in a controlled sand-boxing environment.
+%We evaluate the effectiveness of our approach by verifying the optimizations performed by the GCC compiler. Our experimental results show that our approach is able to auto-tune compilers according to user requirements and construct optimizations that yield to better performance results than standard optimization levels. We also demonstrate that NOTICE can be used to automatically construct optimization levels that represent optimal trade-offs between multiple non-functional properties such as execution time and resource usage requirements.
+
+
+
+
+
+\subsection*{Collaborations}
+
+This year,  we had a close and fruitful collaboration with the industrial partners that are involved in the HEADS and Occiware projects, in particular an active interaction  with the Tellu company in Norway in the Heads context~\cite{hal-01356104}. 
+Tellu relies on Kevoree and KevoreeJS to build their health management systems. 
+They will be also an active member the new Stamp project led by \team{}. 
+We can cite also an active collaboration with Orange Labs through Kevin Corre's joint PhD thesis. 
+Another joint industrial (CIFRE) PhD started in September 2016, and we are also partner in a new starting FUI project. 
+%We also currently negotiate a large CRE to complete this collaboration around the topic of reconfigurable software for security. 
+Finally, \team{} collaborates with the B-COM IRT (https://b-com.com/en), 
+as one permanent member has a researcher position of one day per week at B-COM and a new joint PhD started in September~\cite{outin:hal-01356099}. 
+
+At the academic level we collaborate actively with the Spiral team at INRIA Lille (several joint projects), the Tacoma team (with two co-advised PhD students), the Myriad team (1 co-advised PhD student) and we have started two collaborations with the ASAP team.
+
+
+
+
+%TODO
+%Towards microservices architecture to transcode videos in the large at low costs
+%O Barais, J Bourcier, YD Bromberg, C Dion
+%Telecommunications and Multimedia (TEMU), 2016 International Conference on, 1-6	1	2016
+

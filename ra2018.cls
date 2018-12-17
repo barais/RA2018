@@ -6,12 +6,12 @@
 
 %% original dollar-Id: ra2003.cls,v 1.8 2003/12/22 10:43:36 grimm Exp
 %% actual xId: ra2004.cls,v 1.1 2006/07/25 13:33:21 grimm Exp $
-%% real $Id: ra2017.cls,v 1.1 2009/10/30 16:22:20 dvojtise Exp $
+%% real $Id: ra2018.cls,v 1.1 2009/10/30 16:22:20 dvojtise Exp $
 %% 
 \def\filedate{2006/07/25}
 \def\fileversion{3,2}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ra2017}
+\ProvidesClass{ra2018}
        [\filedate\space v\fileversion\space ^^J\space\space\space
          Copyright INRIA/MIAOU/APICS 2007 Raweb in DRAFT mode]
 
@@ -109,7 +109,7 @@
 \newenvironment{body}{\par}{\par}
 \def\RAlefthead#1{\def\ra@lefthead{#1}}
 \def\RArighthead#1{\def\ra@righthead{#1}}
-\RAlefthead{INRIA activity report 2017}
+\RAlefthead{INRIA activity report 2018}
 \RArighthead{ }
 \global\let\@mkboth\@gobbletwo
 \def \RAbibXXname {Major publications by the team in recent years}
@@ -145,7 +145,7 @@
 \def\RAindex#1{\index{#1}#1}
 \def\@lbibitem[#1]{\@bibitem}
 \newcommand\moduleref{\@ifnextchar[\@xmoduleref\@moduleref}
-\def\@xmoduleref[#1]#2#3#4{\def\@tempa{2017}\def\@tempb{#1}%
+\def\@xmoduleref[#1]#2#3#4{\def\@tempa{2018}\def\@tempb{#1}%
  \ifx\@tempb\@tempa \@moduleref{#2}{#3}{#4}%
  \else[projet~#2, ann^^e9e #1, section~#3\if @#4@\else, module~#4\fi]\fi}
 
@@ -247,7 +247,7 @@ version of \today
 \def\maketitle{%
      \title{\@thetypeprojet: \@theprojetspec}\author{\@theprojetlong\\Theme
     \@thetheme\\\@thelocalisation}%
-     {\lccode`\_=`\_\lowercase{\footbibliography{\theprojet@low_foot2017}}}%
+     {\lccode`\_=`\_\lowercase{\footbibliography{\theprojet@low_foot2018}}}%
 
    \@old@maketitle
    \newpage
@@ -256,14 +256,14 @@ version of \today
    \section{Bibliography}%
    \immediate\openout15=\jobname.refer.aux\relax
    \immediate\write15{\string\bibstyle{rawebnum}}%
-   \immediate\write15{\string\bibdata{\theprojet@low\string_refer2017}}%
+   \immediate\write15{\string\bibdata{\theprojet@low\string_refer2018}}%
    \immediate\write15{\string\citation{*}}%
    \immediate\closeout15
    \urlstyle{xx}%
     \let\bibitem\referbibitem
    \@input@{\jobname.refer.bbl}%
     \let\bibitem\yearbibitem
-   \bibliography{\theprojet@low2017}}
+   \bibliography{\theprojet@low2018}}
 \def\DeclareTextCompositeCommand#1#2#3#4{}
 \def\aparaitre{to appear}
 \let\toappear\aparaitre

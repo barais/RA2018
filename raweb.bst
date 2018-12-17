@@ -432,10 +432,10 @@ FUNCTION {format.date}
         'year
         { month " " * year * }
       if$
-      year "2017" =
+      year "2018" =
       {}
       {
-         "Strange year " year * " in " * cite$ * " (should be 2017)" * warning$ 
+         "Strange year " year * " in " * cite$ * " (should be 2018)" * warning$ 
       }
       if$
     }

@@ -1,0 +1,12 @@
+*.bbl
+*.blg
+*.aux
+*.log
+*.out
+*.refer.*
+*.fb.*
+*.fdb_*
+*.toc
+*.xdv
+*.fls
+*.synctex.gz

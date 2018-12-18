@@ -273,7 +273,7 @@
 \pers{Erwan}{Bousse}{Visiteur}[TU Wien, Austria, until Aug 2018]
 \pers{Marcel}{Heinz}{Visiteur}[University of Koblenz-Landau, Jul 2018]
 \pers{Gurvan}{Le Guernic}{CollaborateurExterieur}[DGA]
-\pers{Benoit}{Combemale}{Visiteur}[Université de Tooulouse, until Aug 2018][Habilite]
+\pers{Benoit}{Combemale}{Visiteur}[Université de Toulouse, until Aug 2018][Habilite]
 %\end{composition}
 
 
@@ -300,13 +300,13 @@
 
 \begin{module}{presentation}{overall}{Overall objectives}
 
-  \team{}'s research agenda is in the area of software engineering. 
-  In this broad domain we develop models, methodologies and theories to address the challenges raised by the emergence of several forms of diversity in the design, deployment and evolution of software-intensive systems.
-  The emergence of software diversity is an essential phenomenon in all application domains that we investigate with our industrial partners. These application domains range from complex systems such as systems of systems (in collaboration with Thales and DGA) and Instrumentation and Control (with EDF) to pervasive combinations of Internet of Things and Internet of Services (with TellU and Software AG) and tactical information systems (with the firefighter department).
-  Even if today these systems are apparently radically different, we envision a strong convergence  of the scientific principles underpinning their construction and validation towards \textbf{flexible and open yet dependable systems}. 
-  In particular, we see that the required flexibility and openness raise challenges for the software layer of these systems that must deal with four dimensions of diversity: the \textbf{diversity of languages} used by the stakeholders involved in the construction of these systems; the \textbf{diversity of features} required by the different customers; the \textbf{diversity of runtime environments} in which software has to run and adapt; the \textbf{diversity of implementations} that are necessary for resilience through redundancy.
+  \team{}'s research agenda targets core values of software engineering. 
+  In this fundamental domain we focus and develop models, methodologies and theories to address major challenges raised by the emergence of several forms of diversity in the design, deployment and evolution of software-intensive systems.
+  Software diversity has emerged as an essential phenomenon in all application domains born by our industrial partners. These application domains range from complex systems brought by systems of systems (addressed in collaboration with Thales and DGA) and Instrumentation and Control (addressed with EDF) to pervasive combinations of Internet of Things and Internet of Services (addressed with TellU and Software AG) and tactical information systems (addressed in collaboration with civil  security).
+  Today these systems seem to be radically different, but we envision a strong convergence  of the scientific principles that underpin their construction and validation, bringing forwards sane and reliable methods for the design of  \textbf{flexible and open yet dependable systems}. 
+  Flexibility and openness are critical and challenging software layer properties that must deal with four dimensions of diversity: \textbf{diversity of languages}, used by the stakeholders involved in the construction of these systems;  \textbf{diversity of features}, required by the different customers; \textbf{diversity of runtime environments}, in which software has to run and adapt; \textbf{diversity of implementations}, which are necessary for resilience by redundancy.
 
-  In this context, the major software engineering challenge consists in handling \textbf{diversity} from variability in requirements and design to heterogeneous and dynamic execution environments. 
+  In this context, the central software engineering challenge consists in handling \textbf{diversity} from variability in requirements and design to heterogeneous and dynamic execution environments. 
   In particular this requires considering that the software system must adapt, in unpredictable ways, to changes in the requirements and environment. 
   Conversely, explicitly handling of diversity is a great opportunity to allow software to spontaneously explore alternative design solutions. 
   Concretely, we want to provide software engineers with the ability:
@@ -1032,10 +1032,27 @@ OpenCompare.org is an ambitious project for the collaborative edition, the shari
 %%%Documentation intranet : https://intranet.inria.fr/Vie-scientifique/Information-edition-scientifiques/RAweb/Les-sections#eztoc27554_10
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{module}{resultats}{new1}{New result 1}
-%%ICI Vous pouvez ecrire du texte
+\begin{module}{resultats}{results-spl}{Results on Variability modeling and management}
+	\label{sec:results-spl}
+	\input{result-spl.tex}
 \end{module}
 
+\begin{module}{resultats}{results-implem-sle}{Results on Software Language
+		Engineering}
+	\label{sec:results-sle}
+	\input{result-sle.tex}
+\end{module}
+
+\begin{module}{resultats}{result-runtime}{Results on Heterogeneous and dynamic software architectures}
+	\label{sec:results-runtime}
+	\input{result-runtime.tex}
+\end{module}
+
+\begin{module}{resultats}{results-implem-resilience}{Results on Diverse
+		Implementations for Resilience}
+	\label{sec:results-implem}
+	\input{result-implementation.tex}
+\end{module}
 
 %%\begin{module}{resultats}{new2}{New result 2}
 %%ICI Vous pouvez ecrire du texte
@@ -1103,7 +1120,7 @@ OpenCompare.org is an ambitious project for the collaborative edition, the shari
 \begin{itemize}
 	\item Coordinator: CEA
 	\item CEA, University of Paris-Sud, Inria Rennes, OcamlPro, Adacore
-	\item Dates: 2014-2017
+	\item Dates: 2014-2018
 	\item Abstract:  Today most major verification
     approaches rely on automatic external
     solvers. However these solvers do not fill the current and
@@ -1143,19 +1160,11 @@ We plan to further collect large experimental data and apply our techniques on p
  %% Ici vous pouvez écrire du texte
  %% Les Competitivity Clusters...
 
-\subsubsection*{\label{project:clarity}CLARITY}
-\begin{itemize}
-	\item Coordinator: Obéo
-	\item Other partners:  AIRBUS, Airbus Defence and Space, All4tec, ALTRAN Technologies, AREVA, Artal, C.E.S.A.M.E.S., Eclipse Foundation Europe, INRIA Sophia Antipolis Méditerranée, PRFC, Scilab Enterprises, Thales Global Services, Thales Alenia Space, Thales Research \& Technology, Thales Systèmes Aéroportés, Université de Rennes 1.
-	\item Dates: 2014-2017
-	\item Abstract: The CLARITY project aims to establish an international dimension ecosystem around Melody/Capella modeling workbench for systems engineering (MBSE) and engineering architectures (system, software, hardware).
-\end{itemize}
-
 \subsubsection*{\label{project:occiware}Occiware}
 \begin{itemize}
 	\item Coordinator: Open Wide
 	\item Open Wide, ActiveEon SA, CSRT - Cloud  Systèmes Réseaux et Télécoms, Institut Mines-Télécom/Télécom SudParis, Inria, Linagora, Obeo, OW2 Consortium, Pôle Numérique, Université Joseph Fourier, 
-	\item Dates: 2014-2017
+	\item Dates: 2014-2018
 	\item Abstract: The Occiware project aims to establish a formal and equipped framework for the management of all cloud resource based on the OCCI standard. 
 \end{itemize}
 
@@ -1365,6 +1374,11 @@ ALE will contribute to the field of Software Language Engineering, aiming to pro
 
 \subsection{Visits of International Scientists}
 %chercheurs invités, profs invités (via université). Les internships sont à mettre dans la subsection suivante.
+%chercheurs invités, profs invités (via université), Les internships sont à mettre dans la subsection suivante. 
+
+Yves Le Traon, Professor at the University of Luxembourg, visited the team in June and July 2017.
+
+François Fouquet, Junior Researcher at the SnT (Lux), visited the team in November 2017.
 
    \subsubsection{Internships}
 
@@ -1385,6 +1399,8 @@ ALE will contribute to the field of Software Language Engineering, aiming to pro
 
 
    \subsubsection{Research Stays Abroad}
+   
+   
 %% les séjours de chercheurs d'une durée supérieure à un mois, dans une université ou un laboratoire étranger
 
 
@@ -1440,6 +1456,30 @@ ALE will contribute to the field of Software Language Engineering, aiming to pro
 \begin{module}{diffusion}{enseignement}{Teaching - Supervision - Juries}
 
 \subsection {Teaching}
+
+
+ The \team{} team bears the bulk of the teaching on Software Engineering at the 
+ University of Rennes 1 and at INSA Rennes, for the first year of the Master of Computer Science
+ (Project Management, Object-Oriented Analysis and Design with UML, Design Patterns, 
+ Component Architectures and Frameworks, Validation \& Verification, Human-Computer Interaction) 
+ and for the second year of the MSc in software engineering (Model driven Engineering, Aspect-Oriented Software Development, 
+ Software Product Lines, Component Based Software Development, Validation \& Verification, \textit{etc.}). 
+ 
+ Each of Jean-Marc J\'{e}z\'{e}quel, No\"el Plouzeau, Olivier Barais, Johann Bourcier, 
+ Arnaud Blouin, and Mathieu Acher teaches about 200h in these domains, 
+ with Benoit Baudry and Benoit Combemale teaching about 50h, 
+ for a grand total of about 1300 hours, including several courses at ENSTB, Supelec, 
+ and ENSAI Rennes engineering school.
+ 
+Olivier~Barais is deputy director of the electronics and computer science 
+ teaching department of the University of Rennes~1.
+ Mathieu Acher is in charge of teaching duties management of this department. 
+Olivier Barais is the head of the final year of the Master in Computer Science at the University of Rennes~1.
+Johann Bourcier is co-manager of the Home-Automation option at the ESIR engineering school in Rennes.
+ 
+ The \team{} team also hosts several MSc and summer trainees every year.
+
+
 %% Ce modulef présente vos activités d'enseignement et d'encadrement à présenter comme suit :
 %
 % respecter le format :  
@@ -1476,13 +1516,47 @@ ALE will contribute to the field of Software Language Engineering, aiming to pro
            %%\item PhD in progress : Nom du doctorant, titre (provisoire) du mémoire, date du début de la thèse, encadrant(s)
   %%\end{itemize}
 
+\begin{itemize} 
+	%%\XMLaddatt*{type}{sanspuces} 
+
+\item PhD in progress: Alejandro Gomez Boix, \emph{Distributed counter-measure against browser fingerprinting}, 2016, B. Baudry, D. Bromberg
+\item PhD in progress: Paul Temple, \emph{TITLE}, 2015, M. Acher, J.-M. Jézéquel
+\item PhD in progress: Manuel Leduc, \emph{Formal and Executable Specification of domain-specific language families}, 2016, O. Barais, B. Combemale
+\item PhD in progress: Youssou NDiaye, \emph{Modelling and evaluating security in user interfaces}, 2016, N. Aillery, O. Barais, A. Blouin, A. Bouabdallah
+\item PhD in progress: Jean-Émile Dartois, \emph{TITRE}, 2016, O. Barais
+\item PhD in progress: Oscar Luis, \emph{Automatic test amplification}, 2016, B. Baudry
+\item PhD in progress: Alexandre Rio, \emph{TITRE}, 2016, O. Barais, Y. Morel
+\item to complete %TODO
+
+\end{itemize} 
+
+
 \subsection {Juries}
 
 %% ICI Vous pouvez ecrire du texte dans le module
-
+\paragraph*{Olivier Barais} was in the examination committee of the following PhD thesis: 
+\begin{itemize}
+	\item Mohammed Boussa, December 2016, Univ Rennes I, Supervisor
+%	\item Maxime Colman, December 2016, Univ Lille I, Reviewer
+%	\item Alexandre Garnier, December 2016, EMN - Univ Nantes, Reviewer
+%	\item 	Matias Ezequiel Vara Larsen, April 2016, Univ Nice, Reviewer
+%	\item Djamel Khelladi, September 2016, UPMC, Reviewer
+%	\item Simon Dupont, April 2016, EMN - Univ Nantes, Reviewer	 	
+\end{itemize}
 \end{module}
 
 \begin{module}{diffusion}{popularization}{Popularization}
+
+\begin{description}
+	\item Stamp action TODO
+	%\item [IT industry forums]. Our recent work on diversity against browser fingerprinting and the associated web site \footnote{\url{https://amiunique.org/}} have been demonstrated in the a major cybersecurity forum (FIC'15 \footnote{\url{https://fic2015.com/home/}}), the largest IT event organized by the European commission (ICT'15 \footnote{\url{https://ec.europa.eu/digital-single-market/en/ict2015}}) and two open source forums (OWF'14 \footnote{\url{http://www.openworldforum.paris/}} and FOSSA'14 \footnote{\url{https://fossa.inria.fr/}}).
+	
+%	\item [General-audience press]. Our work on browser fingerprinting has been featured Le Monde
+%	\footnote{\url{http://abonnes.lemonde.fr/sciences/article/2014/11/24/le-fossa-bazar-techno-participatif_4528568_1650684.html}}, and two full articles appeared in the MISC\footnote{\url{http://connect.ed-diamond.com/MISC/MISC-081/Le-fingerprinting-une-nouvelle-technique-de-tracage}} and the Clubic magazines \footnote{\url{http://pro.clubic.com/webmarketing/publicite-en-ligne/actualite-742853-fingerprinting-cookies.html}}.
+\end{description}
+
+%Jean-Marc Jézéquel and Benoit Baudry have presented overviews of research issues in Cybersecurity to  general public audiences in several events, such as the 2017 Pint of Science.
+
 
 %%% Le module "Popularization"
 %%% La médiation scientifique concerne toutes les actions à destination de publics sortant du cercle professionnel habituel des scientifiques :
@@ -1515,6 +1589,7 @@ ALE will contribute to the field of Software Language Engineering, aiming to pro
 %%% *Créations de cours (par exemple ISN)
 %%% *Organisation de/participation à des salons à destination des professionnels de l'éducation (ORME, educatec-educatice....)
 
+
 \subsection{Interventions}
  %%\begin{itemize}
     %%\item National events: Fête de la Science, Codeweek, Semaine des maths, one-off events such as Pint of Science
@@ -1525,6 +1600,10 @@ ALE will contribute to the field of Software Language Engineering, aiming to pro
       
 
 \subsection{Internal action}
+\begin{itemize}
+\item Olivier Barais provide one day course on Modern Web Engineering to SED Engineer. 
+\end{itemize}
+
  %%\begin{itemize}
      %%\item Internal meetings such as Café des sciences
      %%\item Training of colleagues on new contents or media (activités débranchées, Poppy Ergo, TensorFlow,...)
@@ -1536,6 +1615,9 @@ ALE will contribute to the field of Software Language Engineering, aiming to pro
 %%% Nouveaux supports pour comprendre les fondamentaux des sciences du numérique ou
 %%% pour expliquer des résultats de recherche des plus ancrés aux plus récents :
 %%% vidéos, slides, création de jeu (qui explique un sujet, par exemple : Model checking), fiches autonomes d'activités, …
+
+
+
 
 \end{module}
 

@@ -980,10 +980,13 @@ OpenCompare.org is an ambitious project for the collaborative edition, the shari
 
  \textsc{Functional Description:}  Main features of ALE include:
 
-- Executable metamodeling: Re-open existing EClasses to insert new methods with their implementations
-- Metamodel extension: The very same mechanism can be used to extend existing Ecore metamodels and insert new features (eg. attributes) in a non-intrusive way
--    Interpreted: No need to deploy Eclipse plugins, just run the behavior on a model directly in your modeling environment
--    Extensible: If ALE doesn’t fit your needs, register Java classes as services and invoke them inside your implementations of EOperations.\\
+\begin{itemize}
+	\item Executable metamodeling: Re-open existing EClasses to insert new methods with their implementations
+	\item Metamodel extension: The very same mechanism can be used to extend existing Ecore metamodels and insert new features (eg. attributes) in a non-intrusive way
+	\item Interpreted: No need to deploy Eclipse plugins, just run the behavior on a model directly in your modeling environment
+	\item Extensible: If ALE doesn’t fit your needs, register Java classes as services and invoke them inside your implementations of EOperations.
+\end{itemize}
+
 
    \begin{itemize}
       \item Partner: OBEO
@@ -1016,7 +1019,45 @@ OpenCompare.org is an ambitious project for the collaborative edition, the shari
 
  \end{module}
 
+ \begin{module}{logiciels}{bil-3338}{Descartes}
+	
+	\textsc{Keywords:} Mutation testing - Mutation analysis - Java - JUnit - PIT \\ 
+	
+	
+	
+	
+	\textsc{Functional Description:}  Descartes evaluates the capability of your test suite to detect bugs using extreme mutation testing. In Extreme Mutation testing, the whole body of a method under test is removed. Descartes is a mutation engine plugin for PIT which implements extreme mutation operators. It provides reports combining, line coverage, mutation score and list of weaknesses in the source.\\
+	
+	\begin{itemize}
+		\item Participants: Benoit Baudry, Caroline Landry, Oscar luis Vera-Perez
+		% Contact: Vérifiez si cette personne est toujours membre de Inria.
+		% Sinon corrigez la BIL (base des logiciels Inria): https://bil.inria.fr/ 
+		\item Contact: Oscar luis Vera-Perez
+		\item Partner: ATOS, CSQE, Engineering, INRIA, KTH, XWiki
+		\item URL: \url{https://github.com/STAMP-project/pitest-descartes\begin{center}
+				https://github.com/STAMP-project/pitest-descartes
+		\end{center}}
+	\end{itemize}
+\end{module}
 
+\begin{module}{logiciels}{bil-3448}{PitMP}
+	
+	\textsc{Keywords:} Mutation testing - Mutation analysis - Java - JUnit - PIT - Maven - Multi-module project \\ 
+	
+	\textsc{Functional Description:}  PitMP (PIT for Multi-module Project) is a Maven plugin able to run PIT and Descartes on multi-module projects. PIT is a mutation testing system for Java applications, which allows you to evaluate the quality of your test suites.\\
+	
+	\begin{itemize}
+		\item Participants: Benoit Baudry, Caroline Landry, Oscar luis Vera-Perez
+		% Contact: Vérifiez si cette personne est toujours membre de Inria.
+		% Sinon corrigez la BIL (base des logiciels Inria): https://bil.inria.fr/ 
+		\item Contact: Caroline Landry
+		\item Partner: CSQE, Engineering, INRIA, KTH, XWiki
+		\item URL: \url{https://github.com/STAMP-project/pitmp-maven-plugin\begin{center}
+				https://github.com/STAMP-project/pitmp-maven-plugin
+		\end{center}}
+	\end{itemize}
+	
+\end{module}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%

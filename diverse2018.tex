@@ -864,39 +864,33 @@ A comprehensive environment is proposed as well as integration facilities with t
    \textsc{Keywords:} M2M - Dynamic components - Iot - Heterogeneity - Smart home - Cloud - Software architecture - Dynamic deployment \\ 
 
 
-    \textsc{Scientific Description:} Kevoree is an open-source models@runtime platform (http://www.kevoree.org ) to properly support the dynamic adaptation of distributed systems. Models@runtime basically pushes the idea of reflection [132] one step further by considering the reflection layer as a real model that can be uncoupled from the running architecture (e.g. for reasoning, validation, and simulation purposes) and later automatically resynchronized with its running instance.
+    \textsc{Scientific Description:} Kevoree is an open-source models@runtime platform (http://www.kevoree.org) to properly support the dynamic adaptation of distributed systems. Models@runtime basically pushes the idea of reflection one step further by considering the reflection layer as a real model that can be uncoupled from the running architecture (e.g. for reasoning, validation, and simulation purposes) and later automatically resynchronized with its running instance.
 
-Kevoree has been influenced by previous work that we carried out in the DiVA project [132] and the Entimid project [135] . With Kevoree we push our vision of models@runtime [131] farther. In particular, Kevoree provides a proper support for distributed models@runtime. To this aim we introduced the Node concept to model the infrastructure topology and the Group concept to model semantics of inter node communication during synchronization of the reflection model among nodes. Kevoree includes a Channel concept to allow for multiple communication semantics between remoteComponents deployed on heterogeneous nodes. All Kevoree concepts (Component, Channel, Node, Group) obey the object type design pattern to separate deployment artifacts from running artifacts. Kevoree supports multiple kinds of very different execution node technology (e.g. Java, Android, MiniCloud, FreeBSD, Arduino, ...).
+Kevoree has been influenced by previous work that we carried out in the DiVA project and the Entimid project. With Kevoree we push our vision of models@runtime farther. In particular, Kevoree provides a proper support for distributed models@runtime. To this aim we introduced the Node concept to model the infrastructure topology and the Group concept to model semantics of inter node communication during synchronization of the reflection model among nodes. Kevoree includes a Channel concept to allow for multiple communication semantics between remoteComponents deployed on heterogeneous nodes. All Kevoree concepts (Component, Channel, Node, Group) obey the object type design pattern to separate deployment artifacts from running artifacts. Kevoree supports multiple kinds of very different execution node technology (e.g. Java, Android, MiniCloud, FreeBSD, Arduino, ...).
 
 Kevoree is distributed under the terms of the LGPL open source license.
 
-Main competitors:
+\textsc{Main competitors:}
 \begin{itemize}
-\item    the Fractal/Frascati eco-system (http://frascati.ow2.org ).
-
- \item       SpringSource Dynamic Module (http://spring.io/ )
+	\item the Fractal/Frascati eco-system (http://frascati.ow2.org ).
+ 	\item SpringSource Dynamic Module (http://spring.io/ )
+ 	\item GCM-Proactive (http://proactive.inria.fr/ )
+ 	\item OSGi (http://www.osgi.org )
+ 	\item Chef
+ 	\item Vagran
 \end{itemize}
-    GCM-Proactive (http://proactive.inria.fr/ )
 
-    OSGi (http://www.osgi.org )
 
-    Chef
+\textsc{Main innovative features:}
+\begin{itemize}
+	\item distributed models@runtime platform (with a distributed reflection model and an extensible models@runtime dissemination set of strategies).
+	\item Support for heterogeneous node type (from Cyber Physical System with few resources until cloud computing infrastructure).
+	\item Fully automated provisioning model to correctly deploy software modules and their dependencies.
+	\item Communication and concurrency access between software modules expressed at the model level (not in the module implementation).
+\end{itemize}
 
-    Vagran (http://vagrantup.com/ )
 
-Main innovative features:
-
-    distributed models@runtime platform (with a distributed reflection model and an extensible models@runtime dissemination set of strategies).
-
-    Support for heterogeneous node type (from Cyber Physical System with few resources until cloud computing infrastructure).
-
-    Fully automated provisioning model to correctly deploy software modules and their dependencies.
-
-    Communication and concurrency access between software modules expressed at the model level (not in the module implementation).
-
-Impact:
-
-Several tutorials and courses have been performed this year at EJCP for French PhD student, at ECNU summer school for 82 chineese PhD students. See also the web page http://www.kevoree.org .
+\textsc{Impact:} Several tutorials and courses have been performed this year at EJCP for French PhD student, at ECNU summer school for 82 chineese PhD students. See also the web page http://www.kevoree.org .
 
 In 2015, we mainly created a new implementation in C\# and we created an implementation for system containers for driving resources using Kevoree. We also use Kevoree in the context of Mohammed's PhD to create testing infrastructure on-demand.\\
 
@@ -1243,7 +1237,7 @@ We plan to further collect large experimental data and apply our techniques on p
 	\item Dates: 2015-2018
 	\item Title: User Controlled Trust and Security Level of Web Real-Time Communications
 \end{itemize}
-
+\rule{\linewidth}{.2pt}
 
 \begin{itemize}
 	\item Coordinator: Universit\'e de Rennes 1
@@ -1251,6 +1245,7 @@ We plan to further collect large experimental data and apply our techniques on p
 	\item Dates: 2016-2019
 	\item Title: Modelling and evaluating security in user interfaces
 \end{itemize}
+\rule{\linewidth}{.2pt}
 
 \begin{itemize}
 	\item Coordinator: TODO
@@ -1258,6 +1253,7 @@ We plan to further collect large experimental data and apply our techniques on p
 	\item Dates: 2017-2020
 	\item Title: we investigate the design of solutions in favor of self-consumption for small industries or city districts.
 \end{itemize}
+\rule{\linewidth}{.2pt}
 
 \begin{itemize}
 	\item Coordinator: Inria
@@ -1265,6 +1261,7 @@ We plan to further collect large experimental data and apply our techniques on p
 	\item Dates: 2017-2020
 	\item Title: TODO
 \end{itemize}
+\rule{\linewidth}{.2pt}
 
 \begin{itemize}
 	\item Coordinator: Universit\'e de Rennes 1
@@ -1272,6 +1269,7 @@ We plan to further collect large experimental data and apply our techniques on p
 	\item Dates: 2018-2021
 	\item Title: We investigate the abstraction to facilitate the development of hypermedia API
 \end{itemize}
+\rule{\linewidth}{.2pt}
 
 \begin{itemize}
 	\item Coordinator: Universit\'e de Rennes 1
@@ -1308,7 +1306,7 @@ We plan to further collect large experimental data and apply our techniques on p
 	\item Abstract: Leveraging advanced research in automatic test generation, STAMP aims at pushing automation in DevOps one step further through innovative methods of test amplification. It will reuse existing assets (test cases, API descriptions, dependency models), in order to generate more test cases and test configurations each time the application is updated. Acting at all steps of development cycle, STAMP techniques aim at reducing the number and cost of regression bugs at unit level, configuration level and production stage.
 	
 	STAMP will raise confidence and foster adoption of DevOps by the European IT industry. The project gathers 3 academic partners with strong software testing expertise, 5 software companies (in: e-Health, Content Management, Smart Cities and Public Administration), and an open source consortium. This industry-near research addresses concrete, business-oriented objectives. All solutions are open source and developed as microservices to facilitate exploitation, with a target at TRL 6.  
-
+\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Donnees  construites d'aprÃ¨s les informations de la base DPE pour 2018
 % Source : https://drone.inria.fr/

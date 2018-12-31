@@ -1,0 +1,138 @@
+\begin{thebibliography}{10}[\RAbibXXname]
+\small
+
+% article
+\bibitem[1]{baudry:hal-01182103}\RAsc{B.~Baudry, M.~Monperrus},
+\newblock ``{The Multiple Facets of Software Diversity: Recent Developments in
+  Year 2000 and Beyond}'',
+\newblock  \emph{{ACM Computing Surveys} 48}, 1, 2015, p.~16:1--16:26,
+\newblock \url{https://hal.inria.fr/hal-01182103}.
+
+% article
+\bibitem[2]{becan:hal-01096969}\RAsc{G.~B{\'e}can, M.~Acher, B.~Baudry,
+  S.~Ben~Nasr},
+\newblock ``{Breathing Ontological Knowledge Into Feature Model Synthesis: An
+  Empirical Study}'',
+\newblock  \emph{{Empirical Software Engineering} 21}, 4, 2015, p.~1794--1841,
+\newblock \url{https://hal.inria.fr/hal-01096969}.
+
+% inproceedings
+\bibitem[3]{becan}\RAsc{G.~B{\'e}can, N.~Sannier, M.~Acher, O.~Barais,
+  A.~Blouin, B.~Baudry},
+\newblock ``{Automating the Formalization of Product Comparison Matrices}'',
+\newblock  \emph{in\,: {Proc. of the Int. Conf. on Automated Software
+  Engineering (ASE)}},
+\newblock September 2014,
+\newblock \url{https://hal.inria.fr/hal-01058440}.
+
+% article
+\bibitem[4]{blouin:hal-01120558}\RAsc{A.~Blouin, N.~Moha, B.~Baudry,
+  H.~Sahraoui, J.-M. J{\'e}z{\'e}quel},
+\newblock ``{Assessing the Use of Slicing-based Visualizing Techniques on the
+  Understanding of Large Metamodels}'',
+\newblock  \emph{{Information and Software Technology} 62}, 2015, p.~124 --
+  142,
+\newblock \url{https://hal.inria.fr/hal-01120558}.
+
+% inproceedings
+\bibitem[5]{boussaa:hal-01344835}\RAsc{M.~Boussaa, O.~Barais, B.~Baudry,
+  G.~Suny{\'e}},
+\newblock ``{NOTICE: A Framework for Non-functional Testing of Compilers}'',
+\newblock  \emph{in\,: {Proc. of the Int. Conf. on Software Quality,
+  Reliability \& Security (QRS)}},
+\newblock August 2016,
+\newblock \url{https://hal.archives-ouvertes.fr/hal-01344835}.
+
+% article
+\bibitem[6]{combemale:hal-00994551}\RAsc{B.~Combemale, J.~Deantoni, B.~Baudry,
+  R.~B. France, J.-M. J{\'e}z{\'e}quel, J.~Gray},
+\newblock ``{Globalizing Modeling Languages}'',
+\newblock  \emph{{IEEE Computer}}, June 2014, p.~10--13,
+\newblock \url{https://hal.inria.fr/hal-00994551}.
+
+% inproceedings
+\bibitem[7]{combemale:hal-00850770}\RAsc{B.~Combemale, J.~Deantoni, M.~E.
+  Vara~Larsen, F.~Mallet, O.~Barais, B.~Baudry, R.~France},
+\newblock ``{Reifying Concurrency for Executable Metamodeling}'',
+\newblock  \emph{in\,: {Proc. of the Int. Conf. on Software Language
+  Engineering}}, p.~365--384,
+\newblock October 2013,
+\newblock \url{https://hal.inria.fr/hal-00850770}.
+
+% inproceedings
+\bibitem[8]{davril:hal-00859475}\RAsc{J.-M. Davril, E.~Delfosse, N.~Hariri,
+  M.~Acher, J.~Clelang-Huang, P.~Heymans},
+\newblock ``{Feature Model Extraction from Large Collections of Informal
+  Product Descriptions}'',
+\newblock  \emph{in\,: {Proc. of the Europ. Software Engineering Conf. and the
+  ACM SIGSOFT Symp. on the Foundations of Software Engineering (ESEC/FSE)}},
+  p.~290--300,
+\newblock September 2013,
+\newblock \url{https://hal.inria.fr/hal-00859475}.
+
+% inproceedings
+\bibitem[9]{degueule:hal-01197038}\RAsc{T.~Degueule, B.~Combemale, A.~Blouin,
+  O.~Barais, J.-M. J{\'e}z{\'e}quel},
+\newblock ``{Melange: A Meta-language for Modular and Reusable Development of
+  DSLs}'',
+\newblock  \emph{in\,: {Proc. of the Int. Conf. on Software Language
+  Engineering (SLE)}},
+\newblock October 2015,
+\newblock \url{https://hal.inria.fr/hal-01197038}.
+
+% inproceedings
+\bibitem[10]{galindoduarte:hal-01003148}\RAsc{J.~A. Galindo~Duarte, M.~Alferez,
+  M.~Acher, B.~Baudry, D.~Benavides},
+\newblock ``{A Variability-Based Testing Approach for Synthesizing Video
+  Sequences}'',
+\newblock  \emph{in\,: {Proc. of the Int. Symp. on Software Testing and
+  Analysis (ISSTA)}},
+\newblock July 2014,
+\newblock \url{https://hal.inria.fr/hal-01003148}.
+
+% article
+\bibitem[11]{gonzalezherrera:hal-01354999}\RAsc{I.~Gonzalez-Herrera,
+  J.~Bourcier, E.~Daubert, W.~Rudametkin, O.~Barais, F.~Fouquet, J.-M.
+  J{\'e}z{\'e}quel, B.~Baudry},
+\newblock ``{ScapeGoat: Spotting abnormal resource usage in component-based
+  reconfigurable software systems}'',
+\newblock  \emph{{Journal of Systems and Software}}, 2016,
+\newblock \url{https://hal.inria.fr/hal-01354999}.
+
+% article
+\bibitem[12]{jezequel:hal-00829839}\RAsc{J.-M. J{\'e}z{\'e}quel, B.~Combemale,
+  O.~Barais, M.~Monperrus, F.~Fouquet},
+\newblock ``{Mashup of Meta-Languages and its Implementation in the Kermeta
+  Language Workbench}'',
+\newblock  \emph{{Software and Systems Modeling} 14}, 2, 2015, p.~905--920,
+\newblock \url{https://hal.inria.fr/hal-00829839}.
+
+% inproceedings
+\bibitem[13]{laperdrix:hal-01285470}\RAsc{P.~Laperdrix, W.~Rudametkin,
+  B.~Baudry},
+\newblock ``{Beauty and the Beast: Diverting modern web browsers to build
+  unique browser fingerprints}'',
+\newblock  \emph{in\,: {Proc. of the Symp. on Security and Privacy (S\&P)}},
+\newblock May 2016,
+\newblock \url{https://hal.inria.fr/hal-01285470}.
+
+% inproceedings
+\bibitem[14]{rodriguezcancio:hal-01343818}\RAsc{M.~Rodriguez-Cancio,
+  B.~Combemale, B.~Baudry},
+\newblock ``{Automatic Microbenchmark Generation to Prevent Dead Code
+  Elimination and Constant Folding}'',
+\newblock  \emph{in\,: {Proc. of the Int. Conf. on Automated Software
+  Engineering (ASE)}},
+\newblock September 2016,
+\newblock \url{https://hal.inria.fr/hal-01343818}.
+
+% inproceedings
+\bibitem[15]{tricoire:hal-01354997}\RAsc{M.~Tricoire, O.~Barais, M.~Leduc,
+  J.~Bourcier, F.~Fouquet, G.~Nain, M.~Ludovic, G.~Suny{\'e}, B.~Morin},
+\newblock ``{KevoreeJS: Enabling Dynamic Software Reconfigurations in the
+  Browser}'',
+\newblock  \emph{in\,: {Proc. of WICSA and CompArch}},
+\newblock April 2016,
+\newblock \url{https://hal.inria.fr/hal-01354997}.
+
+\end{thebibliography}

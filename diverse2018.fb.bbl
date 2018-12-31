@@ -1,0 +1,432 @@
+\begin{thebibliography}{SDMHR11}
+
+% inproceedings
+\bibitem[AB11]{ArcuriB11}\RAsc{A.~Arcuri, L.~C. Briand},
+\newblock ``A practical guide for using statistical tests to assess randomized
+  algorithms in software engineering'',
+\newblock  \emph{in\,: ICSE}, p.~1--10,
+\newblock 2011.
+
+% article
+\bibitem[Avi85]{avizienis85}\RAsc{A.~Avizienis},
+\newblock ``The N-version approach to fault-tolerant software'',
+\newblock  \emph{Software Engineering, IEEE Transactions on}, 12, 1985,
+  p.~1491--1501.
+
+% article
+\bibitem[BAC{\etalchar{+}}99]{briand1999empirical}\RAsc{L.~C. Briand,
+  E.~Arisholm, S.~Counsell, F.~Houdek, P.~Th{\'e}venod-Fosse},
+\newblock ``Empirical studies of object-oriented artifacts, methods, and
+  processes: state of the art and future directions'',
+\newblock  \emph{Empirical Software Engineering 4}, 4, 1999, p.~387--404.
+
+% article
+\bibitem[BAFS05]{barrantes05}\RAsc{E.~G. Barrantes, D.~H. Ackley, S.~Forrest,
+  D.~Stefanovi{\'c}},
+\newblock ``Randomized instruction set emulation'',
+\newblock  \emph{ACM Transactions on Information and System Security (TISSEC)
+  8}, 1, 2005, p.~3--40.
+
+% article
+\bibitem[BB01]{Bachmann2001}\RAsc{F.~Bachmann, L.~Bass},
+\newblock ``Managing variability in software architectures'',
+\newblock  \emph{SIGSOFT Softw. Eng. Notes 26}, 3, 2001, p.~126--132.
+
+% inproceedings
+\bibitem[BC04]{BAN04}\RAsc{E.~Baniassad, S.~Clarke},
+\newblock ``Theme: an approach for aspect-oriented analysis and design'',
+\newblock  \emph{in\,: 26th International Conference on Software Engineering
+  (ICSE)}, p.~158--167,
+\newblock 2004.
+
+% inproceedings
+\bibitem[Ben09]{Bencomo:2009tm}\RAsc{N.~Bencomo},
+\newblock ``{On the use of software models during software execution}'',
+\newblock  \emph{in\,: MISE '09: Proceedings of the 2009 ICSE Workshop on
+  Modeling in Software Engineering}, IEEE Computer Society,
+\newblock May 2009.
+
+% inproceedings
+\bibitem[BFG{\etalchar{+}}02]{Bosch2002}\RAsc{J.~Bosch, G.~Florijn,
+  D.~Greefhorst, J.~Kuusela, J.~H. Obbink, K.~Pohl},
+\newblock ``Variability Issues in Software Product Lines'',
+\newblock  \emph{in\,: PFE '01: Revised Papers from the 4th International
+  Workshop on Software Product-Family Engineering}, Springer-Verlag, p.~13--21,
+\newblock London, UK, 2002.
+
+% article
+\bibitem[BHLM94]{buck1994ptolemy}\RAsc{J.~T. Buck, S.~Ha, E.~A. Lee, D.~G.
+  Messerschmitt},
+\newblock ``Ptolemy: A framework for simulating and prototyping heterogeneous
+  systems'',
+\newblock  \emph{Int. Journal of Computer Simulation}, 1994.
+
+% inproceedings
+\bibitem[BHP06]{bures2006sofa}\RAsc{T.~Bures, P.~Hnetynka, F.~Plasil},
+\newblock ``Sofa 2.0: Balancing advanced features in a hierarchical component
+  model'',
+\newblock  \emph{in\,: Software Engineering Research, Management and
+  Applications, 2006. Fourth International Conference on}, IEEE, p.~40--48,
+\newblock 2006.
+
+% inproceedings
+\bibitem[BJP10]{beugnard2010contract}\RAsc{A.~Beugnard, J.-M. J{\'e}z{\'e}quel,
+  N.~Plouzeau},
+\newblock ``Contract Aware Components, 10 years after'',
+\newblock  \emph{in\,: WCSI}, p.~1--11,
+\newblock 2010.
+
+% article
+\bibitem[BKR09]{Becker:2009cl}\RAsc{S.~Becker, H.~Koziolek, R.~Reussner},
+\newblock ``{The Palladio component model for model-driven performance
+  prediction}'',
+\newblock  \emph{Journal of Systems and Software 82}, 1, January 2009,
+  p.~3--22.
+
+% inproceedings
+\bibitem[BLHM02]{batory2002}\RAsc{D.~Batory, R.~E. Lopez-Herrejon, J.-P.
+  Martin},
+\newblock ``Generating Product-Lines of Product-Families'',
+\newblock  \emph{in\,: {ASE '02: Automated software engineering}}, IEEE,
+  p.~81--92,
+\newblock 2002.
+
+% book
+\bibitem[Bos00]{Bosch2000}\RAsc{J.~Bosch},
+\newblock  \emph{Design and use of software architectures: adopting and
+  evolving a product-line approach},
+\newblock ACM Press/Addison-Wesley Publishing Co., New York, NY, USA, 2000.
+
+% article
+\bibitem[BWH{\etalchar{+}}03]{balarin2003metropolis}\RAsc{F.~Balarin,
+  Y.~Watanabe, H.~Hsieh, L.~Lavagno, C.~Passerone, A.~Sangiovanni-Vincentelli},
+\newblock ``Metropolis: An integrated electronic system design environment'',
+\newblock  \emph{Computer 36}, 4, 2003, p.~45--52.
+
+% book
+\bibitem[CE00]{czarnecki2000}\RAsc{K.~Czarnecki, U.~W. Eisenecker},
+\newblock  \emph{Generative programming: methods, tools, and applications},
+\newblock ACM Press/Addison-Wesley Publishing Co., New York, NY, USA, 2000.
+
+% article
+\bibitem[CHW98]{Coplien1998}\RAsc{J.~Coplien, D.~Hoffman, D.~Weiss},
+\newblock ``Commonality and Variability in Software Engineering'',
+\newblock  \emph{IEEE Software 15}, 6, 1998, p.~37--45.
+
+% book
+\bibitem[CLG{\etalchar{+}}09]{Cheng:2009hh}\RAsc{B.~H.~C. Cheng, R.~Lemos,
+  H.~Giese, P.~Inverardi, J.~Magee, J.~Andersson, B.~Becker, N.~Bencomo,
+  Y.~Brun, B.~Cukic, G.~Marzo~Serugendo, S.~Dustdar, A.~Finkelstein, C.~Gacek,
+  K.~Geihs, V.~Grassi, G.~Karsai, H.~M. Kienle, J.~Kramer, M.~Litoiu, S.~Malek,
+  R.~Mirandola, H.~A. M{\"u}ller, S.~Park, M.~Shaw, M.~Tichy, M.~Tivoli,
+  D.~Weyns, J.~Whittle},
+\newblock  \emph{{Software Engineering for Self-Adaptive Systems: A Research
+  Roadmap }},  \emph{Betty H. C. Cheng, Rog{\'e}rio de Lemos, Holger Giese,
+  Paola Inverardi, and Jeff Magee},  \emph{5525},
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2009.
+
+% article
+\bibitem[CSVC11]{crnkovic2011classification}\RAsc{I.~Crnkovic, S.~Sentilles,
+  A.~Vulgarakis, M.~R. Chaudron},
+\newblock ``A classification framework for software component models'',
+\newblock  \emph{Software Engineering, IEEE Transactions on 37}, 5, 2011,
+  p.~593--615.
+
+% article
+\bibitem[DO91]{demilli1991constraint}\RAsc{R.~DeMilli, A.~J. Offutt},
+\newblock ``Constraint-based automatic test data generation'',
+\newblock  \emph{Software Engineering, IEEE Transactions on 17}, 9, 1991,
+  p.~900--910.
+
+% article
+\bibitem[DPAM02]{deb2002fast}\RAsc{K.~Deb, A.~Pratap, S.~Agarwal,
+  T.~Meyarivan},
+\newblock ``A fast and elitist multiobjective genetic algorithm: NSGA-II'',
+\newblock  \emph{Evolutionary Computation, IEEE Transactions on 6}, 2, 2002,
+  p.~182--197.
+
+% inproceedings
+\bibitem[FFH13]{frey2013search}\RAsc{S.~Frey, F.~Fittkau, W.~Hasselbring},
+\newblock ``Search-based genetic optimization for deployment and
+  reconfiguration of software in the cloud'',
+\newblock  \emph{in\,: Proceedings of the 2013 International Conference on
+  Software Engineering}, IEEE Press, p.~512--521,
+\newblock 2013.
+
+% inproceedings
+\bibitem[FR07]{France07}\RAsc{R.~B. France, B.~Rumpe},
+\newblock ``Model-driven Development of Complex Software: A Research Roadmap'',
+\newblock  \emph{in\,: Proceedings of the Future of Software Engineering
+  Symposium (FOSE '07)}, L.~C. Briand, A.~L. Wolf (editors), IEEE, p.~37--54,
+\newblock 2007.
+
+% inproceedings
+\bibitem[FSA97]{forrest1997building}\RAsc{S.~Forrest, A.~Somayaji, D.~H.
+  Ackley},
+\newblock ``Building diverse computer systems'',
+\newblock  \emph{in\,: Operating Systems, 1997., The Sixth Workshop on Hot
+  Topics in}, IEEE, p.~67--72,
+\newblock 1997.
+
+% incollection
+\bibitem[HB08]{hardebolle2008modhel}\RAsc{C.~Hardebolle, F.~Boulanger},
+\newblock ``ModHel'X: A component-oriented approach to multi-formalism
+  modeling'',
+\newblock  \emph{in\,: Models in Software Engineering},
+\newblock Springer, 2008, p.~247--258.
+
+% inproceedings
+\bibitem[HBAA10]{HemmatiBAA10}\RAsc{H.~Hemmati, L.~C. Briand, A.~Arcuri,
+  S.~Ali},
+\newblock ``An enhanced test case selection approach for model-based testing:
+  an industrial case study'',
+\newblock  \emph{in\,: SIGSOFT FSE}, p.~267--276,
+\newblock 2010.
+
+% article
+\bibitem[HJ01]{harman2001search}\RAsc{M.~Harman, B.~F. Jones},
+\newblock ``Search-based software engineering'',
+\newblock  \emph{Information and Software Technology 43}, 14, 2001,
+  p.~833--839.
+
+% article
+\bibitem[HP03]{halmans2003}\RAsc{G.~Halmans, K.~Pohl},
+\newblock ``Communicating the Variability of a Software-Product Family to
+  Customers'',
+\newblock  \emph{Software and System Modeling 2}, 1, 2003, p.~15--36.
+
+% inproceedings
+\bibitem[HWRK11]{Hutchinson11}\RAsc{J.~Hutchinson, J.~Whittle, M.~Rouncefield,
+  S.~Kristoffersen},
+\newblock ``{Empirical assessment of MDE in industry}'',
+\newblock  \emph{in\,: Proceedings of the 33rd International Conference on
+  Software Engineering (ICSE '11)}, R.~N. Taylor, H.~Gall, N.~Medvidovic
+  (editors), ACM, p.~471--480,
+\newblock 2011.
+
+% article
+\bibitem[J{\'e}z08]{Jezequel08a}\RAsc{J.-M. J{\'e}z{\'e}quel},
+\newblock ``Model Driven Design and Aspect Weaving'',
+\newblock  \emph{Journal of Software and Systems Modeling ({SoSyM}) 7}, 2, may
+  2008, p.~209--218,
+\newblock \url{http://www.irisa.fr/triskell/publis/2008/Jezequel08a.pdf}.
+
+% techreport
+\bibitem[KCH{\etalchar{+}}90]{Kang1990}\RAsc{K.~C. Kang, S.~G. Cohen, J.~A.
+  Hess, W.~E. Novak, A.~S. Peterson},
+\newblock ``Feature-Oriented Domain Analysis (FODA) Feasibility Study'',
+\newblock  \emph{research report}, Carnegie-Mellon University Software
+  Engineering Institute, November 1990.
+
+% inproceedings
+\bibitem[KM07]{Kramer:2007kv}\RAsc{J.~Kramer, J.~Magee},
+\newblock ``{Self-Managed Systems: an Architectural Challenge}'',
+\newblock  \emph{in\,: Future of Software Engineering}, IEEE, p.~259--268,
+\newblock 2007.
+
+% incollection
+\bibitem[LEW05]{lau2005exogenous}\RAsc{K.-K. Lau, P.~V. Elizondo, Z.~Wang},
+\newblock ``Exogenous connectors for software components'',
+\newblock  \emph{in\,: Component-Based Software Engineering},
+\newblock Springer, 2005, p.~90--106.
+
+% article
+\bibitem[MBJ{\etalchar{+}}09]{Morin09f}\RAsc{B.~Morin, O.~Barais, J.-M.
+  J{\'e}z{\'e}quel, F.~Fleurey, A.~Solberg},
+\newblock ``Models at Runtime to Support Dynamic Adaptation'',
+\newblock  \emph{{IEEE} Computer}, October 2009, p.~46--53,
+\newblock \url{http://www.irisa.fr/triskell/publis/2009/Morin09f.pdf}.
+
+% article
+\bibitem[McM04]{mcminn2004search}\RAsc{P.~McMinn},
+\newblock ``Search-based software test data generation: a survey'',
+\newblock  \emph{Software Testing, Verification and Reliability 14}, 2, 2004,
+  p.~105--156.
+
+% article
+\bibitem[Mem07]{memon2007event}\RAsc{A.~M. Memon},
+\newblock ``An event-flow model of GUI-based applications for testing'',
+\newblock  \emph{Software Testing, Verification and Reliability 17}, 3, 2007,
+  p.~137--157.
+
+% inproceedings
+\bibitem[MFJ05]{Muller05a}\RAsc{P.-A. Muller, F.~Fleurey, J.-M.
+  J{\'e}z{\'e}quel},
+\newblock ``Weaving Executability into Object-Oriented Meta-Languages'',
+\newblock  \emph{in\,: Proc. of {MODELS/{UML}}'2005},  \emph{LNCS}, Springer,
+\newblock Jamaica, 2005.
+
+% inproceedings
+\bibitem[MHM98]{Meekel1998}\RAsc{J.~Meekel, T.~B. Horton, C.~Mellone},
+\newblock ``Architecting for Domain Variability'',
+\newblock  \emph{in\,: ESPRIT ARES Workshop}, p.~205--213,
+\newblock 1998.
+
+% inproceedings
+\bibitem[MMR{\etalchar{+}}10]{Melisson:2010it}\RAsc{R.~M{\'e}lisson, P.~Merle,
+  D.~Romero, R.~Rouvoy, L.~Seinturier},
+\newblock ``{Reconfigurable run-time support for distributed service component
+  architectures}'',
+\newblock  \emph{in\,: the IEEE/ACM international conference}, ACM Press,
+  p.~171,
+\newblock New York, New York, USA, 2010.
+
+% inproceedings
+\bibitem[NJW16]{niedermayr2016}\RAsc{R.~Niedermayr, E.~Juergens, S.~Wagner},
+\newblock ``Will my tests tell me if I break this code?'',
+\newblock  \emph{in\,: Proceedings of the International Workshop on Continuous
+  Software Evolution and Delivery}, ACM, p.~23--29,
+\newblock 2016.
+
+% inbook
+\bibitem[NLTJ06]{Nebut06b}\RAsc{C.~Nebut, Y.~Le~Traon, J.-M. J{\'e}z{\'e}quel},
+\newblock  \emph{System Testing of Product Families: from Requirements to Test
+  Cases},
+\newblock Springer Verlag, 2006, p.~447--478,
+\newblock \url{http://www.irisa.fr/triskell/publis/2006/Nebut06b.pdf}.
+
+% inproceedings
+\bibitem[Nor99]{Northrop1999}\RAsc{L.~M. Northrop},
+\newblock ``A Framework for Software Product Line Practice'',
+\newblock  \emph{in\,: Proceedings of the Workshop on Object-Oriented
+  Technology}, Springer-Verlag London, UK, p.~365--376,
+\newblock 1999.
+
+% article
+\bibitem[Nor02]{Northrop2002}\RAsc{L.~M. Northrop},
+\newblock ``{SEI}'s Software Product Line Tenets'',
+\newblock  \emph{IEEE Softw. 19}, 4, 2002, p.~32--40.
+
+% inproceedings
+\bibitem[NPLJ03]{nebut03b}\RAsc{C.~Nebut, S.~Pickin, Y.~{Le Traon}, J.-M.
+  J{\'e}z{\'e}quel},
+\newblock ``Automated Requirements-based Generation of Test Cases for Product
+  Families'',
+\newblock  \emph{in\,: Proc. of the 18th IEEE International Conference on
+  Automated Software Engineering ({ASE'03})},
+\newblock 2003,
+\newblock \url{http://www.irisa.fr/triskell/publis/2003/nebut03b.pdf}.
+
+% article
+\bibitem[OGO06]{ober2006validating}\RAsc{I.~Ober, S.~Graf, I.~Ober},
+\newblock ``Validating timed UML models by simulation and verification'',
+\newblock  \emph{International Journal on Software Tools for Technology
+  Transfer 8}, 2, 2006, p.~128--145.
+
+% article
+\bibitem[Par76]{parnas1976}\RAsc{D.~L. Parnas},
+\newblock ``On the Design and Development of Program Families'',
+\newblock  \emph{IEEE Trans. Softw. Eng. 2}, 1, 1976, p.~1--9.
+
+% book
+\bibitem[PBv05]{Pohl2005}\RAsc{K.~Pohl, G.~B{\"o}ckle, F.~J. {van der Linden}},
+\newblock  \emph{Software Product Line Engineering: Foundations, Principles and
+  Techniques},
+\newblock Springer-Verlag New York, Inc., Secaucus, NJ, USA, 2005.
+
+% article
+\bibitem[PJJ{\etalchar{+}}07]{Pickin07a}\RAsc{S.~Pickin, C.~Jard, T.~J\'eron,
+  J.-M. J\'ez\'equel, Y.~{Le Traon}},
+\newblock ``Test Synthesis from {{UML}} Models of Distributed Software'',
+\newblock  \emph{IEEE Transactions on Software Engineering 33}, 4, April 2007,
+  p.~252--268.
+
+% article
+\bibitem[Ran75]{randell75}\RAsc{B.~Randell},
+\newblock ``System structure for software fault tolerance'',
+\newblock  \emph{Software Engineering, IEEE Transactions on}, 2, 1975,
+  p.~220--232.
+
+% article
+\bibitem[RH09]{runeson2009guidelines}\RAsc{P.~Runeson, M.~H{\"o}st},
+\newblock ``Guidelines for conducting and reporting case study research in
+  software engineering'',
+\newblock  \emph{Empirical Software Engineering 14}, 2, 2009, p.~131--164.
+
+% inproceedings
+\bibitem[Rin12]{Rinard12}\RAsc{M.~Rinard},
+\newblock ``Obtaining and reasoning about good enough software'',
+\newblock  \emph{in\,: Proceedings of Annual Design Automation Conference
+  (DAC)}, p.~930--935,
+\newblock 2012.
+
+% inproceedings
+\bibitem[RWLN89]{Rothenberg89thenature}\RAsc{J.~Rothenberg, L.~E. Widman, K.~A.
+  Loparo, N.~R. Nielsen},
+\newblock ``The Nature of Modeling'',
+\newblock  \emph{in\,: in Artificial Intelligence, Simulation and Modeling},
+  John Wiley \& Sons, p.~75--92,
+\newblock 1989.
+
+% article
+\bibitem[Sch06]{Schmidt06}\RAsc{D.~Schmidt},
+\newblock ``Guest Editor's Introduction: Model-Driven Engineering'',
+\newblock  \emph{IEEE Computer 39}, 2, 2006, p.~25--31.
+
+% inproceedings
+\bibitem[SDMHR11]{Sidiroglou-Douskos2011}\RAsc{S.~Sidiroglou-Douskos,
+  S.~Misailovic, H.~Hoffmann, M.~Rinard},
+\newblock ``Managing performance vs. accuracy trade-offs with loop
+  perforation'',
+\newblock  \emph{in\,: Proc. of the Symp. on Foundations of software
+  engineering},  \emph{ESEC/FSE '11}, ACM, p.~124--134,
+\newblock New York, NY, USA, 2011.
+
+% book
+\bibitem[SGM02]{szyperski2002component}\RAsc{C.~Szyperski, D.~Gruntz,
+  S.~Murer},
+\newblock  \emph{Component software: beyond object-oriented programming},
+\newblock Addison-Wesley, 2002.
+
+% article
+\bibitem[SJ07]{Steel07a}\RAsc{J.~Steel, J.-M. J{\'e}z{\'e}quel},
+\newblock ``On Model Typing'',
+\newblock  \emph{Journal of Software and Systems Modeling ({SoSyM}) 6}, 4,
+  December 2007, p.~401--414,
+\newblock \url{http://www.irisa.fr/triskell/publis/2007/Steel07a.pdf}.
+
+% book
+\bibitem[SSS08]{shull2008guide}\RAsc{F.~Shull, J.~Singer, D.~I. Sjberg},
+\newblock  \emph{Guide to advanced empirical software engineering},
+\newblock Springer, 2008.
+
+% techreport
+\bibitem[TH03]{Jean-ChristopheTRIGAUX2003}\RAsc{J.-C. Trigaux, P.~Heymans},
+\newblock ``Modelling variability requirements in Software Product Lines: a
+  comparative survey'',
+\newblock  \emph{research report}, FUNDP Namur, 2003.
+
+% book
+\bibitem[UL10]{utting2010practical}\RAsc{M.~Utting, B.~Legeard},
+\newblock  \emph{Practical model-based testing: a tools approach},
+\newblock Morgan Kaufmann, 2010.
+
+% inproceedings
+\bibitem[VWMA11]{Vromant:NPd9bKZ}\RAsc{P.~Vromant, D.~Weyns, S.~Malek,
+  J.~Andersson},
+\newblock ``{On interacting control loops in self-adaptive systems}'',
+\newblock  \emph{in\,: SEAMS 2011}, ACM, p.~202--207,
+\newblock 2011.
+
+% article
+\bibitem[YCP06]{yilmaz2006covering}\RAsc{C.~Yilmaz, M.~B. Cohen, A.~A. Porter},
+\newblock ``Covering arrays for efficient fault characterization in complex
+  configuration spaces'',
+\newblock  \emph{Software Engineering, IEEE Transactions on 32}, 1, 2006,
+  p.~20--34.
+
+% inbook
+\bibitem[ZJ06]{Ziadi2006a}\RAsc{T.~Ziadi, J.-M. J\'{e}z\'{e}quel},
+\newblock  \emph{Product Line Engineering with the {{UML}}: Deriving Products},
+\newblock Springer Verlag, 2006, p.~557--586.
+
+% inproceedings
+\bibitem[ZMKR12]{Zhu12}\RAsc{Z.~A. Zhu, S.~Misailovic, J.~A. Kelner,
+  M.~Rinard},
+\newblock ``Randomized accuracy-aware program transformations for efficient
+  approximate computations'',
+\newblock  \emph{in\,: Proc. of the Symp. on Principles of Programming
+  Languages (POPL)}, p.~441--454,
+\newblock 2012.
+
+\end{thebibliography}

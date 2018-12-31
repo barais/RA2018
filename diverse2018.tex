@@ -298,17 +298,8 @@
 %
 
 
-\begin{module}{presentation}{overall}{Overall objectives}
 
-  \team{}'s research agenda targets core values of software engineering. 
-  In this fundamental domain we focus and develop models, methodologies and theories to address major challenges raised by the emergence of several forms of diversity in the design, deployment and evolution of software-intensive systems.
-  Software diversity has emerged as an essential phenomenon in all application domains born by our industrial partners. These application domains range from complex systems brought by systems of systems (addressed in collaboration with Thales and DGA) and Instrumentation and Control (addressed with EDF) to pervasive combinations of Internet of Things and Internet of Services (addressed with TellU and Software AG) and tactical information systems (addressed in collaboration with civil  security).
-  Today these systems seem to be radically different, but we envision a strong convergence  of the scientific principles that underpin their construction and validation, bringing forwards sane and reliable methods for the design of  \textbf{flexible and open yet dependable systems}. 
-  Flexibility and openness are critical and challenging software layer properties that must deal with four dimensions of diversity: \textbf{diversity of languages}, used by the stakeholders involved in the construction of these systems;  \textbf{diversity of features}, required by the different customers; \textbf{diversity of runtime environments}, in which software has to run and adapt; \textbf{diversity of implementations}, which are necessary for resilience by redundancy.
 
-  In this context, the central software engineering challenge consists in handling \textbf{diversity} from variability in requirements and design to heterogeneous and dynamic execution environments. 
-  In particular this requires considering that the software system must adapt, in unpredictable ways, to changes in the requirements and environment. 
-  Conversely, explicitly handling of diversity is a great opportunity to allow software to spontaneously explore alternative design solutions. 
   Concretely, we want to provide software engineers with the ability:
   \begin{itemize}
       \item to characterize an `envelope' of possible variations
@@ -472,7 +463,7 @@ requires that models are no longer informal, and that the weaving process is
 itself described as a program (which is as a matter of facts an executable
 meta-model~  \footcite{Muller05a}) manipulating these models to produce for instance a
 detailed design that can ultimately be transformed to code, or to test
-suites~  \footcite{Pickin07a}, or other software artifacts.
+suites~\footcite{Pickin07a}, or other software artifacts.
 
 
 \subsection{Component-based software development}
@@ -617,21 +608,21 @@ The systematic modeling of variability in software systems has emerged as an eff
 A fundamental problem is that the \textbf{number of variants} can be exponential in the number of options (features). 
 Already with 300~boolean configuration options, approximately $10^{90}$ configurations exist -- more than estimated count of atoms in the universe. Domains like automotive or operating systems have to manage more than 10000 options (e.g., Linux). Practitioners face the challenge of developing billions of variants. It is easy to forget a necessary constraint, leading to the synthesis of unsafe variants, or to under-approximate the capabilities of the software platform. Scalable modelling techniques are therefore crucial to specify and reason about a very large set of variants.
 
-Model-driven development supports two ways to deal with the increasing number of concerns in complex systems: (1)~multi-view modeling, \textit{i.e.} when modeling each concern separately, and variability modeling. However, there is little support to combine both approaches consistently. Techniques to integrate both approaches will enable the construction of a consistent set of views and variation points in each view.
+Model-driven development supports two ways to deal with the increasing number of concerns in complex systems: multi-view modeling, \textit{i.e.} when modeling each concern separately, and variability modeling. However, there is little support to combine both approaches consistently. Techniques to integrate both approaches will enable the construction of a consistent set of views and variation points in each view.
 
 The design, construction and maintenance of software families have a major impact on \textbf{software testing}. Among the existing challenges, we can cite: the selection of test cases for a specific variant; the evolution of test suites with integration of new variants; the combinatorial explosion of the number of software configurations to be tested. Novel model-based techniques for test generation and test management in a software product line context are needed to overcome state-of-the-art limits we already observed in some projects.
 
 \subsubsection*{Scientific objectives} 
 
 
-We aim at developing scalable  techniques  to automatically analyze variability models and their interactions with other views on the software intensive system (requirements, architecture, design). These techniques  provide two major advancements in the  state of the art: (1)~an extension of the semantics of variability models in order to enable the definition of attributes (\textit{e.g.}, cost, quality of service, effort) on features and to include these attributes in the reasoning;  (2)~an assessment of the consistent specification of variability models with respect to system views (since variability is orthogonal to system modeling, it is currently possible to specify the different models in ways that are semantically meaningless). The former aspect of analysis is tackled through  constraint solving and finite-domain constraint programming, while the latter aspect is investigated through automatic search-based techniques (similar to genetic algorithms) for the exploration of the space of interaction between variability and view models.
+We aim at developing scalable reasoning techniques to \textbf{automatically analyze} variability models and their interactions with other views on the software intensive system (requirements, architecture, design, code). These techniques  provide two major advancements in the  state of the art: (1)~an extension of the semantics of variability models in order to enable the definition of attributes (\textit{e.g.}, cost, quality of service, effort) on features and to include these attributes in the reasoning;  (2)~an assessment of the consistent specification of variability models with respect to system views (since variability is orthogonal to system modeling, it is currently possible to specify the different models in ways that are semantically meaningless). The former aspect of analysis is tackled through  constraint solving and finite-domain constraint programming, while the latter aspect is investigated through automatic search-based and learning-based techniques for the exploration of the space of interaction between variability and view models.
 
 %Manual elaboration of variability models (e.g., feature models) is not realistic for large projects or for legacy systems. 
-We aim to develop procedures to reverse engineer dependencies and features' sets from existing software artefacts -- be it source code, configuration files, spreadsheets (e.g., product comparison matrices) or requirements. 
+We want to develop procedures to \textbf{reverse engineer} dependencies and features' sets from existing software artefacts -- be it source code, configuration files, spreadsheets (e.g., product comparison matrices) or requirements. 
 We expect to scale up (e.g., for extracting a very large number of variation points) and guarantee some properties (e.g., soundness of configuration semantics, understandability of ontological semantics). 
 For instance, when building complex software-intensive systems, textual requirements are captured in very large quantities of documents. In this context, adequate models to formalize the organization of requirements documents and automated techniques to support impact analysis (in case of changes in the requirements) have to be developed.
 
-We aim at developing sound methods and tools to integrate variability management in model-based testing activities. In particular, we will leverage requirement models as an essential asset to establish formal relations between variation points and test models. These relations will form the basis for novel algorithms that drive  the systematic selection of test configurations that satisfy well-defined test adequacy criteria as well as the generation of test cases for a specific product in the product line.
+% We also aim at developing sound methods and tools to integrate variability management in model-based testing activities. In particular, we will leverage requirement models as an essential asset to establish formal relations between variation points and test models. These relations will form the basis for novel algorithms that drive  the systematic selection of test configurations that satisfy well-defined test adequacy criteria as well as the generation of test cases for a specific product in the product line.
 
 
 
@@ -736,6 +727,9 @@ This architecture is very favorable for diversification, since by using the mult
 
 \begin{module}{highlights}{NewHighlights}{}
 
+
+JHipster article at ESEM~\cite{halin:hal-01829928}
+
 \subsection{Awards}
 
 %% ICI vous pouvez ecrire du texte
@@ -819,7 +813,7 @@ A comprehensive environment is proposed as well as integration facilities with t
  \textsc{Functional Description:}  Familiar is an environment for large-scale product customisation. From a model of product features (options, parameters, etc.), Familiar can automatically generate several million variants. These variants can take many forms: software, a graphical interface, a video sequence or even a manufactured product (3D printing). Familiar is particularly well suited for developing web configurators (for ordering customised products online), for providing online comparison tools and also for engineering any family of embedded or software-based products.\\
 
    \begin{itemize}
-      \item Participants: Aymeric Hervieu, Benoit Baudry, Didier Vojtisek, Edward Mauricio Alferez Salinas, Guillaume Bécan, Joao Bosco Ferreira-Filho, Julien Richard-Foy, Mathieu Acher, Olivier Barais and Sana Ben Nasr
+    %  \item Participants: Mathieu Acher, Hugo Martin, Olivier Barais
           % Contact: Vérifiez si cette personne est toujours membre de Inria.
     % Sinon corrigez la BIL (base des logiciels Inria): https://bil.inria.fr/ 
       \item Contact: Mathieu Acher
@@ -945,8 +939,7 @@ Melange is tightly integrated with the Eclipse Modeling Framework ecosystem and 
 OpenCompare.org is an ambitious project for the collaborative edition, the sharing, the standardisation, and the open exploitation of PCMs. The goal of OpenCompare.org is to provide an integrated set of tools (e.g., APIs, visualizations, configurators, editors) for democratizing their creation, import, maintenance, and exploitation.\\
 
    \begin{itemize}
-      \item Participants: Guillaume Bécan, Mathieu Acher and Sana Ben Nasr
-          % Contact: Vérifiez si cette personne est toujours membre de Inria.
+    % Contact: Vérifiez si cette personne est toujours membre de Inria.
     % Sinon corrigez la BIL (base des logiciels Inria): https://bil.inria.fr/ 
       \item Contact: Mathieu Acher
       \item URL: \url{http://opencompare.org}
@@ -1433,10 +1426,16 @@ François Fouquet, Junior Researcher at the SnT (Lux), visited the team in Novem
 \subsection{Scientific Events Organisation}
     \subsubsection{General Chair, Scientific Chair}
     
+    Mathieu Acher:
+    \begin{itemize}
+        \item co-organizer of 1st International Workshop on Machine Learning and Software Engineering in Symbiosis (co-located at ASE'18) \url{https://mases18.github.io/}
+        \item co-organizer of Third International Workshop on Software Product Line Teaching (co-located with SPLC'18) \url{http://spltea.irisa.fr/}
+    \end{itemize}
 %%%   si liste, alors merci d'utiliser :
 %%%  \begin{itemize}
 %%%     \item  
 %%%     \end{itemize}    
+ 
 
     \subsubsection{Member of the Organizing Committees}
     
@@ -1453,6 +1452,14 @@ Arnaud Blouin:
     \item Second International Workshop on Debugging in Model-Driven Engineering at MODELS'2018 (MDEBug), 2018
     \item Third International Workshop on Human Factors in Modeling at MODELS'2018 (HuFaMo), 2018
 	\item PC member of the ACM Student Research Competition (SRC) at MODELS 2018
+\end{itemize} 
+
+
+Mathieu Acher:
+\begin{itemize}
+    \item 33rd IEEE/ACM International Conference on Automated Software Engineering 
+    \item 22nd International Systems and Software Product Line Conference 
+    \item 12th International Workshop on Variability Modelling of Software-Intensive Systems
 \end{itemize} 
     
     \subsubsection{Reviewer}
@@ -1478,12 +1485,16 @@ Arnaud Blouin:
 
 - \emph{Reverse Engineering Language Product Lines from Existing DSL Variants}, David Méndez-Acuña, José Galindo, Benoit Combemale, Arnaud Blouin, Benoit Baudry, at GDR-GPL 2018
 
+- \emph{Re-engineering Software Variability into Software Product Lines}, Tewfik Ziadi, Mathieu Acher, at ASE 2018 (tutorial: \url{http://www.ase2018.com/?p=tutorials#spl})
+
     \subsection{Leadership within the Scientific Community}
 
 \noindent Arnaud Blouin:
 \begin{itemize}
 	\item Founding member and member of the GL-IHM (software engineering and human-computer interaction) working group (action spécifique GDR-GPL 2017)
 \end{itemize}
+
+Mathieu Acher is member of the steering committee of SPLC, the major venue in software product line and variability \url{http://splc.net/}.
 
     \subsection{Scientific Expertise}
     
@@ -1511,12 +1522,14 @@ Arnaud Blouin:
  and ENSAI Rennes engineering school.
  
 Olivier~Barais is deputy director of the electronics and computer science teaching department of the University of Rennes~1.
- Mathieu Acher is in charge of teaching duties management of this department. 
+%  Mathieu Acher is in charge of teaching duties management of this department. 
 Olivier Barais is the head of the final year of the Master in Computer Science at the University of Rennes~1.
 Johann Bourcier is co-manager of the Home-Automation option at the ESIR engineering school in Rennes.
 Arnaud Blouin is in charge of industrial relationships for the computer science department at INSA Rennes.
  
  The \team{} team also hosts several MSc and summer trainees every year.
+ 
+Mathieu Acher gave courses to EJCP (Ecole Jeune Chercheur en Programmation), a well-known, national training school for PhD students \url{https://ejcp2018.sciencesconf.org/resource/page/id/5}
 
 
 %% Ce modulef présente vos activités d'enseignement et d'encadrement à présenter comme suit :
@@ -1559,7 +1572,7 @@ Arnaud Blouin is in charge of industrial relationships for the computer science 
 	%%\XMLaddatt*{type}{sanspuces} 
 
 \item PhD in progress: Alejandro Gomez Boix, \emph{Distributed counter-measure against browser fingerprinting}, 2016, B. Baudry, D. Bromberg
-\item PhD in progress: Paul Temple, \emph{TITLE}, 2015, M. Acher, J.-M. Jézéquel
+\item PhD: Paul Temple, \emph{Investigate the Matrix: Leveraging Variability to Specialize Software and Test Suites}, 2018, M. Acher, J.-M. Jézéquel
 \item PhD in progress: Manuel Leduc, \emph{Formal and Executable Specification of domain-specific language families}, 2016, O. Barais, B. Combemale
 \item PhD in progress: Youssou NDiaye, \emph{Modelling and evaluating security in user interfaces}, 2016, N. Aillery, O. Barais, A. Blouin, A. Bouabdallah
 \item PhD in progress: Jean-Émile Dartois, \emph{TITRE}, 2016, O. Barais
@@ -1574,6 +1587,13 @@ Arnaud Blouin is in charge of industrial relationships for the computer science 
 
 
 \subsection {Juries}
+
+\paragraph*{Mathieu Acher} was in the examination committee of the following PhD thesis: 
+\begin{itemize}
+	\item Jessie carbonnel, November 2018, Univ Montpellier (examiner)
+	\item Paul Temple, December 2018, Univ Rennes I (co-supervisor) 
+\end{itemize}
+\end{module}
 
 %% ICI Vous pouvez ecrire du texte dans le module
 \paragraph*{Olivier Barais} was in the examination committee of the following PhD thesis: 

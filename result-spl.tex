@@ -1,21 +1,7 @@
 % We select three main contributions for this DiverSE's research axis.
 % Two contributions are in the field of variability model synthesis, while the third one is in the field of variability testing.
 
-\paragraph{Variability and product comparison matrix.}
-%\begin{description}
-%	\item[Contribution.]
-% Product Comparison Matrices (PCMs) are widely used for documenting or comparing a set of
-% products. PCMs are simple tabular data in which products are usually organized as rows, features as columns, while each cell
-% define how a product implements the corresponding feature. We develop metamodeling and feature modeling techniques for formalizing PCMs.
-% We develop automated techniques to extract PCMs out of informal product descriptions, written in natural language. 
-%	\item[Originality.] 
-	% We establish a connection between PCMs and variability modeling formalism, which is of interest for the product line community.
-%	\item[Impact.] 
-	% OpenCompare is a direct output of this research and is an important step towards the creation of a community around PCMs.
-	% We mined millions of Wikipedia tabular data together with end-users and developers to cross-validate our model-based approach. 
-    Domain analysts, product managers, or customers aim to capture the important features and differences among a set of related products. A case-by-case reviewing of each product description is a laborious and time-consuming task that fails to deliver a condense view of a family of product. We investigate the use of automated techniques for synthesizing a product comparison matrix (PCM) from a set of product descriptions written in natural language. We describe a tool-supported process, based on term recognition, information extraction, clustering, and similarities, capable of identifying and organizing features and values in a PCM – despite the informality and absence of structure in the textual descriptions of products. We evaluate our proposal against numerous categories of products mined from BestBuy. Our empirical results show that the synthesized PCMs exhibit numerous quantitative, comparable information that can potentially complement or even refine technical descriptions of products. The user study shows that our automatic approach is capable of extracting a significant portion of correct features and correct values. This approach has been implemented in MatrixMiner a web environment with an interactive support for automatically synthesizing PCMs from informal product descriptions. MatrixMiner also maintains traceability with the original descriptions and the technical specifications for further refinement or maintenance by users~\cite{JSSbennasr}. 
-    There is a connection between PCMs and variability modeling formalism, which is of interest for the product line community.
-    Additional resources: \url{http://opencompare.org} and \url{http://matrix-miner.variability.io/}
+
 
     
     
@@ -29,43 +15,33 @@
 
 \paragraph{Variability and testing.}
 Many approaches for testing configurable software systems start from the same assumption: it is impossible to test all configurations. This motivated the definition of variability-aware abstractions and sampling techniques to cope with large configuration spaces. Yet, there is no theoretical barrier that prevents the exhaustive testing of all configurations by simply enumerating them, if the effort required to do so remains acceptable. Not only this: we believe there is lots to be learned by systematically and exhaustively testing a configurable system. We report on the first ever endeavor to test all possible configurations of an industry-strength, open source configurable software system, JHipster, a popular code generator for web applications. We built a testing scaffold for the 26,000+ configurations of JHipster using a cluster of 80 machines during 4 nights for a total of 4,376 hours (182 days) CPU time. We find that 35.70\% configurations fail and we identify the feature interactions that cause the errors. We show that sampling testing strategies (like dissimilarity and 2-wise) (1) are more effective to find faults than the 12 default configurations used in the JHipster continuous integration; (2) can be too costly and exceed the available testing budget. We cross this quantitative analysis with the qualitative assessment of JHipster's lead developers.
-Additional resources: preliminary effort on JHipster~\cite{halin:hal-01468084}, \url{https://arxiv.org/abs/1710.07980} \url{https://github.com/axel-halin/Thesis-JHipster/}
+Publication at Empirical Software Engineering: ~\cite{halin:hal-01829928}
+See also, in the rest of the report, the work on \emph{Multimorphic Testing} that actually relies on variability techniques. 
+% preliminary effort on JHipster~\cite{halin:hal-01468084}, \url{https://arxiv.org/abs/1710.07980} \url{https://github.com/axel-halin/Thesis-JHipster/}
 
 
 \paragraph{Variability and teaching.}
 
 Software Product Line (SPL) engineering has emerged to provide the means to efficiently model, produce, and maintain multiple similar software variants, exploiting their common properties, and managing their variabilities (differences). With over two decades of existence, the community of SPL researchers and practitioners is thriving as can be attested by the extensive research output and the numerous successful industrial projects. Education has a key role to support the next generation of practitioners to build highly complex, variability-intensive systems. Yet, it is unclear how the concepts of variability and SPLs are taught, what are the possible missing gaps and difficulties faced, what are the benefits, or what is the material available. Also, it remains unclear whether scholars teach what is actually needed by industry. We report on three initiatives we have conducted with scholars, educators, industry practitioners, and students to further understand the connection between SPLs and education, i.e., an online survey on teaching SPLs we performed with 35 scholars, another survey on learning SPLs we conducted with 25 students, as well as two workshops held at the International Software Product Line Conference in 2014 and 2015 with both researchers and industry practitioners participating. We build upon the two surveys and the workshops to derive recommendations for educators to continue improving the state of practice of teaching SPLs, aimed at both individual educators as well as the wider community. Finally, we are developing and maintaining a repository for teaching SPLs and variability.
-Additional resources: \url{https://teaching.variability.io}
+Publication at SPLC (journal first)~\cite{acher:hal-01829933}, workshop SPLTea'18 \url{http://spltea.irisa.fr/} and repository: \url{https://teaching.variability.io}
 
-\paragraph{Variability and constraint solving.}  
-Array constraints are essential for handling data structures in automated reasoning and software verification. Unfortunately, the use of a typical finite domain (FD) solver based on local consistency-based filtering has strong limitations when constraints on indexes are combined with constraints on array elements and size. This work proposes an efficient and complete FD-solving technique for extended constraints over (possibly unbounded) arrays. We describe a simple but particularly powerful transformation for building an equisatisfiable formula that can be efficiently solved using standard FD reasoning over arrays, even in the unbounded case. Experiments show that the proposed solver significantly outperforms FD solvers, and successfully competes with the best SMT-solvers~\cite{plazar:hal-01545557}.
-This work is not directly related to variability and SPL. 
-But it contributes to DiverSE's attempts to connect artificial intelligence techniques to software variability engineering, in which constraint solving or machine learning are typically applied. 
+%\paragraph{Variability and constraint solving.}  
+%Array constraints are essential for handling data structures in automated reasoning and software verification. Unfortunately, the use of a typical finite domain (FD) solver based on local consistency-based filtering has strong limitations when constraints on indexes are combined with constraints on array elements and size. This work proposes an efficient and complete FD-solving technique for extended constraints over (possibly unbounded) arrays. We describe a simple but particularly powerful transformation for building an equisatisfiable formula that can be efficiently solved using standard FD reasoning over arrays, even in the unbounded case. Experiments show that the proposed solver significantly outperforms FD solvers, and successfully competes with the best SMT-solvers~\cite{plazar:hal-01545557}.
+% This work is not directly related to variability and SPL. 
+% But it contributes to DiverSE's attempts to connect artificial intelligence techniques to software variability engineering, in which constraint solving or machine learning are typically applied. 
 
-\paragraph{Variability and machine learning (performance specialization of variability-intensive systems).}
+\paragraph{Variability and machine learning}
 %\begin{description}
 %	\item[Contribution.] 
-	We propose the use of a machine learning approach to infer variability constraints
-	from an oracle that is able to assess whether a given configuration is correct.
-	We propose an automated procedure to randomly generate configurations, classify them according to the oracle, and synthesize cross-tree constraints. Specifically, based on an oracle (e.g. a runtime test) that tells us whether a given configuration meets the requirements (e.g. speed or memory footprint), we leverage machine learning to retrofit the acquired knowledge into a variability model of the system that can be used to automatically specialize the configurable system. We validate our approach on a set of well-known configurable software systems (Apache server, x264, etc.) 
-    Our results show that, for many different kinds of objectives and performance qualities, the approach has interesting accuracy, precision and recall after a learning stage based on a relative small number of random samples~\cite{temple:hal-01467299}.    
-    Additional resources: \url{https://learningconstraints.github.io} and VaryVary ANR project
-    
-\paragraph{Variability and machine learning (learning contextual variability models).} 
-Modeling how contextual factors relate to a software system’s configuration space is usually a manual, error-prone task that depends highly on expert knowledge. Machine-learning techniques can automatically predict the acceptable software configurations for a given context. Such an approach executes and observes a sample of software configurations within a sample of contexts. It then learns what factors of each context will likely discard or activate some of the software’s features. This lets developers and product managers automatically extract the rules that specialize highly configurable systems for specific contexts~\cite{temple:hal-01659137}
-Additional resources: \url{https://learningconstraints.github.io} and VaryVary ANR project
+We propose the use of a machine learning approach to infer variability constraints
+from an oracle that is able to assess whether a given configuration is correct.
+We propose an automated procedure to generate configurations, classify them according to the oracle, and synthesize cross-tree constraints. Specifically, based on an oracle (e.g. a runtime test) that tells us whether a given configuration meets the requirements (e.g. speed or memory footprint), we leverage machine learning to retrofit the acquired knowledge into a variability model of the system that can be used to automatically specialize the configurable system. We validate our approach on a set of well-known configurable software systems (Apache server, x264, etc.) 
+Our results show that, for many different kinds of objectives and performance qualities, the approach has interesting accuracy, precision and recall after a learning stage based on a relative small number of random samples.
+Publications: Temple et al. \emph{Towards Adversarial Configurations for Software Product Lines} \url{https://arxiv.org/abs/1805.12021}, VaryLaTeX~\cite{acher:hal-01659161} a variability and learning-based tool to generate relevant paper variants written in \latex. 
 
-We are currently exploring the use of machine learning for variability-intensive systems in the context of VaryVary ANR project (see also VaryLaTeX~\cite{acher:hal-01659161}).
+\emph{TUXML (Tux is the mascotte of the Linux Kernel while ML stands for statistical machine learning)}. The goal of TuxML  is to predict properties of Linux Kernel configurations (e.g., does the kernel compile? what's its size? does it boot?). The Linux Kernel provides near 15000 configuration options: there is an infinity of different kernels. As we cannot compile, measure, and observe all combinations of options (aka configurations), we're trying to learn Linux kernel properties out of a sample of configurations. The TuxML project is developing tools, mainly based on Docker and Python, to massively compile and gather data about thousand of configuration kernels~\url{https://github.com/TuxML/}.
 
-
-
-\paragraph{Model-driven Virtual Reality applications synthesis}
-
-Development practices in Virtual Reality (VR) are not optimized. For example, each company uses its own methods. We automatize development and evaluation of VR software with the use of Model-Driven Engineering (MDE) techniques~\cite{TODOTheseGwendal}. The existing approaches in VR do not take advantage of software commonalities. Those lacks of reuse, separation of concerns and abstraction are known problems in MDE, which proposes the Software Product Line (SPL) concept to automatize the
-production of software belonging to the same family, by reusing common components. However, this approach is not adapted to software based on a scenario, like in VR.
-We propose two approaches that respectively address the lacks in MDE and VR: LPLOS (Scenario-Oriented Software Product Line) and LPLRV (VR SPL). LPLOS is based on a scenario model that handles a software variability model (Feature Model, FM). Each scenario step matches a configuration of the FM. LPLRV is based on LPLOS. The scenario manages virtual objects manipulation, the objects being generated automatically from a model. We implemented these approaches inside tools that have been tried on examples and evaluated by their target users. The results promote the use of these frameworks for producing scenario-based software.
-
-
+In general, we are currently exploring the use of machine learning for variability-intensive systems in the context of VaryVary ANR project \url{https://varyvary.github.io}.
 
 
 

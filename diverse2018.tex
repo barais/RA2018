@@ -742,7 +742,7 @@ This year, we would like to highlight the following results:
 	\item In terms of publications:
 	\begin{itemize}
 		\item Among the many articles published this year, articles \cite{halin:hal-01829928} and b \cite{veraperez:hal-01867423} have been published at the highest level but above all they represent perfectly the type of research conducted within the team: open research based on studies of major open-source software and in connection with the developer communities. 
-		\item The results of this year's SLE conference also make us very proud. 4 accepted papers including 1 best vision paper (hal-01889155), 1 best artifact (hal-01890446) and the award for the best reviewer for a former doctoral student of the team recently appointed associate professor at the University of Nantes.
+		\item The results of this year's SLE conference also make us very proud. 4 accepted papers including 1 best vision paper~\cite{coulon:hal-01889155}, 1 best artifact (hal-01890446) and the award for the best reviewer for a former doctoral student of the team recently appointed associate professor at the University of Nantes.
 	\end{itemize}
 
 	\item A former PhD student of the team, Pierre Laperdrix get "\textit{Le prix de thèse Gilles Kahn 2018 (premier accessit), décerné par la SiF et patronné par l’Académie des Sciences}" for his PhD entitled \textit{ Browser Fingerprinting: Exploring Device Diversity to Augment Authentication and Build Client-Side Countermeasures}. 
@@ -764,6 +764,10 @@ This year, we would like to highlight the following results:
 %% ICI vous pouvez ecrire du texte
 %%
 %% citez les "Awards" sous la forme : \bestcite{xxxx}, \bestcite{yyyy}, ...
+
+
+\bestcite{coulon:hal-01889155} gets the best vision paper at SLE'18. \\
+\bestcite{leduc:hal-01890446} get the best artefact associated to a scientific paper at SLE'18. 
 
 \end{module}
 
@@ -797,43 +801,10 @@ This year, we would like to highlight the following results:
 %%% La partie Plaforms de la section logiciels et plateformes doit, le cas échéant, être complétée ici :  
 %%%  
 
- \begin{module}{logiciels}{bil-2737}{amiunique}
-
-   \textsc{Keywords:} Privacy - Browser fingerprinting \\ 
-
-
-    \textsc{Scientific Description:} The amiunique web site has been deployed in the context of the DiverSE's research activities on browser fingerprinting and how software diversity can be leveraged in order to mitigate the impact of fingerprinting on the privacy of users. The construction of a dataset of genuine fingerprints is essential to understand in details how browser fingerprints can serve as unique identifiers and hence what should be modified in order to mitigate its impact privacy. This dataset also supports the large-scale investigation of the impact of web technology advances on fingerprinting. For example, we can analyze in details the impact of the HTML5 canvas element or the behavior of fingerprinting on mobile devices.
-
-The whole source code of amiunique is open source and is distributed under the terms of the MIT license.
-
-Similar sites:
-    Panopticlick https://panopticlick.eff.org/
-    BrowserSpy http://browserspy.dk/
-    http://noc.to/
-Main innovative features:
-    canvas fingerprinting
-    WebGL fingerprinting
-    advanced JS features (platform, DNT, etc.)
-
-Impact:
-The website has been showcased in several professional forums in 2014 and 2015 (Open World Forum 2014, FOSSA'14, FIC'15, ICT'15) and it has been visited by more than 100000 unique visitors in one year.\\
-
- \textsc{Functional Description:}  This web site aims at informing visitors about browser fingerprinting and possible tools to mitigate its effect, as well as at collecting data about the fingerprints that can be found on the web. It collects browser fingerprints with the explicit agreement of the users (they have to click on a button on the home page). Fingerprints are composed of 17 attributes, which include regular HTTP headers as well as the most recent state of the art techniques (canvas fingerprinting, WebGL information).\\
-
-   \begin{itemize}
-      \item Participants: Benoit Baudry and Pierre Laperdrix
-      \item Partner: INSA Rennes
-          % Contact: Vérifiez si cette personne est toujours membre de Inria.
-    % Sinon corrigez la BIL (base des logiciels Inria): https://bil.inria.fr/ 
-      \item Contact: Benoit Baudry
-      \item URL: \url{https://amiunique.org/}
-   \end{itemize}
-
- \end{module}
 
  \begin{module}{logiciels}{bil-1468}{FAMILIAR}
 
-   \textsc{Keywords:} Software line product - Configators - Customisation \\ 
+   \textsc{Keywords:} Software line product - Configurators - Customisation \\ 
 
 
     \textsc{Scientific Description:} FAMILIAR (for FeAture Model scrIpt Language for manIpulation and Automatic Reasoning) is a language for importing, exporting, composing, decomposing, editing, configuring, computing "diffs", refactoring, reverse engineering, testing, and reasoning about (multiple) feature models. All these operations can be combined to realize complex variability management tasks. 
@@ -857,6 +828,7 @@ A comprehensive environment is proposed as well as integration facilities with t
 
 
     \textsc{Scientific Description:} The language workbench put together the following tools seamlessly integrated to the Eclipse Modeling Framework (EMF):
+
 
 - Melange, a tool-supported meta-language to modularly define executable modeling languages with execution functions and data, and to extend (EMF-based) existing modeling languages.
 - MoCCML, a tool-supported meta-language dedicated to the specification of a Model of Concurrency and Communication (MoCC) and its mapping to a specific abstract syntax and associated execution functions of a modeling language.
@@ -916,9 +888,6 @@ Kevoree is distributed under the terms of the LGPL open source license.
 
     Vagran (http://vagrantup.com/ )
 
-\textsc{Impact:} Several tutorials and courses have been performed this year at EJCP for French PhD student, at ECNU summer school for 82 chineese PhD students. See also the web page http://www.kevoree.org .
-
-In 2015, we mainly created a new implementation in C\# and we created an implementation for system containers for driving resources using Kevoree. We also use Kevoree in the context of Mohammed's PhD to create testing infrastructure on-demand.\\
 
  \textsc{Functional Description:}  Kevoree is an open-source models@runtime platform to properly support the dynamic adaptation of distributed systems. Models@runtime basically pushes the idea of reflection one step further by considering the reflection layer as a real model that can be uncoupled from the running architecture (e.g. for reasoning, validation, and simulation purposes) and later automatically resynchronized with its running instance.\\
 
@@ -1089,6 +1058,48 @@ OpenCompare.org is an ambitious project for the collaborative edition, the shari
  \end{module}
 
 
+ \begin{module}{logiciels}{bil-2737}{amiunique}
+ 	
+ 	\textsc{Keywords:} Privacy - Browser fingerprinting \\ 
+ 	
+ 	
+ 	\textsc{Scientific Description:} The amiunique web site has been deployed in the context of the DiverSE's research activities on browser fingerprinting and how software diversity can be leveraged in order to mitigate the impact of fingerprinting on the privacy of users. The construction of a dataset of genuine fingerprints is essential to understand in details how browser fingerprints can serve as unique identifiers and hence what should be modified in order to mitigate its impact privacy. This dataset also supports the large-scale investigation of the impact of web technology advances on fingerprinting. For example, we can analyze in details the impact of the HTML5 canvas element or the behavior of fingerprinting on mobile devices.
+ 	
+ 	The whole source code of amiunique is open source and is distributed under the terms of the MIT license.
+ 	
+ 	
+ 	Similar sites:
+ 	
+ 	\begin{itemize}
+ 		\item Panopticlick https://panopticlick.eff.org/
+ 		\item BrowserSpy http://browserspy.dk/
+ 		\item http://noc.to/
+ 	\end{itemize}
+ 	
+ 	Main innovative features:
+ 	\begin{itemize}
+ 		\item    canvas fingerprinting
+ 		\item WebGL fingerprinting
+ 		\item advanced JS features (platform, DNT, etc.)
+ 	\end{itemize}
+ 	Impact:
+ 	
+ 	The website has been showcased in several professional forums from 2014 to 2018  and it has been visited by more than 100000 unique visitors in one year.\\
+ 	
+ 	\textsc{Functional Description:}  This web site aims at informing visitors about browser fingerprinting and possible tools to mitigate its effect, as well as at collecting data about the fingerprints that can be found on the web. It collects browser fingerprints with the explicit agreement of the users (they have to click on a button on the home page). Fingerprints are composed of 17 attributes, which include regular HTTP headers as well as the most recent state of the art techniques (canvas fingerprinting, WebGL information).\\
+ 	
+ 	\begin{itemize}
+ 		\item Participants: Benoit Baudry and Pierre Laperdrix
+ 		\item Partner: INSA Rennes
+ 		% Contact: Vérifiez si cette personne est toujours membre de Inria.
+ 		% Sinon corrigez la BIL (base des logiciels Inria): https://bil.inria.fr/ 
+ 		\item Contact: Benoit Baudry
+ 		\item URL: \url{https://amiunique.org/}
+ 	\end{itemize}
+ 	
+ \end{module}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
@@ -1170,7 +1181,16 @@ OpenCompare.org is an ambitious project for the collaborative edition, the shari
 	\item Abstract: The OSS project investigates an extreme version of moving target defense where a slightly different version of the application is deployed each time it is used (e.g., for crypto functions or payment services). We investigate the analysis, synthesis and transformation techniques to support diversification at 5 points of a software construction pipeline, which, once combined yield up to billions of variants. We also evaluate the support of diversification as a first class property in DevOps.
 \end{itemize}
 
+
+\subsubsection*{Agileo}
+\begin{itemize}
+	\item Partners: Inria/Agileo
+	\item Dates: 2017-2018
+	\item Abstract: In this project we mainly design a systematic mapping study on modeling for Industry 4.0 in order to share a common scientific roadmap. 
+\end{itemize}
+
 \end{module}
+
 
 %\begin{module}{contrats}{cgwi2}{Bilateral Grants with Industry}
 %%ICI Vous pouvez ecrire du texte
@@ -1343,6 +1363,14 @@ We plan to further collect large experimental data and apply our techniques on p
 
 
 \subsection{Collaborations in European Programs, Except FP7 \& H2020}
+\begin{itemize}
+	\item Coordinator: UR1
+	\item Other partners: Airbreizh - Surveillance of Brittany air quality association, branch of the French national air surveillance network, AmpliSIM - SME specialized in pollution numerical simulation, CNRS / IDRIS - Institute for Development and Resources in Intensive Scientific Computing, GENCI - Supercomputing centres association, Keolis - Public transport operator for Rennes Metropole,	Neovia – SME specialized in HPC and project management, Rennes Métropole – Local authority in charge of the Service Public Métropolitain de la Donnée (SPMD), Ryax Technologies – SME providing Data Analytics workflows’ automation and seamless orchestration on hybrid distributed infrastructures
+	UCit – SME providing HPC as a Service
+	\item Dates: 2018-2020
+	\item Abstract: The AQMO project is co-financed by the European Union through its CEF programme. It addresses the air quality challenge, thanks to the development of a smart city pilot in the area of Rennes Metropole. The project will provide an end-to-end urban platform that extends current practices in air quality measurements. The AQMO platform will provide citizens, local authorities, scientific organizations and private companies with new data and innovative services based on computing simulation.
+
+\end{itemize}
 % Eureka, COST...
 
 % respecter le format  
@@ -1461,7 +1489,7 @@ ALE will contribute to the field of Software Language Engineering, aiming to pro
 %%% indique un partenariat international important pour votre équipe,  
 %%% hors Equipes Associées et hors participation aux programmes internationaux mentionnés ci-dessous
 
-        \subsubsection{Declared Inria International Partners}
+%        \subsubsection{Declared Inria International Partners}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1674,17 +1702,17 @@ Olivier Barais:
 \end{itemize} 
 
 
-    \subsubsection{Reviewer - Reviewing Activities}
+%    \subsubsection{Reviewer - Reviewing Activities}
  
- Arnaud Blouin, external reviewers for:
-\begin{itemize}
-    \item EICS'18, ICWE'18
-\end{itemize}    
+% Arnaud Blouin, external reviewers for:
+%\begin{itemize}
+%    \item EICS'18, ICWE'18
+%\end{itemize}    
     
-Arnaud Blouin, external reviewers for:
-  \begin{itemize}
-   	\item ICSE'18, ASE'18
-  \end{itemize}    
+%Arnaud Blouin, external reviewers for:
+%  \begin{itemize}
+%   	\item ICSE'18, ASE'18
+%  \end{itemize}    
      
      
     

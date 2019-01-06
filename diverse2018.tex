@@ -813,7 +813,7 @@ Paper \bestcite{leduc:hal-01890446} was awarded the best artefact associated to 
     \textsc{Scientific Description:} FAMILIAR (for FeAture Model scrIpt Language for manIpulation and Automatic Reasoning) is a language for importing, exporting, composing, decomposing, editing, configuring, computing "diffs", refactoring, reverse engineering, testing, and reasoning about (multiple) feature models. All these operations can be combined to realize complex variability management tasks. 
 A comprehensive environment is proposed as well as integration facilities with the Java ecosystem.\\
 
- \textsc{Functional Description:}  Familiar is an environment for large-scale product customisation. From a model of product features (options, parameters, etc.), Familiar can automatically generate several million variants. These variants can take many forms: software, a graphical interface, a video sequence or even a manufactured product (3D printing). Familiar is particularly well suited for developing web configurators (for ordering customised products online), for providing online comparison tools and also for engineering any family of embedded or software-based products.\\
+ \textsc{Functional Description:}  Familiar is an environment for large-scale product customisation. From a model of product features (options, parameters, etc.), Familiar can automatically generate several millions of variants. These variants can take many forms: software, a graphical interface, a video sequence or even a manufactured product (3D printing). Familiar is particularly well suited to developments of web configurators (for ordering customised products online), to provide online comparison tools and also to engineer any family of embedded or software-based products.\\
 
    \begin{itemize}
       \item Participants: Mathieu Acher, Hugo Martin, Olivier Barais
@@ -830,18 +830,18 @@ A comprehensive environment is proposed as well as integration facilities with t
    \textsc{Keywords:} DSL - Language workbench - Model debugging \\ 
 
 
-    \textsc{Scientific Description:} The language workbench put together the following tools seamlessly integrated to the Eclipse Modeling Framework (EMF):
+    \textsc{Scientific Description:} The language workbench put together the following tools, seamlessly integrated in the Eclipse Modeling Framework (EMF):
 
 
-- Melange, a tool-supported meta-language to modularly define executable modeling languages with execution functions and data, and to extend (EMF-based) existing modeling languages.
-- MoCCML, a tool-supported meta-language dedicated to the specification of a Model of Concurrency and Communication (MoCC) and its mapping to a specific abstract syntax and associated execution functions of a modeling language.
-- GEL, a tool-supported meta-language dedicated to the specification of the protocol between the execution functions and the MoCC to support the feedback of the data as well as the callback of other expected execution functions.
-- BCOoL, a tool-supported meta-language dedicated to the specification of language coordination patterns to automatically coordinates the execution of, possibly heterogeneous, models.
+- Melange, a tool-supported metalanguage to modularly define executable modeling languages with execution functions and data, and to extend (EMF-based) existing modeling languages.
+- MoCCML, a tool-supported metalanguage dedicated to the specification of a Model of Concurrency and Communication (MoCC) and its mapping to a specific abstract syntax and associated execution functions of a modeling language.
+- GEL, a tool-supported metalanguage dedicated to the specification of the protocol between the execution functions and the MoCC to support the feedback of the data as well as the callback of other expected execution functions.
+- BCOoL, a tool-supported metalanguage dedicated to the specification of language coordination patterns to automatically coordinate the execution of possibly heterogeneous models.
 - Sirius Animator, an extension to the model editor designer Sirius to create graphical animators for executable modeling languages.\\
 
- \textsc{Functional Description:}  The GEMOC Studio is an eclipse package that contains components supporting the GEMOC methodology for building and composing executable Domain-Specific Modeling Languages (DSMLs). It includes the two workbenches:
+ \textsc{Functional Description:}  The GEMOC Studio is an Eclipse package that contains components supporting the GEMOC methodology for building and composing executable Domain-Specific Modeling Languages (DSMLs). GEMOC Studio includes the two following workbenches:
     The GEMOC Language Workbench: intended to be used by language designers (aka domain experts), it allows to build and compose new executable DSMLs.
-    The GEMOC Modeling Workbench: intended to be used by domain designersto create, execute and coordinate models conforming to executable DSMLs. The different concerns of a DSML, as defined with the tools of the language workbench, are automatically deployed into the modeling workbench. They parametrize a generic execution framework that provide various generic services such as graphical animation, debugging tools, trace and event managers, timeline, etc.\\
+    The GEMOC Modeling Workbench: intended to be used by domain designers to create, execute and coordinate models conforming to executable DSMLs. The different concerns of a DSML, as defined with the tools of the language workbench, are automatically deployed into the modeling workbench. They parameterize a generic execution framework that provides various generic services such as graphical animation, debugging tools, trace and event managers, timeline, etc.\\
 
    \begin{itemize}
       \item Participants: Didier Vojtisek, Dorian Leroy, Erwan Bousse, Fabien Coulon and Julien Deantoni
@@ -864,7 +864,7 @@ A comprehensive environment is proposed as well as integration facilities with t
 
     \textsc{Scientific Description:} Kevoree is an open-source models@runtime platform (http://www.kevoree.org) to properly support the dynamic adaptation of distributed systems. Models@runtime basically pushes the idea of reflection one step further by considering the reflection layer as a real model that can be uncoupled from the running architecture (e.g. for reasoning, validation, and simulation purposes) and later automatically resynchronized with its running instance.
 
-Kevoree has been influenced by previous work that we carried out in the DiVA project and the Entimid project. With Kevoree we push our vision of models@runtime farther. In particular, Kevoree provides a proper support for distributed models@runtime. To this aim we introduced the Node concept to model the infrastructure topology and the Group concept to model semantics of inter node communication during synchronization of the reflection model among nodes. Kevoree includes a Channel concept to allow for multiple communication semantics between remoteComponents deployed on heterogeneous nodes. All Kevoree concepts (Component, Channel, Node, Group) obey the object type design pattern to separate deployment artifacts from running artifacts. Kevoree supports multiple kinds of very different execution node technology (e.g. Java, Android, MiniCloud, FreeBSD, Arduino, ...).
+Kevoree has been influenced by previous work that we carried out in the DiVA project and the Entimid project. With Kevoree we push our vision of models@runtime farther. In particular, Kevoree provides a proper support for distributed models@runtime. To this aim we introduced the Node concept to model the infrastructure topology and the Group concept to model semantics of inter node communication during synchronization of the reflection model among nodes. Kevoree includes a Channel concept to allow for multiple communication semantics between remote components deployed on heterogeneous nodes. All Kevoree concepts (Component, Channel, Node, Group) obey the object type design pattern to separate deployment artifacts from running artifacts. Kevoree supports multiple kinds of very different execution node technologies (e.g. Java, Android, MiniCloud, FreeBSD, Arduino, ...).
 
 Kevoree is distributed under the terms of the LGPL open source license.
 
@@ -883,8 +883,8 @@ Kevoree is distributed under the terms of the LGPL open source license.
 
 \textsc{Main innovative features:}
 \begin{itemize}
-	\item distributed models@runtime platform (with a distributed reflection model and an extensible models@runtime dissemination set of strategies).
-	\item Support for heterogeneous node type (from Cyber Physical System with few resources until cloud computing infrastructure).
+	\item Distributed models@runtime platform (with a distributed reflection model and an extensible models@runtime dissemination set of strategies).
+	\item Support for heterogeneous node type (from Cyber Physical System with scarce resources up to cloud computing infrastructure).
 	\item Fully automated provisioning model to correctly deploy software modules and their dependencies.
 	\item Communication and concurrency access between software modules expressed at the model level (not in the module implementation).
 \end{itemize}
@@ -909,11 +909,11 @@ Kevoree is distributed under the terms of the LGPL open source license.
    \textsc{Keywords:} Model-driven engineering - Meta model - MDE - DSL - Model-driven software engineering - Dedicated langage - Language workbench - Meta-modelisation - Modeling language - Meta-modeling \\ 
 
 
-    \textsc{Scientific Description:} Melange is a follow-up of the executable metamodeling language Kermeta, which provides a tool-supported dedicated meta-language to safely assemble language modules, customize them and produce new DSMLs. Melange provides specific constructs to assemble together various abstract syntax and operational semantics artifacts into a DSML. DSMLs can then be used as first class entities to be reused, extended, restricted or adapted into other DSMLs. Melange relies on a particular model-oriented type system that provides model polymorphism and language substitutability, i.e. the possibility to manipulate a model through different interfaces and to define generic transformations that can be invoked on models written using different DSLs. Newly produced DSMLs are correct by construction, ready for production (i.e., the result can be deployed and used as-is), and reusable in a new assembly.
+    \textsc{Scientific Description:} Melange is a follow-up of the executable metamodeling language Kermeta, which provides a tool-supported dedicated metalanguage to safely assemble language modules, customize them and produce new DSMLs. Melange provides specific constructs to assemble together various abstract syntax and operational semantics artifacts into a DSML. DSMLs can then be used as first class entities to be reused, extended, restricted or adapted into other DSMLs. Melange relies on a particular model-oriented type system that provides model polymorphism and language substitutability, i.e. the possibility to manipulate a model through different interfaces and to define generic transformations that can be invoked on models written using different DSLs. Newly produced DSMLs are correct by construction, ready for production (i.e., the result can be deployed and used as-is), and reusable in a new assembly.
 
-Melange is tightly integrated with the Eclipse Modeling Framework ecosystem and relies on the meta-language Ecore for the definition of the abstract syntax of DSLs. Executable meta-modeling is supported by weaving operational semantics defined with Xtend. Designers can thus easily design an interpreter for their DSL in a non-intrusive way. Melange is bundled as a set of Eclipse plug-ins.\\
+Melange is tightly integrated with the Eclipse Modeling Framework ecosystem and relies on the Ecore metalanguage for the definition of the abstract syntax of DSLs. Executable meta-modeling is supported by weaving operational semantics defined with Xtend. Designers can thus easily design an interpreter for their DSL in a non-intrusive way. Melange is bundled as a set of Eclipse plug-ins.\\
 
- \textsc{Functional Description:}  Melange is a language workbench which helps language engineers to mashup their various language concerns as language design choices, to manage their variability, and support their reuse. It provides a modular and reusable approach for customizing, assembling and integrating DSMLs specifications and implementations.\\
+ \textsc{Functional Description:}  Melange is a language workbench that helps language engineers to mashup their various language concerns as language design choices, to manage their variability, and support their reuse. It provides a modular and reusable approach for customizing, assembling and integrating DSMLs specifications and implementations.\\
 
    \begin{itemize}
       \item Participants: Arnaud Blouin, Benoît Combemale, David Mendez Acuna, Didier Vojtisek, Dorian Leroy, Erwan Bousse, Fabien Coulon, Jean-Marc Jézéquel, Olivier Barais and Thomas Degueule
@@ -932,7 +932,7 @@ Melange is tightly integrated with the Eclipse Modeling Framework ecosystem and 
 
    
 
- \textsc{Functional Description:}  Product comparison matrices (PCMs) are tabular data: supported and unsupported features are documented for both describing the product itself and for discriminating one product compared to another. PCMs abound – we are all using PCMs – and constitute a rich source of knowledge for easily comparing and choosing product. Yet the current practice is suboptimal both for humans and computers, mainly due to unclear semantics, heterogeneous forms of data, and lack of dedicated support. 
+ \textsc{Functional Description:}  Product comparison matrices (PCMs) are tabular data: supported and unsupported features are documented for both describing the product itself and for discriminating one product compared to another. PCMs abound – we are all using PCMs – and form a rich source of knowledge for easily comparing and choosing product. Yet the current practice is suboptimal both for humans and computers, mainly because of unclear semantics, heterogeneous forms of data, and lack of dedicated support. 
 
 OpenCompare.org is an ambitious project for the collaborative edition, the sharing, the standardisation, and the open exploitation of PCMs. The goal of OpenCompare.org is to provide an integrated set of tools (e.g., APIs, visualizations, configurators, editors) for democratizing their creation, import, maintenance, and exploitation.\\
 
@@ -953,7 +953,7 @@ OpenCompare.org is an ambitious project for the collaborative edition, the shari
 
    
 
- \textsc{Functional Description:}  DSpot is a tool that generates missing assertions in JUnit tests. DSpot takes as input a Java project with an existing test suite. As output, DSpot outputs new test cases on console. DSpot supports Java projects built with Maven and Gradle\\
+ \textsc{Functional Description:}  DSpot is a tool that generates missing assertions in JUnit tests. DSpot takes as input a Java project with an existing test suite. As output, DSpot outputs new test cases on console. DSpot supports Java projects built with Maven and Gradle.\\
 
    \begin{itemize}
       \item Participants: Benoit Baudry, Martin Monperrus and Benjamin Danglot
@@ -1158,7 +1158,7 @@ OpenCompare.org is an ambitious project for the collaborative edition, the shari
 \begin{itemize}
 	\item Coordinator: Inria
 	\item Dates: 2017-2021
-	\item Abstract: The goal of this project is to integrate a chaos engineering principles to IoT Services frameworks to improve the robustness of the software-defined network services using this approach and to explore the concept of equivalence for software-defined network services and propose an approach to constantly evolve the attack surface of the network services.
+	\item Abstract: The goal of this project is to integrate chaos engineering principles to IoT Services frameworks to improve the robustness of the software-defined network services using this approach, to explore the concept of equivalence for software-defined network services, and to propose an approach to constantly alter the attack surface of the network services.
 \end{itemize}
 
 

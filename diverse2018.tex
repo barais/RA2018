@@ -364,7 +364,7 @@ is extremely promising   \footcite{Morin09f}.
 \label{sec:variability}
 % TODO: too many citations
 While the basic vision underlying \textit{Software Product Lines} (SPL) can
-probably be traced back to David Parnas seminal article~  \footcite{parnas1976} on
+probably be traced back to David Parnas seminal article~\footcite{parnas1976} on
 the Design and Development of Program Families, it is only quite recently that
 SPLs are emerging as a paradigm shift towards modeling and developing
 software system families rather than individual
@@ -431,7 +431,7 @@ that are valid at different times) and \textbf{variability in space}
 different levels of visibility: \textbf{external variability} is visible to
 the customers while \textbf{internal variability}, that of domain artifacts,
 is hidden from them. Other classification proposals come from Meekel \textit{et~al.}   \footcite{Meekel1998} (feature, hardware platform, performances and attributes
-variability) or Bass \textit{et~al.}   \footcite{Bachmann2001} who discuss about variability
+variability) or Bass \textit{et~al.}   \footcite{Bachmann2001} who discusses about variability
 at the architectural level.
 
 
@@ -496,8 +496,8 @@ If for any reason after design time architectural changes are needed after syste
 (unless the changes are limited to parameter adjustment in the components deployed).
 
 Dynamic designs allow for \textit{on the fly} redesign of a component based system. 
-A  process for dynamic adaptation is able to reapply the  design phases while the system is up and running, without stopping it (this is different from stop/redeploy/start).
-This kind of process supports \textit{chosen adaptation}, when changes are planned and realized to maintain a good fit between the needs that the system must support and the way it supports them~  \footcite{Kramer:2007kv}.
+A  process for dynamic adaptation is able to reapply the  design phases while the system is up and running, without stopping it (this is different from a stop/redeploy/start process).
+Dynamic adaptation process supports \textit{chosen adaptation}, when changes are planned and realized to maintain a good fit between the needs that the system must support and the way it supports them~  \footcite{Kramer:2007kv}.
 Dynamic component-based designs rely on a component meta-model that supports complex life cycles for components, connectors, service specification, etc.
 Advanced dynamic designs can also take platform changes into account at run-time, without human intervention, by adapting themselves~  \footcite{Cheng:2009hh,Vromant:NPd9bKZ}.
 Platform changes and more generally environmental changes trigger \textit{imposed adaptation}, when the system can no longer use its design to provide the services it must support.
@@ -560,13 +560,13 @@ The rigorous, scientific evaluation of \team{}'s contributions is an essential a
 \label{sec:axis}
 
 Figure \ref{fig:axis} illustrates the four dimensions of software diversity, which form the core research axis of \team{}: the \textbf{diversity of languages} used by the stakeholders involved in the construction of these systems; the \textbf{diversity of features} required by the different customers; the \textbf{diversity of runtime environments} in which software has to run and adapt; the \textbf{diversity of implementations} that are necessary for resilience through redundancy. 
-These four axis share and leverage the scientific and technological results developed in the area of model-driven engineering in the last decade. 
+These four axes share and leverage the scientific and technological results developed in the area of model-driven engineering in the last decade. 
 This means that all our research activities are founded on sound abstractions to reason about specific aspects of software systems, compose different perspectives and automatically generate parts of the system.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{IMG/research-axis.pdf}
-\caption{The four research axis of \team{}, which rely on a MDE scientific background}
+\caption{The four research axes of \team{}, which rely on a MDE scientific background}
 \label{fig:axis}
 \end{figure}
 
@@ -584,26 +584,26 @@ However, it is still hardly possible for language designers to design typical la
 Conversely, concepts and mechanisms that enable artifacts reusability abound in the software engineering community. 
 
 \textbf{Variability} in modeling languages occur in the definition of the abstract and concrete syntax as well as in the specification of the language's semantics. 
-The major challenges met when addressing the need for variability are: (i)~set principles for modeling language units that support the modular specification of a modeling language; and (ii)~design mechanisms to assemble these units in a complete language, according to the set of authorized variation points for the modeling language family.
+The major challenges met when addressing the need for variability are: (i)~to set principles for modeling language units that support the modular specification of a modeling language; and (ii)~to design mechanisms to assemble these units into a complete language, according to the set of authorized variation points for the modeling language family.
 
 
-A new generation of complex software-intensive systems (for example smart health support, smart grid, building energy management, and intelligent transportation systems) presents new opportunities for leveraging modeling languages. The development of these systems requires expertise in diverse domains.
+A new generation of complex software-intensive systems (for example smart health support, smart grid, building energy management, and intelligent transportation systems) gives new opportunities for leveraging modeling languages. The development of these systems requires expertise in diverse domains.
 Consequently, different types of stakeholders (e.g., scientists, engineers and end-users) must work in a coordinated manner on various aspects of the system across multiple development phases. DSMLs can be used to support the work of domain experts who focus on a specific system aspect, but they can also provide the means for coordinating work across teams specializing in different aspects and across development phases. The support and integration of DSMLs leads to what we call \textbf{the globalization of modeling languages}, \textit{i.e.} the use of multiple languages for the coordinated development of diverse aspects of a system. One can make an analogy with world globalization in which relationships are established between sovereign countries to regulate interactions (e.g., travel and commerce related interactions) while preserving each country's independent existence.
 
 
 \subsubsection*{Scientific objectives} 
 
 We address reuse and variability challenges through the investigation of the time-honored concepts of substitutability, inheritance and components, evaluate their relevance for language designers and provide tools and methods for their inclusion in software language engineering.
-We will develop novel techniques for the modular construction of language extensions with the support of model syntactical variability. From the semantics perspective, we investigate extension mechanisms for the specification of variability in  operational semantics, focusing on static introduction and heterogeneous models of computation. The definition of variation points for the three aspects of the language definition provides the foundations for the novel concept Language Unit (LU) as well as suitable mechanisms to compose such units.
+We will develop novel techniques for the modular construction of language extensions with support to model syntactical variability. From the semantics perspective, we investigate extension mechanisms for the specification of variability in  operational semantics, focusing on static introduction and heterogeneous models of computation. The definition of variation points for the three aspects of the language definition provides the foundations for the novel concept Language Unit (LU) as well as suitable mechanisms to compose such units.
 
 
 We explore the necessary breakthrough in software languages to support modeling and simulation of heterogeneous and open systems. This work relies on the specification of executable domain specific modeling languages (DSMLs) to formalize the various concerns of a software-intensive system, and of models of computation (MoCs) to explicitly model the concurrency, time and communication of such DSMLs. We develop a framework that integrates the necessary foundations and facilities for designing and
-implementing executable and concurrent domain-specific modeling languages. It also provides unique features to specify composition operators between (possibly heterogeneous) DSMLs. Such specifications are amenable to support the edition, execution, graphical animation and analysis of heterogeneous models. The objective is to provide both a significant improvement of MoCs and DSMLs design and implementation; and the simulation based validation and verification of complex systems.
+implementing executable and concurrent domain-specific modeling languages. It also provides unique features to specify composition operators between (possibly heterogeneous) DSMLs. Such specifications are amenable to support the edition, execution, graphical animation and analysis of heterogeneous models. The objective is to provide both a significant improvement to MoCs and DSMLs design and implementation and to the simulation based validation and verification of complex systems.
 
 
 We see an opportunity for the automatic diversification of programs' computation semantics, for example through the diversification of compilers or virtual machines. The main impact of this artificial diversity is to provide flexible computation and thus ease adaptation to different execution conditions. A combination of static and dynamic analysis could support the identification of what we call \emph{plastic computation zones} in the code. We identify different categories of such zones: (i)~areas in the code in which the
 order of computation can vary (e.g., the order in which a block of sequential statements is executed); (ii)~areas that can be removed, keeping the essential functionality   \footcite{Sidiroglou-Douskos2011} (e.g., skip some loop iterations); (iii)~areas that can replaced by alternative code (e.g., replace a try-catch by a return statement). Once we know which zones in the code can be randomized, it is necessary to modify the model of computation to leverage the computation plasticity. This consists in introducing variation points in the interpreter
-to reflect the diversity of models of computation. Then, the choice of a given variation is performed randomly at run-time.
+to reflect the diversity of models of computation. Then, the choice of a given variation is performed randomly at run time.
 
 
 
@@ -617,9 +617,9 @@ The systematic modeling of variability in software systems has emerged as an eff
 \subsubsection*{Challenges} 
 
 A fundamental problem is that the \textbf{number of variants} can be exponential in the number of options (features). 
-Already with 300~boolean configuration options, approximately $10^{90}$ configurations exist -- more than estimated count of atoms in the universe. Domains like automotive or operating systems have to manage more than 10000 options (e.g., Linux). Practitioners face the challenge of developing billions of variants. It is easy to forget a necessary constraint, leading to the synthesis of unsafe variants, or to under-approximate the capabilities of the software platform. Scalable modelling techniques are therefore crucial to specify and reason about a very large set of variants.
+Already with 300~boolean configuration options, approximately $10^{90}$ configurations exist -- more than the estimated count of atoms in the universe. Domains like automotive or operating systems have to manage more than 10000 options (e.g., Linux). Practitioners face the challenge of developing billions of variants. It is easy to forget a necessary constraint, leading to the synthesis of unsafe variants, or to under-approximate the capabilities of the software platform. Scalable modelling techniques are therefore crucial to specify and reason about a very large set of variants.
 
-Model-driven development supports two ways to deal with the increasing number of concerns in complex systems: multi-view modeling, \textit{i.e.} when modeling each concern separately, and variability modeling. However, there is little support to combine both approaches consistently. Techniques to integrate both approaches will enable the construction of a consistent set of views and variation points in each view.
+Model-driven development supports two approaches to deal with the increasing number of concerns in complex systems: multi-view modeling, \textit{i.e.} when modeling each concern separately, and variability modeling. However, there is little support to combine both approaches consistently. Techniques to integrate both approaches will enable the construction of a consistent set of views and variation points in each view.
 
 The design, construction and maintenance of software families have a major impact on \textbf{software testing}. Among the existing challenges, we can cite: the selection of test cases for a specific variant; the evolution of test suites with integration of new variants; the combinatorial explosion of the number of software configurations to be tested. Novel model-based techniques for test generation and test management in a software product line context are needed to overcome state-of-the-art limits we already observed in some projects.
 
@@ -656,7 +656,8 @@ The main challenge is to provide new homogeneous architectural modelling languag
 
 %\textbf{Imposed diversity}
 
-Platform architectural heterogeneity induces a first dimension of imposed diversity (type diversity). Platform reconfigurations driven by changing resources define another dimension of diversity (deployment diversity). To deal with these imposed diversity problems, we will  rely on  model based runtime support for adaptation, in the spirit of the dynamic distributed component framework developed by the Triskell team. Since the runtime environment composed of distributed, resource constrained hardware nodes cannot afford the overhead of traditional runtime adaptation techniques, we investigate the design of novel solutions relying on models@runtime and on specialized tiny virtual machines to offer resource provisioning and dynamic reconfigurations. In the next two years this research will be supported by the InfraJVM project.
+Platform architectural heterogeneity induces a first dimension of imposed diversity (type diversity). Platform reconfigurations driven by changing resources define another dimension of diversity (deployment diversity). To deal with these imposed diversity problems, we will  rely on  model based runtime support for adaptation, in the spirit of the dynamic distributed component framework developed by the Triskell team. Since the runtime environment composed of distributed, resource constrained hardware nodes cannot afford the overhead of traditional runtime adaptation techniques, we investigate the design of novel solutions relying on models@runtime and on specialized tiny virtual machines to offer resource provisioning and dynamic reconfigurations. 
+%In the next two years this research will be supported by the InfraJVM project.
 
 %\textbf{Chosen diversity}
 
@@ -670,7 +671,7 @@ Diversity can also be an asset to optimize software architecture. Architecture m
  
 \textbf{Automatic synthesis of optimal software architectures.} Implementing a service over a distributed platform (\textit{e.g.}, a pervasive system or a cloud platform) consists in deploying multiple software components over distributed computation nodes. We aim at designing search-based solutions to (i)~assist the software architect in establishing a good initial architecture (that balances between different factors such as cost of the nodes, latency, fault tolerance) and to automatically update the architecture when the environment or the system itself change. The choice of search-based techniques is motivated by the very large number of possible software deployment architectures that can be investigated and that all provide different trade-offs between qualitative factors. Another essential aspect that is supported by multi-objective search is to explore different architectural solutions that are not necessarily comparable. This is important when the qualitative factors are orthogonal to each other, such as security and usability for example.
 
-\textbf{Flexible software architecture for testing and data management.} As the number of  platforms on which software runs increases and different software versions coexist, the demand for testing environments also increases. For example, to test a  software patch or upgrade, the number of testing environments  is the product of the number of running environments the  software supports and the number of coexisting versions of the  software.  
+\textbf{Flexible software architecture for testing and data management.} As the number of  platforms on which software runs increases and different software versions coexist, the demand for testing environments also increases. For example, the number of testing environments to test a  software patch or upgrade is the product of the number of running environments the  software supports and the number of coexisting versions of the  software.  
 Based on our first experiment on the synthesis of cloud environment using architectural models, our objective is to define a set of domain specific languages to catch the requirement and to design cloud environments for testing and data management of future internet systems from data centers to things. These languages will be interpreted to support dynamic synthesis and reconfiguration of a testing environment.
 
 \textbf{Runtime support for heterogeneous environments.}
@@ -747,15 +748,15 @@ This year, we would like to highlight the following results:
 		\item The results of this year's SLE conference also make us very proud. 4 accepted papers including 1 best vision paper~\cite{coulon:hal-01889155}, 1 best artifact (hal-01890446) and the award for the best reviewer for a former doctoral student of the team recently appointed associate professor at the University of Nantes.
 	\end{itemize}
 
-	\item A former PhD student of the team, Pierre Laperdrix get "\textit{Le prix de thèse Gilles Kahn 2018 (premier accessit), décerné par la SiF et patronné par l’Académie des Sciences}" for his PhD entitled \textit{ Browser Fingerprinting: Exploring Device Diversity to Augment Authentication and Build Client-Side Countermeasures}. 
+	\item A former PhD student of the team, Pierre Laperdrix was awarded the "\textit{Le prix de thèse Gilles Kahn 2018 (premier accessit), décerné par la SiF et patronné par l’Académie des Sciences}" for his PhD entitled \textit{ Browser Fingerprinting: Exploring Device Diversity to Augment Authentication and Build Client-Side Countermeasures}. 
 	
-	\item Three new PhDs and one new HDR has been passed this year. 
+	\item Three new PhDs and one new HDR have been succesfully defended this year. 
 
 	\item A new CNRS junior researcher, Djamel Eddine Khelladi, will join the team in 2019.
 	
-	\item Mathieu Acher succesfully submited its ERC starting grant program: Killing and Resurrecting Software Variability (REVARY). This research program fully structured the Variability axis of the team for the next years. 
+	\item Mathieu Acher succesfully submitted its ERC starting grant program: Killing and Resurrecting Software Variability (REVARY). This research program fully structures the Variability axis of the team for the next years. 
 	
-	\item Didier Vojtisek, research engineer hosted since many years within the team"  get the INRIA award (\textit{appui à la recherche}) with Guillaume Cassonnet, Christophe Demarey, Herve Mathieu, Florent Pruvost for the Sonarqube project. As a research team in the field of software engineering, we study and produce many open source software. In this context, we regularly test and deploy internally support services to produce high-quality software. Sonar (SonarQube ancestor) had been deployed internally since 2008. Plunging research engineers into software engineering research teams as often as possible is undoubtedly a win-win operation for both parties (the research team but also the SED and therefore INRIA as a whole)
+	\item Didier Vojtisek, research engineer hosted since many years within the team  was awarded the INRIA award (\textit{appui à la recherche}) with Guillaume Cassonnet, Christophe Demarey, Herve Mathieu, Florent Pruvost for the Sonarqube project. As a research team in the field of software engineering, we study and produce many open source software artefacts. In this context, we regularly test and deploy internally support services to produce high-quality software. Sonar (SonarQube ancestor) had been deployed internally since 2008. Embedding research engineers into software engineering research teams as often as possible is undoubtedly a win-win operation for both parties (the research team but also the SED and therefore INRIA as a whole)
 	
 \end{description}
 
@@ -768,8 +769,8 @@ This year, we would like to highlight the following results:
 %% citez les "Awards" sous la forme : \bestcite{xxxx}, \bestcite{yyyy}, ...
 
 
-\bestcite{coulon:hal-01889155} gets the best vision paper at SLE'18. \\
-\bestcite{leduc:hal-01890446} get the best artefact associated to a scientific paper at SLE'18. 
+Paper \bestcite{coulon:hal-01889155} was awarded the best vision paper at SLE'18. \\
+Paper \bestcite{leduc:hal-01890446} was awarded the best artefact associated to a scientific paper at SLE'18. 
 
 \end{module}
 
